@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-import Logo from '../../images/logo.jpeg';
+import Logo from '../../images/logo.png';
 import Ordinarios from '../../images/ordinarios.png';
 import Metales from '../../images/metales.png';
-import Peligrosos from '../../images/peligrosos.png';
+import Organicos from '../../images/organicos.png';
 import Papel from '../../images/papel.png';
 import Plastico from '../../images/plastico.png';
 import Vidrio from '../../images/vidrio.png';
@@ -19,6 +19,7 @@ class Home extends React.Component {
             <div>
                 <header>
                     <nav
+                        id="nav"
                         className="navbar w-auto nav-pills nav-fill flex-sm-row" 
                         style={{ 'background': '#0C927D' }}
                     >
@@ -34,9 +35,8 @@ class Home extends React.Component {
                 <div className="container align-items-center justify-content-center">
                     <div className="row row-cols-2">
                         <div className="col d-flex justify-content-center">
-                            <Link to="/learning">
+                            <Link id="btn1" to="/learning">
                                 <button
-                                    id="btn1"
                                     type="button"
                                     className="btn mr-1"
                                 >
@@ -62,7 +62,7 @@ class Home extends React.Component {
                     </div>
                     <div className="row row-cols-2">
                         <div className="col d-flex justify-content-center">
-                            <button id="btn3" type="button" className="btn mr-1"><img className="img-fluid rounded" src={Peligrosos} /></button>
+                            <button id="btn3" type="button" className="btn mr-1"><img className="img-fluid rounded" src={Organicos} /></button>
                         </div>
                         <div className="col d-flex justify-content-center">
                             <button id="btn4" type="button" className="btn mr-1"><img className="img-fluid rounded" src={Papel} /></button>

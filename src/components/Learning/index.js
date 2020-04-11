@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import Logo from '../../images/logo.jpeg';
+import Logo from '../../images/logo.png';
+import Video from './movie';
+
 
 class Learning extends Component {
     render() {
+        
         return (
             <div>
                 <header>
@@ -23,12 +26,14 @@ class Learning extends Component {
                         </a>
                     </nav>
                 </header>
-
-
-                <footer style={{ 'background': '#0F2943' }}>
-                    <div 
+                <main>
+                    <Video />
+                </main>
+                <footer>
+                    <div
+                        id="footer"
                         className="card-footer bg-transparent border-success text-center text-white"
-                        >By Team ECOPAY
+                    >By Team ECOPAY
                     </div>
                 </footer>
             </div>
