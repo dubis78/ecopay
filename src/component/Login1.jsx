@@ -17,7 +17,7 @@ import firebaseConfig from '../firebaseConfig';
 import GoogleLogin from 'react-google-login';*/
 class Login1 extends Component {
   
-  
+  //creamos el state de los campos del formulario que vamos a usar
   state={
     form:{
       email: '',
@@ -25,6 +25,7 @@ class Login1 extends Component {
   }
   };
 
+  //esto es lo mismo para todo, estamos tomando con el target name los valores del formulario
   handleChange=(event)=>{
     this.setState({
         form:{
@@ -34,16 +35,17 @@ class Login1 extends Component {
     })
 }
 
+//realizamos con axios el get de la api, donde si su respuesta es distinta a null, con un foreach recorremos todos los elementos que hayan en la api para asi lograr hacer loguin,comparamos que los datos  que ingresamos si existan mediante  el foreach.
   handleSubmit = event => {
     event.preventDefault();     
     axios.get(`https://datosregistro.now.sh/datosUsuario/`)
       .then(res => {
        if(res!=null){
         res.data.forEach(element => {
-          if(element.correo == this.state.form.email){
-            if(element.contrasena == this.state.form.password){
-              localStorage.setItem('user', JSON.stringify(element));
-              this.props.history.push('/home');
+          if(element.correo == this.state.form.email){ //condicional que nos ayuda a buscar si el correo existe
+            if(element.contrasena == this.state.form.password){ //condicional que nos ayuda a buscar si la contraseña existe
+              localStorage.setItem('user', JSON.stringify(element)); //convertimos en formato json el array que nos lanza el for each element
+              this.props.history.push('/home'); //nos redirecciona al home
             }
           }
         });
@@ -52,10 +54,11 @@ class Login1 extends Component {
   }
 
   render() {
+    //estamos pasando que los datos de usser se conviertan en formato json mediante el localstorage
     let user = JSON.parse(localStorage.getItem('user'));
 
-        if(user != null && user.nombres != ""){
-          return <Redirect to='/home' />
+        if(user != null && user.nombres != ""){ //estamos validando que  tengamos datos en el formulario de login
+          return <Redirect to='/home' /> //si no está vacio y si si existen en nuestra api,nos redirecciona al home
         }else{
 
     return (

@@ -12,10 +12,10 @@ class Home extends Component {
         window.location.reload(false);
     }
     render() { 
-        let user = JSON.parse(localStorage.getItem('user'));
-        if(user != null && user.nombres != ""){
+        let user = JSON.parse(localStorage.getItem('user')); //estamos recibiendo el formato json
+        if(user != null && user.nombres != ""){ 
             return (  <div>
-                <h1 className="text-white">Bienvenido {user.nombres}</h1>
+                <h1 className="text-white">Bienvenido {user.nombres}</h1> 
                 <button onClick={this.signOut} > Sign out </button>
             </div>);
         }else{

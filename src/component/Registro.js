@@ -35,7 +35,7 @@ class Registro extends Component {
         axios.post(`https://datosregistro.now.sh/datosUsuario/`, {...this.state.form})
           .then(res => {
            if(res!=null){
-            localStorage.setItem('user', JSON.stringify(res.data));
+            localStorage.setItem('user', JSON.stringify(res.data)); //local storage de la data para asi llevarlos al home
             this.props.history.push('/home');
             }
           })
