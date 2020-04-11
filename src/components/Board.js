@@ -1,21 +1,16 @@
 import React from 'react';
 import Backend from 'react-dnd-html5-backend'
 import {DndProvider} from 'react-dnd';
-import { useDragLayer } from 'react-dnd'
 
-import Element from './Element';
-import Trash from './Trash';
+import Elements from './Elements';
+import TrashBins from './TrashBins';
+import elementsData from './elementsData';
 
-
-
-const Board=(props)=>{
-    //const collectedProps = useDragLayer(spec)
+const Board=(props)=>{    
     return(
         <DndProvider backend={Backend}>
-            <Trash/>  
-            <Element
-            name='toalla'
-            />
+            <TrashBins/>   
+            <Elements/>           
         </DndProvider>
     )
 }

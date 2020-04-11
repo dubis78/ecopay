@@ -1,10 +1,17 @@
-import { DragSource } from 'react-dnd'
 import trashA from '../icon/trashA.png';
+import trashV from '../icon/trashV.png';
   
 export const trashData={
     trashCan:[
         {
-            trash:trashA,           
+            icon:trashA,
+            acepts:['glass','plastic'],
+            name:'Plastic-Glass Bin',           
+        },
+        {
+            icon:trashV,
+            acepts:['organic'],
+            name:'Organic Bin',           
         },
     ],
 }
