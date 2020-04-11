@@ -1,19 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import $ from 'jquery';
-import Popper from 'popper.js';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'font-awesome/css/font-awesome.min.css';
-
-
 import './index.css';
-import App from './App';
-//julieth//
+import Routes from './Routes'
+import {BrowserRouter} from 'react-router-dom'
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+
+  <BrowserRouter>
+    <Routes/>
+  </BrowserRouter>,
+    
+
   document.getElementById('root')
 );
 
