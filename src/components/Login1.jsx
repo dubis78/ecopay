@@ -1,62 +1,58 @@
-import React,{ Component } from 'react';
-import '../index.css';
-import logo  from '../Imagenes/logo.png';
-import { Link, Redirect} from 'react-router-dom';
-import Login from './Login';
-import axios from 'axios';
+import React, { Component } from 'react';
+import '../styles/style.css';
+import logo  from '../img/logo.jpg';
+import { Link } from 'react-router-dom';
+import Login from '../login.js';
 
 
 
-/*
+
 import withFirebaseAuth from 'react-with-firebase-auth'
 import * as firebase from 'firebase/app';
 import 'firebase/auth';
 import firebaseConfig from '../firebaseConfig';
 
 
-import GoogleLogin from 'react-google-login';*/
+import GoogleLogin from 'react-google-login';
 class Login1 extends Component {
   
-  
-  state={
-    form:{
+  constructor(props) {
+    super(props);
+    this.state = {
       email: '',
-      password: ''
+      password: '',
+      rememberMe: false,
+    };
   }
+  
+
+  _handleChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value,
+      rememberMe: e.target.checked,
+    });
+  };
+  
+  
+_handleSubmit = (e) => {
+    e.preventDefault();
+    if (
+     
+      this.state.email !== '' &&
+      this.state.password !== ''
+    ) {
+      localStorage.setItem('myUser', this.state.email);
+      localStorage.setItem('myRemember', this.state.rememberMe);
+      this.props.history.push('/home');
+    }else{
+        alert('Ingrese toda la información');
+    }
   };
 
-  handleChange=(event)=>{
-    this.setState({
-        form:{
-            ...this.state.form,
-            [event.target.name]:event.target.value
-        }
-    })
-}
-
-  handleSubmit = event => {
-    event.preventDefault();     
-    axios.get(`https://datosregistro.now.sh/datosUsuario/`)
-      .then(res => {
-       if(res!=null){
-        res.data.forEach(element => {
-          if(element.correo == this.state.form.email){
-            if(element.contrasena == this.state.form.password){
-              localStorage.setItem('user', JSON.stringify(element));
-              this.props.history.push('/home');
-            }
-          }
-        });
-        }
-      })
-  }
+  
 
   render() {
-    let user = JSON.parse(localStorage.getItem('user'));
-
-        if(user != null && user.nombres != ""){
-          return <Redirect to='/home' />
-        }else{
+    
 
     return (
       <>
@@ -71,7 +67,7 @@ class Login1 extends Component {
             <div className="container-fluid d-flex justify-content-center align-item-center p-3" style={{
                 backgroundColor: '#0F2943'
             }}>
-                <form class="form-signin" onSubmit={this.handleSubmit}>
+                <form class="form-signin">
                     <div class="text-center mb-4">
                         
                         <img class="mb-4 mt-4" src={logo} alt="" width="72" height="72"></img>
@@ -82,47 +78,46 @@ class Login1 extends Component {
 
                     <div class="form-label-group">
                     <label className="text-white"for="inputEmail">Correo Electrónico</label>
-                        <input className="text-white" type="email" id="email" name="email" class="form-control" placeholder="Example@gmail.com"
-                        onChange={this.handleChange} required
+                        <input className="text-white" type="email" id="inputEmail" class="form-control" placeholder="Example@gmail.com" required
                         ></input>
                         
                     </div>
 
-                    <div class="form-label-group">
+                    <div className="form-label-group">
                       
                     <label className="text-white" for="inputPassword">Contraseña</label>
-                        <input type="password" id="password" name="password" class="form-control" placeholder="******" onChange={this.handleChange}
+                        <input type="password" id="inputPassword" className="form-control" placeholder="******" 
                         required></input>
                         
                     </div>
                     <div class="checkbox mb-3">
-                        <label className="text-white">
-                        <input className="text-white" type="checkbox" value="remember-me"/>Recordarme
-                        
-                        </label>
-                        
-                    </div>
+    <label className="text-white">
+      <input className="text-white" type="checkbox" value="remember-me"/>Recordarme
+      
+    </label>
+    
+  </div>
                   
-                    
+                    <Link to="/home">
                     <button className="btn btn-lg btn-primary rounded-pil  btn-block" type="submit" 
                     style={{
                         backgroundColor:'#0C927D' 
                       }}>Ingresar</button>
                     
-                    
+                    </Link>
                      
                      
                    
                     <Link to="/registro">
 
                     <p class="create-account-callout mt-3">
-                        No tienes una cuenta?
-                        <a  href="">Crear Una</a>.
-                    </p>
+        No tienes una cuenta?
+        <a  href="">Crear Una</a>.
+      </p>
                       </Link>
                     
                     
-                    <Login/>
+         <Login/>
       
                 </form>
             </div>
@@ -131,7 +126,6 @@ class Login1 extends Component {
 
       </>
     );
-  }
   }
 }
 

@@ -18,7 +18,7 @@ class Registro extends Component {
             correo:'',
             contrasena:0,
             ConfirmacionContrasena:0,
-            numeroCedula:0 ,
+            numeroCedula:0
         }  
     };
     handleChange=(event)=>{
@@ -29,19 +29,15 @@ class Registro extends Component {
             }
         })
     }
+    
     handleSubmit = event => {
         event.preventDefault();     
         axios.post(`https://datosregistro.now.sh/datosUsuario/`, {...this.state.form})
           .then(res => {
-            console.log(res);
-            console.log(res.data);
-            this.props.history.push('/home');
            if(res!=null){
-
+            localStorage.setItem('user', JSON.stringify(res.data));
+            this.props.history.push('/home');
             }
-            else {}
-
-            
           })
         
       }
@@ -74,7 +70,7 @@ class Registro extends Component {
                         <div className="col mb-3">
                             <label className="text-white " for="validationServer01">Nombres</label>
                             <input
-                               type="nombres"
+                               type="text"
                                 name="nombres"
                                 placeholder="Ingrese nombres"
                                 onChange={this.handleChange}
@@ -88,7 +84,7 @@ class Registro extends Component {
                         <div className="col mb-3">
                             <label  className="text-white " for="validationServer02">Apellidos</label>
                             <input  className="form-control"
-                                type="apellidos"
+                                type="text"
                                 name="apellidos"
                            
                                 placeholder="Ingrese Apellidos"
@@ -108,7 +104,7 @@ class Registro extends Component {
                             <label className="text-white " for="validationServer02">Correo electrónico</label>
                             <input
                                className="form-control "
-                                type="correo"
+                                type="email"
                                 name="correo"
                              
                                 placeholder="Ingrese correo electronico"
@@ -143,7 +139,7 @@ class Registro extends Component {
                         <div className="col mb-3">
                             <label  className="text-white " for="validationServer02">Contraseña</label>
                             <input  className="form-control "
-                                type="contrasena"
+                                type="password"
                                 name="contrasena"
                              
                                 placeholder="Ingrese contraseña"
@@ -160,7 +156,7 @@ class Registro extends Component {
                         <div className="col mb-3">
                             <label className="text-white " for="validationServer02">Confirmación de contraseña</label>
                             <input className="form-control "
-                                type="ConfirmacionContrasena"
+                                type="password"
                                 name="ConfirmacionContrasena"
                                 placeholder="Ingrese contraseña"
                                 onChange={this.handleChange}

@@ -1,4 +1,4 @@
-export default{
+const config={
     apiKey: "AIzaSyBih5SF6oFm0AjHt1bl-NWQ4GHPCUJoT9I",
     authDomain: "project-273723.firebaseapp.com",
     databaseURL: "https://project-273723.firebaseio.com",
@@ -8,3 +8,5 @@ export default{
     appId: "1:761091480124:web:64d67acbe04bdba86c0139",
     measurementId: "G-PNLR7EGE3W"
 };
+
+export default config;
