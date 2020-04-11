@@ -28,13 +28,9 @@ class Learning extends Component {
                 </header>
                 <main>
                     <Video />
-                </main>
-                <footer>
-                    <div
-                        id="footer"
-                        className="card-footer bg-transparent border-success text-center text-white"
-                    >By Team ECOPAY
-                    </div>
+                </main>                
+                <footer style={{ 'background': '#0F2943' }}>
+                    <div className="card-footer bg-transparent border-success text-center text-white">By Team ECOPAY</div>
                 </footer>
             </div>
         );

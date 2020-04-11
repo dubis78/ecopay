@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import './index.css';
 
 import Logo from '../../images/logo.png';
 import Ordinarios from '../../images/ordinarios.png';
@@ -35,23 +36,24 @@ class Home extends React.Component {
                 <div className="container align-items-center justify-content-center">
                     <div className="row row-cols-2">
                         <div className="col d-flex justify-content-center">
-                            <Link id="btn1" to="/learning">
+                            <Link className="btn1" to="/learning">
                                 <button
                                     type="button"
                                     className="btn mr-1"
                                 >
-                                    <img className="img-fluid rounded" src={Ordinarios} />
+                                    <img className="img-fluid" src={Ordinarios} />
                                 </button>
                             </Link>
                         </div>
                         <div className="col d-flex justify-content-center">
-                            <button 
-                                id="btn2" 
-                                type="button" 
-                                className="btn mr-1"
-                            >
-                                <img className="img-fluid rounded" src={Metales} />
-                            </button>
+                            <Link className="btn1" to="/learning">
+                                <button 
+                                    type="button" 
+                                    className="btn mr-1"
+                                >
+                                    <img className="img-fluid" src={Metales} />
+                                </button>
+                            </Link>
                         </div>
                         <div className="col d-flex justify-content-center">
                             <h2 className="text-black text-center p-2 text-wrap">Orgánicos</h2>
@@ -62,10 +64,24 @@ class Home extends React.Component {
                     </div>
                     <div className="row row-cols-2">
                         <div className="col d-flex justify-content-center">
-                            <button id="btn3" type="button" className="btn mr-1"><img className="img-fluid rounded" src={Organicos} /></button>
+                            <Link className="btn1" to="/learning">
+                                <button 
+                                    type="button" 
+                                    className="btn mr-1"
+                                >
+                                    <img className="img-fluid" src={Organicos} />
+                                </button>
+                            </Link>
                         </div>
                         <div className="col d-flex justify-content-center">
-                            <button id="btn4" type="button" className="btn mr-1"><img className="img-fluid rounded" src={Papel} /></button>
+                            <Link className="btn1" to="/learning">                                
+                                <button
+                                    type="button" 
+                                    className="btn mr-1"
+                                >
+                                    <img className="img-fluid" src={Papel} />
+                                </button>
+                            </Link>
                         </div>
                         <div className="col d-flex justify-content-center">
                             <h2 className="text-black text-center p-2 text-wrap">Peligrosos</h2>
@@ -76,10 +92,26 @@ class Home extends React.Component {
                     </div>
                     <div className="row row-cols-2">
                         <div className="col d-flex justify-content-center">
-                            <button id="btn5" type="button" className="btn mr-1"><img className="img-fluid rounded" src={Plastico} /></button>
+                            <Link className="btn1" to="/learning">
+                                <button 
+                                    className="btn5" 
+                                    type="button" 
+                                    className="btn mr-1"
+                                    >
+                                        <img className="img-fluid" src={Plastico} />
+                                </button>
+                            </Link>
                         </div>
                         <div className="col d-flex justify-content-center">
-                            <button id="btn6" type="button" className="btn mr-1"><img className="img-fluid rounded" src={Vidrio} /></button>
+                            <Link className="btn1" to="/learning">
+                                <button 
+                                    className="btn6" 
+                                    type="button" 
+                                    className="btn mr-1"
+                                >
+                                        <img className="img-fluid" src={Vidrio} />
+                                </button>
+                            </Link>
                         </div>
                         <div className="col d-flex justify-content-center">
                             <h2 className="text-black text-center p-2 text-wrap">Plástico</h2>
