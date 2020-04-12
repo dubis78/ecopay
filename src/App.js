@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
-import Home from './components/Home';
-import Learning from './components/Learning';
+import Home from './component/Home';
+import Learning from './component/Learning';
+import Game from './component/Game'
+import ToGame from './component/ToGame'
 
 import {
   BrowserRouter as Router,
@@ -15,6 +17,12 @@ function App() {
     <Router>
       <Switch>
         {/* Cuando la ruta sea XXX renderice este componente */}
+        <Route path="/togame">
+          <ToGame />
+        </Route>
+        <Route path="/game">
+          <Game />
+        </Route>
         <Route path="/learning">
           <Learning />
         </Route>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import './index.css';
 
 import Logo from '../../images/logo.png';
 import Ordinarios from '../../images/ordinarios.png';
@@ -17,18 +16,19 @@ class Home extends React.Component {
         
         return (
 
-            <div>
+            <div className="home">
                 <header>
                     <nav
                         id="nav"
-                        className="navbar w-auto nav-pills nav-fill flex-sm-row" 
-                        style={{ 'background': '#0C927D' }}
+                        className="navbar w-auto nav-pills nav-fill flex-sm-row"                         
                     >
                         <a className="navbar-brand text-white text-wrap" href="#">
                             <img id="logo" src={Logo} width="30" height="30" className="d-inline-block align-top" alt="" />
                                 ECOPAY
                         </a>
-                        <button className="btn rounded-pill text-white" type="button" style={{ 'background': '#0F2943' }}>Jugar</button>
+                        <Link className="bntGame" to="/game">
+                            <button id="bntGame" className="nav-item text-white btn rounded-pill" href="#quien-soy">Jugar</button>  
+                        </Link>
                     </nav>
                 </header>
                 <h1 className="text-center text-black text-wrap">Selecciona la caneca que corresponde al residuo</h1>
@@ -69,7 +69,7 @@ class Home extends React.Component {
                                     type="button" 
                                     className="btn mr-1"
                                 >
-                                    <img className="img-fluid" src={Organicos} />
+                                    <img className="img-fluid" src={Organicos} alt="" />
                                 </button>
                             </Link>
                         </div>
@@ -79,12 +79,12 @@ class Home extends React.Component {
                                     type="button" 
                                     className="btn mr-1"
                                 >
-                                    <img className="img-fluid" src={Papel} />
+                                    <img className="img-fluid" src={Papel} alt="" />
                                 </button>
                             </Link>
                         </div>
                         <div className="col d-flex justify-content-center">
-                            <h2 className="text-black text-center p-2 text-wrap">Peligrosos</h2>
+                            <h2 className="text-black text-center p-2 text-wrap">Ordinarios</h2>
                         </div>
                         <div className="col d-flex justify-content-center">
                             <h2 className="text-black text-center p-2 text-wrap">Papel y cartón</h2>
@@ -121,7 +121,7 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </div>
-                <footer style={{ 'background': '#0F2943' }}>
+                <footer className="footer">
                     <div className="card-footer bg-transparent border-success text-center text-white">By Team ECOPAY</div>
                 </footer>
             </div>

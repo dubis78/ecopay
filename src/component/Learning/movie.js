@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player'
 class Video extends Component {
   render() {
     return (
-      <div>
+      <div className="movie">
         <div className="container">
           <h1 className="text-center">
             ¡Aprende con nosotros!
