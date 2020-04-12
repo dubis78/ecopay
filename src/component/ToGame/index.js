@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Logo from '../../images/logo.png';
-
+import Board from '../Board';
 
 
 class ToGame extends Component {
@@ -39,6 +39,9 @@ class ToGame extends Component {
                         </div>
                     </nav>
                 </header>
+                <div className="App container">        
+                    <Board/>        
+                 </div>
                 <footer className="footer">
                     <div className="card-footer bg-transparent border-success text-center text-white">By Team ECOPAY</div>
                 </footer>

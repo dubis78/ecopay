@@ -10,4 +10,18 @@ body {
   width: 100px;
   height: auto;
 }
+/* {
+  margin:0;
+  padding: 0;
+}
+html, body, #root{
+  height: 100%;  
+}*/
+
+.trashElement{
+  height: 96px;
+}
+.trashCan{
+  height: 250px;
+}
 
