@@ -59,11 +59,12 @@ class Login1 extends Component {
 
         if(user != null && user.nombres != ""){ //estamos validando que  tengamos datos en el formulario de login
           return <Redirect to='/home' /> //si no está vacio y si si existen en nuestra api,nos redirecciona al home
+          
         }else{
-
+         
     return (
       <>
-  <nav className="navbar" style={{ 'background': '#0C927D' }}>
+        <nav className="navbar" style={{ 'background': '#0C927D' }}>
                 <a className="navbar-brand text-white" href="#">
                     <img src={logo} width="30" height="30" className="d-inline-block align-top" alt="" />
                         ECOPAY

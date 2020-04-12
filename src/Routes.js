@@ -11,31 +11,16 @@ import ToGame from './component/ToGame';
 class Routes extends Component {
     
     render() { 
-        return ( 
-            <>
-            <Switch>
-                <Route exact path='/' component={Login1} />
-                <Route exact path= '/registro' component={Registro} />                
-                
-                  <Route path="/togame">
-                    <ToGame />
-                  </Route>
-                  <Route path="/game">
-                    <Game />
-                  </Route>
-                  <Route path="/learning">
-                    <Learning />
-                  </Route>
-                  <Route path="/home">
-                    <Home />
-                  </Route>
-                
-             
-          
-            </Switch>
-             
-              </>
-         );
+      return (
+        <Switch>
+          <Route exact path='/' component={Login1} />
+          <Route exact path= '/registro' component={Registro} />                
+          <Route exact path='/togame' component={ToGame}/>
+          <Route exact path='/game' component={Game}/>
+          <Route exact path='/learning' component={Learning}/>
+          <Route exact path='/home' component={Home}/>    
+        </Switch>
+      );
     }
 }
  
