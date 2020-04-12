@@ -87,14 +87,15 @@ class Home extends React.Component {
                                             </span>
                                         </button>
                                     </Link>
-                                    
+                                        <a href="https://ecopay.netlify.com">
                                         <button 
                                             id="bntGame" 
                                             className="nav-item text-white btn rounded-pill" 
-                                            onClick={this.signOut}
+                                            onClick={this.signOut}                                            
                                         >
                                             Salir
                                         </button>
+                                        </a>                                        
                                    
                                 </div>
                             {/*</div>*/}
