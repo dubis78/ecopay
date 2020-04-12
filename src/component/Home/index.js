@@ -87,7 +87,7 @@ class Home extends React.Component {
                                             </span>
                                         </button>
                                     </Link>
-                                    <Link to="/Login1">
+                                    <Link to="/">
                                         <button 
                                             id="bntGame" 
                                             className="nav-item text-white btn rounded-pill" 
