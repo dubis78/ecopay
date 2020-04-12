@@ -36,7 +36,7 @@ class Home extends React.Component {
                                     <img id="logo" src={Logo} width="30" height="30" className="d-inline-block align-top" alt="" />
                                 ECOPAY
                         </a>
-                                <p className="text-white">Bienvenid@{user.nombres}!</p>
+                                <p className="text-white">Bienvenid@ {user.nombres}!</p>
 
 
                                 <Link className="bntGame" to="/game">
