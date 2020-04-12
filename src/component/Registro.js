@@ -1,13 +1,7 @@
-import React, { Component,useState,Fragment } from 'react';
+import React, { Component,Fragment } from 'react';
 import Logo from '../Imagenes/logo.png'
 import axios from 'axios';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
-  import '../index.css'
+import '../index.css'
 
     
 
@@ -69,7 +63,7 @@ class Registro extends Component {
                     </div>
                     <div className="form-row">
                         <div className="col mb-3">
-                            <label className="text-white " for="validationServer01">Nombres</label>
+                            <label className="text-white " htmlFor="validationServer01">Nombres</label>
                             <input
                                type="text"
                                 name="nombres"

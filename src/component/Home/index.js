@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Link, Redirect } from "react-router-dom";
 
 import Logo from '../../images/logo.png';
@@ -23,7 +23,7 @@ class Home extends React.Component {
     }
     render() {
         let user = JSON.parse(localStorage.getItem('user')); //estamos recibiendo el formato json
-        if (user != null && user.nombres != "") {
+        if (user !== null && user.nombres !== "") {
             return (
                 <>
 
@@ -240,9 +240,8 @@ class Home extends React.Component {
                                         to="/learning"
                                     >
                                         <button
-                                            className="btn5"
+                                            className="btn5 btn mr-1"
                                             type="button"
-                                            className="btn mr-1"
                                         >
                                             <img
                                                 className="img-fluid"
@@ -260,9 +259,8 @@ class Home extends React.Component {
                                         to="/learning"
                                     >
                                         <button
-                                            className="btn6"
+                                            className="btn6 btn mr-1"
                                             type="button"
-                                            className="btn mr-1"
                                         >
                                             <img
                                                 className="img-fluid"

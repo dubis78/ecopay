@@ -74,31 +74,31 @@ class Login1 extends Component {
             <div className="container-fluid d-flex justify-content-center align-item-center p-3" style={{
                 backgroundColor: '#0F2943'
             }}>
-                <form class="form-signin" onSubmit={this.handleSubmit}>
-                    <div class="text-center mb-4">
+                <form className="form-signin" onSubmit={this.handleSubmit}>
+                    <div className="text-center mb-4">
                         
-                        <img class="mb-4 mt-4" src={logo} alt="" width="72" height="72"></img>
+                        <img className="mb-4 mt-4" src={logo} alt="" width="72" height="72"></img>
                         <h1 className="h3 mb-3 font-weight-normal text-center text-white">Iniciar Sesión</h1>
 
                     </div>
                  
 
-                    <div class="form-label-group">
-                    <label className="text-white"for="inputEmail">Correo Electrónico</label>
-                        <input className="text-white" type="email" id="email" name="email" class="form-control" placeholder="Example@gmail.com"
+                    <div className="form-label-group">
+                    <label className="text-white"htmlFor="inputEmail">Correo Electrónico</label>
+                        <input className="text-white" type="email" id="email" name="email" className="form-control" placeholder="Example@gmail.com"
                         onChange={this.handleChange} required
                         ></input>
                         
                     </div>
 
-                    <div class="form-label-group">
+                    <div className="form-label-group">
                       
-                    <label className="text-white" for="inputPassword">Contraseña</label>
-                        <input type="password" id="password" name="password" class="form-control" placeholder="******" onChange={this.handleChange}
+                    <label className="text-white" htmlFor="inputPassword">Contraseña</label>
+                        <input type="password" id="password" name="password" className="form-control" placeholder="******" onChange={this.handleChange}
                         required></input>
                         
                     </div>
-                    <div class="checkbox mb-3">
+                    <div className="checkbox mb-3">
                         <label className="text-white">
                         <input className="text-white" type="checkbox" value="remember-me"/>Recordarme
                         
@@ -118,9 +118,9 @@ class Login1 extends Component {
                    
                     <Link to="/registro">
 
-                    <p class="create-account-callout mt-3">
+                    <p className="create-account-callout mt-3">
                         No tienes una cuenta?
-                        <a  href="">Crear Una</a>.
+                        Crear Una.
                     </p>
                       </Link>
                     
