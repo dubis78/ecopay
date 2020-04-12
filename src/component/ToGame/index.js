@@ -24,19 +24,19 @@ class ToGame extends Component {
                         </a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
+                            {/*<span className="navbar-toggler-icon"></span>*/}
                         </button>
-                        <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        {/*<div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">*/}
                             <div className="navbar-nav">
                                 <Link to="/home">
-                                    <button id="bntGame" className="nav-item active text-white btn rounded-pill" href="#inicio">Inicio <span
-                                        className="sr-only"></span></button>
+                                    <button id="bntGame" className="nav-item active text-white btn rounded-pill">Inicio {/*<span
+                                        className="sr-only"></span>*/}</button>
                                 </Link>
                                 <Link to="/learning">
-                                    <button id="bntGame" className="nav-item text-white btn rounded-pill" href="#quien-soy">Aprendamos Juntos</button>
+                                    <button id="bntGame" className="nav-item text-white btn rounded-pill">Aprendamos Juntos</button>
                                 </Link>
                             </div>
-                        </div>
+                        {/*</div>*/}
                     </nav>
                 </header>
                 <div className="App container">        

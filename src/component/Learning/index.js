@@ -13,7 +13,7 @@ class Learning extends Component {
                 <header>
                     <nav id="nav" className="navbar navbar-inverse navbar-static-top navbar-expand-lg navbar-light justify-content-between text-responsive">
                         <a className="navbar-brand text-white" href="#">
-                            <h2 className="nombre text-responsive"><img
+                            <h2 className="text-responsive"><img
                                 id="logo"
                                 src={Logo}
                                 width="30"
@@ -25,19 +25,19 @@ class Learning extends Component {
                         </a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
+                            {/*<span className="navbar-toggler-icon"></span>*/}
                         </button>
-                        <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        {/*<div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">*/}
                             <div className="navbar-nav">
                                 <Link to="/home">
-                                    <button id="bntGame" className="nav-item active text-white btn rounded-pill" href="#inicio">Inicio <span
-                                        className="sr-only"></span></button>
+                                    <button id="bntGame" className="nav-item active text-white btn rounded-pill">Inicio {/*<span
+                                        className="sr-only"></span>*/}</button>
                                 </Link>
                                 <Link to="/game">
-                                    <button id="bntGame" className="nav-item text-white btn rounded-pill" href="#quien-soy">Juego</button>
+                                    <button id="bntGame" className="nav-item text-white btn rounded-pill">Juego</button>
                                 </Link>
                             </div>
-                        </div>
+                        {/*</div>*/}
                     </nav>
                 </header>
                 <main>
