@@ -14,12 +14,6 @@ const TrashBins=()=>{
             pAcepts={trashData.trashCan[0].acepts}
             pIndex={0}            
         />
-        <TrashBin
-            pIcon={trashData.trashCan[1].icon}
-            pName={trashData.trashCan[1].name}
-            pAcepts={trashData.trashCan[1].acepts}
-            pIndex={1}            
-        /> 
     </div>
     );
 }
