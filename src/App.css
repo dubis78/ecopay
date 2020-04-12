@@ -36,3 +36,57 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+    background: white;
+  };
+  
+  .home .btn1 {
+    width: 300px;
+  }
+  
+  .game .img-fluid {
+    width: 150px;
+    height: auto;
+  }
+
+  .home .img-fluid {
+      width: 300px;
+  }
+
+  .game #nav {
+    background: #0C927D;
+  }
+
+  .game .footer {
+    background: #0F2943;
+  }
+
+  .game #bntGame {
+    background: #0F2943;
+  }
+
+  .home .footer {
+    background: #0F2943;
+  }
+
+  .learning .footer {
+    background: #0F2943;
+  }
+
+  .learning #nav {
+    background: #0C927D;
+  }
+
+  .learning #bntGame {
+    background: #0F2943;
+  }
+
+  .home #bntGame {
+    background: #0F2943;
+  }
+
+  .home #nav {
+    background: #0C927D;
+  }
+  

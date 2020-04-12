@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import { Switch,Route } from 'react-router-dom';
 
 import Registro from './component/Registro';
-import Home from './component/Home';
+import Home from './component/Home/index';
 import Login1 from './component/Login1';
 
 class Routes extends Component {
