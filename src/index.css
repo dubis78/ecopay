@@ -1,6 +1,7 @@
 body {
-  background: white;
+  background:#0F2943;
 };
+
 
 .home .btn1 {
   width: 300px;
@@ -35,10 +36,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
  
 }
-body{
-  
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

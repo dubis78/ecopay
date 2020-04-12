@@ -8,6 +8,7 @@ import Organicos from '../../images/organicos.png';
 import Papel from '../../images/papel.png';
 import Plastico from '../../images/plastico.png';
 import Vidrio from '../../images/vidrio.png';
+import './home.css';
 
 
 class Home extends React.Component {

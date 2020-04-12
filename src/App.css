@@ -92,4 +92,13 @@ body {
   .home #btnGame{
     width: 300px;
   }
+
+.body-registro{
+  background-color: #0F2943;
+  margin: 0;
+  height: 100%;
+}
+.footer-registro{
+  background-color: #0C927D;
+}
   
