@@ -6,6 +6,7 @@ import Home from './component/Home';
 import Learning from './component/Learning';
 import Game from './component/Game'
 import ToGame from './component/ToGame'
+import './index.css';
 
 import {
   BrowserRouter as Router,

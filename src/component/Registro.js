@@ -7,6 +7,7 @@ import {
     Route,
     Link
   } from "react-router-dom";
+  import '../index.css'
 
     
 
@@ -56,7 +57,7 @@ class Registro extends Component {
                
             
             
-            <div className="container-fluid d-flex justify-content-center align-item-center " >
+            <div className="container-fluid d-flex justify-content-center align-item-center body-registro " >
               
                 <form className="form-signin" onSubmit={this.handleSubmit}
                 >
@@ -180,6 +181,7 @@ class Registro extends Component {
                     <p className="mt-5 mb-3 text-muted text-center text-white">© 2020</p>
                 </form>
             </div>
+            <footer className="footer-registro"></footer>
 
 
             </Fragment>
