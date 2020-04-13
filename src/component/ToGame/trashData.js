@@ -1,5 +1,5 @@
-import trashA from '../icon/trashA.png';
-import trashV from '../icon/trashV.png';
+import trashA from '../../icon/trashA.png';
+import trashV from '../../icon/trashV.png';
   
 export const trashData={
     trashCan:[

@@ -14,6 +14,7 @@ const TrashBins=()=>{
             pAcepts={trashData.trashCan[0].acepts}
             pIndex={0}            
         />
+        
     </div>
     );
 }

@@ -1,4 +1,6 @@
 import React from 'react';
+import Routes from './Routes'
+import {BrowserRouter} from 'react-router-dom'
 import './App.css';
 import Home from './component/Home';
 import Learning from './component/Learning';
@@ -14,23 +16,12 @@ import {
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        {/* Cuando la ruta sea XXX renderice este componente */}
-        <Route path="/togame">
-          <ToGame />
-        </Route>
-        <Route path="/game">
-          <Game />
-        </Route>
-        <Route path="/learning">
-          <Learning />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
-      </Switch>
-    </Router>    
+    <>
+    <BrowserRouter>
+      <Routes/>
+    </BrowserRouter>
+    
+    </>
   );
 }
 export default App

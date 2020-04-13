@@ -1,0 +1,30 @@
+{
+  "datosRegistro": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "nombres": "juJU",
+      "apellidos": "ju",
+      "correo": "ju",
+      "numeroCivica": "juliju",
+      "contrasena": [
+        "ju",
+        "ju"
+      ],
+      "id": 5
+    },
+    {
+      "id": 6
+    }
+  ]
+}
