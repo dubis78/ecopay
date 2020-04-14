@@ -23,275 +23,201 @@ class Home extends React.Component {
     }
     render() {
         let user = JSON.parse(localStorage.getItem('user')); //estamos recibiendo el formato json
-        if (user != null && user.nombres != "") {
+        if (user != null && user.nombres !== "") {
             return (
                 <>
 
-                    <div 
+                    <div
                         className="home"
                     >
-                    <header>
-                        <nav 
-                            id="nav" 
-                            className="navbar navbar-inverse navbar-static-top navbar-expand-lg justify-content-between"
-                        >
-                            <a 
-                                className="navbar-brand text-white" 
-                                href="#"
+                        <header>
+                            <nav
+                                id="nav"
+                                className="navbar navbar-inverse navbar-static-top navbar-expand-lg justify-content-between"
                             >
-                                <h2 
-                                    className="nombre text-responsive"
+                                <a
+                                    className="navbar-brand text-white"
                                 >
-                                <img
-                                    id="logo"
-                                    src={Logo}
-                                    width="30"
-                                    height="30"
-                                    className="d-inline-block align-top"
-                                    alt=""
-                                />
-                                ECOPAY</h2>
-                            </a>
-                            <p
-                                className="text-white"
-                            >
-                                        Bienvenid@ {user.nombres}!
+                                    <h2
+                                        className="text-responsive"
+                                    >
+                                        <img
+                                            id="logo"
+                                            src={Logo}
+                                            width="30"
+                                            height="30"
+                                            className="d-inline-block"
+                                            alt=""
+                                        />
+                                        <span>
+                                            ECOPAY
+                                    </span>
+                                    </h2>
+                                </a>
+                                <p
+                                    className="text-white"
+                                >
+                                    Bienvenid@ {user.nombres}!
                             </p>
-                            <button 
-                                className="navbar-toggler" 
-                                type="button" 
-                                data-toggle="collapse" 
-                                data-target="#navbarNavAltMarkup"
-                                aria-controls="navbarNavAltMarkup" 
-                                aria-expanded="false" 
-                                aria-label="Toggle navigation">
-                            </button>
-                            {/*<div 
-                                className="collapse navbar-collapse justify-content-end" 
-                                id="navbarNavAltMarkup"
-                            >*/}
-                                <div 
+                                <button
+                                    className="navbar-toggler"
+                                    type="button"
+                                >
+                                </button>
+                                <div
                                     className="navbar-nav"
                                 >
-                                    <Link 
+                                    <Link
                                         to="/game"
                                     >
-                                        <button 
-                                            id="bntGame" 
+                                        <button
+                                            id="bntGame"
                                             className="nav-item active text-white btn rounded-pill"
                                         >
-                                            Jugar 
-                                            <span
-                                                className="sr-only"
-                                            >
-                                            </span>
+                                            Jugar
                                         </button>
                                     </Link>
                                     <Link to="/Login1">
-                                        <button 
-                                            id="bntGame" 
-                                            className="nav-item text-white btn rounded-pill" 
+                                        <button
+                                            id="bntGame"
+                                            className="nav-item text-white btn rounded-pill"
                                             onClick={this.signOut}
                                         >
                                             Salir
                                         </button>
                                     </Link>
                                 </div>
-                            {/*</div>*/}
-                        </nav>
-                    </header>
-                        
+                            </nav>
+                        </header>
+
                         <h1
-                            className="text-center text-black text-wrap"
+                            className="text-center text-black text-wrap p-5"
                         >
                             Selecciona la caneca que corresponde al residuo
                         </h1>
 
-                        <div
-                            className="container align-items-center justify-content-center"
-                        >
-                            <div
-                                className="row row-cols-2"
-                            >
+                        <div class="container">
+                            <div class="row p-4">
                                 <div
-                                    className="col d-flex justify-content-center"
+                                    className="col-sm d-flex justify-content-center"
                                 >
                                     <Link
-                                        className="btn1" to="/learning"
-                                    >
-                                        <button
-                                            type="button"
-                                            className="btn mr-1"
-                                        >
-                                            <img
-                                                className="img-fluid"
-                                                src={Ordinarios}
-                                                alt=""
-                                            />
-                                        </button>
-                                    </Link>
-                                </div>
-                                <div
-                                    className="col d-flex justify-content-center"
-                                >
-                                    <Link
-                                        className="btn1"
+                                        className="btn1 mr-1 p-3 text-body"
                                         to="/learning"
                                     >
-                                        <button
-                                            type="button"
-                                            className="btn mr-1"
+
+                                        <img
+                                            className="img-fluid"
+                                            src={Ordinarios}
+                                            alt=""
+                                        />
+                                        <h2
+                                            className="text-body text-center p-2"
                                         >
-                                            <img
-                                                className="img-fluid"
-                                                src={Metales}
-                                                alt=""
-                                            />
-                                        </button>
+                                            Orgánicos
+                                        </h2>
                                     </Link>
                                 </div>
                                 <div
-                                    className="col d-flex justify-content-center"
+                                    className="col-sm d-flex justify-content-center"
                                 >
-                                    <h2
-                                        className="text-black text-center p-2 text-wrap"
+                                    <Link
+                                        className="btn1 mr-1 p-3 text-body"
+                                        to="/learning"
                                     >
-                                        Orgánicos
-                                    </h2>
+                                        <img
+                                            className="img-fluid"
+                                            src={Metales}
+                                            alt=""
+                                        />
+                                        <h2
+                                            className="text-body text-center p-2"
+                                        >
+                                            Metales
+                                        </h2>
+                                    </Link>
                                 </div>
                                 <div
-                                    className="col d-flex justify-content-center"
+                                    className="col-sm d-flex justify-content-center"
                                 >
-                                    <h2
-                                        className="text-black text-center p-2 text-wrap"
+                                    <Link
+                                        className="btn1 mr-1 p-3 text-body"
+                                        to="/learning"
                                     >
-                                        Metales
-                                    </h2>
+                                        <img
+                                            className="img-fluid"
+                                            src={Organicos}
+                                            alt=""
+                                        />
+                                        <h2
+                                            className="text-body text-center p-2"
+                                        >
+                                            Ordinarios
+                                        </h2>
+                                    </Link>
                                 </div>
                             </div>
-                            <div
-                                className="row row-cols-2"
-                            >
+                            <div class="row p-4">
                                 <div
-                                    className="col d-flex justify-content-center"
+                                    className="col-sm d-flex justify-content-center"
                                 >
                                     <Link
-                                        className="btn1"
+                                        className="btn1 mr-1 p-3 text-body"
                                         to="/learning"
                                     >
-                                        <button
-                                            type="button"
-                                            className="btn mr-1"
+                                        <img
+                                            className="img-fluid"
+                                            src={Papel}
+                                            alt=""
+                                        />
+                                        <h2
+                                            className="text-body text-center p-2"
                                         >
-                                            <img
-                                                className="img-fluid"
-                                                src={Organicos}
-                                                alt=""
-                                            />
-                                        </button>
+                                            Papel y cartón
+                                        </h2>
                                     </Link>
                                 </div>
                                 <div
-                                    className="col d-flex justify-content-center"
+                                    className="col-sm d-flex justify-content-center"
                                 >
                                     <Link
-                                        className="btn1"
+                                        className="btn1 mr-1 p-3 text-body"
                                         to="/learning"
                                     >
-                                        <button
-                                            type="button"
-                                            className="btn mr-1"
+                                        <img
+                                            className="img-fluid"
+                                            src={Plastico}
+                                            alt=""
+                                        />
+
+                                        <h2
+                                            className="text-body text-center p-2"
                                         >
-                                            <img
-                                                className="img-fluid"
-                                                src={Papel}
-                                                alt=""
-                                            />
-                                        </button>
+                                            Plástico
+                                            </h2>
                                     </Link>
                                 </div>
                                 <div
-                                    className="col d-flex justify-content-center"
+                                    className="col-sm d-flex justify-content-center"
                                 >
-                                    <h2
-                                        className="text-black text-center p-2 text-wrap"
+                                    <Link
+                                        className="btn1 mr-1 p-3 text-body"
+                                        to="/learning"
                                     >
-                                        Ordinarios
-                                    </h2>
-                                </div>
-                                <div
-                                    className="col d-flex justify-content-center"
-                                >
-                                    <h2
-                                        className="text-black text-center p-2 text-wrap"
-                                    >
-                                        Papel y cartón
-                                    </h2>
+                                        <img
+                                            className="img-fluid"
+                                            src={Vidrio}
+                                            alt=""
+                                        />
+                                        <h2
+                                            className="text-body text-center p-2"
+                                        >
+                                            Vídrio
+                                            </h2>
+                                    </Link>
                                 </div>
                             </div>
-                            <div
-                                className="row row-cols-2"
-                            >
-                                <div
-                                    className="col d-flex justify-content-center"
-                                >
-                                    <Link
-                                        className="btn1"
-                                        to="/learning"
-                                    >
-                                        <button
-                                            className="btn5"
-                                            type="button"
-                                            className="btn mr-1"
-                                        >
-                                            <img
-                                                className="img-fluid"
-                                                src={Plastico}
-                                                alt=""
-                                            />
-                                        </button>
-                                    </Link>
-                                </div>
-                                <div
-                                    className="col d-flex justify-content-center"
-                                >
-                                    <Link
-                                        className="btn1"
-                                        to="/learning"
-                                    >
-                                        <button
-                                            className="btn6"
-                                            type="button"
-                                            className="btn mr-1"
-                                        >
-                                            <img
-                                                className="img-fluid"
-                                                src={Vidrio}
-                                                alt=""
-                                            />
-                                        </button>
-                                    </Link>
-                                </div>
-                                <div
-                                    className="col d-flex justify-content-center"
-                                >
-                                    <h2
-                                        className="text-black text-center p-2 text-wrap"
-                                    >
-                                        Plástico
-                                    </h2>
-                                </div>
-                                <div
-                                    className="col d-flex justify-content-center"
-                                >
-                                    <h2
-                                        className="text-black text-center p-2 text-wrap"
-                                    >
-                                        Vídrio
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
+                        </div>                        
                         <footer
                             className="footer"
                         >

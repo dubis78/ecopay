@@ -1,22 +1,32 @@
 import React, { Component } from 'react'
 import ReactPlayer from 'react-player'
+import Bg from '../../images/background3.jpg'
 
 class Video extends Component {
   render() {
     return (
-      <div className="movie">
-        <div className="container">
-          <h1 className="text-center">
+      <div 
+        className="movie"
+      >          
+        <div 
+          className="container"
+        >
+          <h1 
+            className="text-center p-3"
+          >
             ¡Aprende con nosotros!
           </h1>
         </div>
-        <div id="movie" className="justify-content-center d-flex align-items-center">
+        <div 
+          id="movie" 
+          className="justify-content-center d-flex align-items-center p-5"
+        >
           <ReactPlayer
             url='https://youtu.be/9g2nfYotXCk'
             className='react-player'
             playing
-            width='1000px'
-            height='600px'
+            width='800px'
+            height='400px'
           />
         </div>
       </div>

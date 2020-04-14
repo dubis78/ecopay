@@ -40,9 +40,9 @@
 body {
     background: white;
   };
-  
+
   .home .btn1 {
-    width: 300px;
+    width: 250px;
   }
   
   .game .img-fluid {
@@ -93,6 +93,13 @@ body {
     width: 300px;
   }
 
+  .movie {
+    background-image: url('./images/background3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
 .body-registro{
   background-color: #0F2943;
   margin: 0;
@@ -102,3 +109,20 @@ body {
   background-color: #0C927D;
 }
   
+.btn1 {
+  border-radius: 4px;
+  background-color: #fff;
+  background-color: var(--mdc-theme-surface, #fff);
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0,0,0,.12);
+}
+
+.btn1:hover {
+  box-shadow: 0 0 8px 0 rgba(0,0,0,.08), 0 0 15px 0 rgba(0,0,0,.02), 0 0 20px 4px rgba(0,0,0,.06);
+}
+
+/*.game {
+  background-image: url('./images/img10.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}*/
