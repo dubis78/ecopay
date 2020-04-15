@@ -4,6 +4,7 @@ import Logo from '../../images/logo.png';
 import ImgReciclyng from '../../images/img8.jpg';
 
 
+
 class Principal extends Component {
 
     render() {
@@ -11,67 +12,48 @@ class Principal extends Component {
 
             <div className="principal">
                 <header>
-                    <nav 
-                        id="nav" 
-                        className="navbar navbar-inverse navbar-static-top navbar-expand-lg justify-content-between"
-                    >
-                        <a 
-                            className="navbar-brand text-white"
-                        >
-                            <h2 
-                                className="nombre text-responsive"
-                            >
+                    <nav
+                        id="nav"
+                        className="navbar navbar-inverse navbar-static-top navbar-expand-lg justify-content-between">
+                        <a className="navbar-brand text-white" >
+                            <h2 className="nombre text-responsive" >
                                 <img
                                     id="logo"
                                     src={Logo}
                                     width="30"
                                     height="30"
                                     className="d-inline-block align-top"
-                                    alt=""
-                                />
-                                ECOPAY
+                                    alt="" />
+                                  ECOPAY
                             </h2>
-                        </a> 
-                            <div 
-                                className="navbar-nav"
+                        </a>
+                        <div
+                            className="navbar-nav" >
+                            <Link
+                                to="/registro" >
+                                <button
+                                    id="bntGame"
+                                    className="nav-item text-white btn rounded-pill mr-1">
+                                    Registrarse
+                                    </button>
+                            </Link>
+                            <Link
+                                to="/login"
                             >
-                                <Link 
-                                    to="/home"
-                                >
-                                    <button 
-                                        id="bntGame" 
-                                        className="nav-item text-white btn rounded-pill mr-1"
-                                    >
-                                        Inicio
+                                <button
+                                    id="bntGame"
+                                    className="nav-item text-white btn rounded-pill mr-1" >
+                                    Iniciar sesión
                                     </button>
-                                </Link>
-                                <Link 
-                                    to="/learning"
-                                >
-                                    <button 
-                                        id="bntGame" 
-                                        className="nav-item text-white btn rounded-pill mr-1"
-                                    >
-                                        Aprendamos Juntos
-                                    </button>
-                                </Link>
-                            </div>
+                            </Link>
+                        </div>
                     </nav>
                 </header>
                 <div className="valueProposal">
-                    <div className="container">
-                        <div className="row align-items-center p-5 justify-content-center">
-                            <div className="col-sm justify-content-center">
-                                <h2 className="text-center text-responsive">
-                                    ECOPAY
-                                </h2>
-                                <button type="button" className="btn btn-primary btn-sm justify-content-center">Small button</button>
-                                <button type="button" className="btn btn-secondary btn-sm justify-content-center">Small button</button>
-                            </div>
-                            <div className="col-sm justify-content-center">
-                            </div>
-                        </div>
-                    </div>
+                <div class="post-banner-category">
+								<img class="banner__icon" src="https://www.webfx.com/blog/wp-content/themes/webfx/assets/svg/icon_blog-design.svg"></img>
+								<span class="banner__category">Web Design</span>
+							</div>
                 </div>
                 <div className="container">
                     <div className="row d-flex align-items-center p-5">
@@ -93,7 +75,7 @@ class Principal extends Component {
                 </div>
                 <div class="col-12 text-center">
 
-                    <h2>Beneficios del reciclaje</h2>
+                    <h2 className="text-wrap d-inline-block">Beneficios del reciclaje</h2>
 
                 </div>
                 <br></br>
@@ -106,7 +88,7 @@ class Principal extends Component {
                             <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono1-1.png" alt="Usamos menos materias primas" class="img-responsive" />
                         </div>
                         <div class="titulo text-center">
-                            <h4 class="titular">Usamos menos materias primas</h4>
+                            <h4 className="titular text-wrap">Usamos menos materias primas</h4>
                         </div>
                         <div class="texto text-center">
                             <p>Ahorramos recursos naturales<br />

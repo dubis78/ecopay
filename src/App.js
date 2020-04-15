@@ -6,8 +6,7 @@ import Home from './component/Home';
 import Learning from './component/Learning';
 import Game from './component/Game'
 import ToGame from './component/ToGame'
-import Auth from './component/Autentication/Auth';
-import '../src/component/Autentication/Auth.css'
+
 import './index.css';
 
 import {
