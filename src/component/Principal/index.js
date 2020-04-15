@@ -55,7 +55,7 @@ class Principal extends Component {
 								<span class="banner__category"> <h4 className="texto-header">RECICLA Y GANA</h4></span>
                                 <div></div>
 
-                                <Link to='/login'> <button className="btn btn-light btn-lg text-black boton"><h1>JUGAR</h1></button></Link>
+                                <Link to='/prueba'> <button className="btn btn-light btn-lg text-black boton"><h1>JUGAR</h1></button></Link>
 							
 
                                
