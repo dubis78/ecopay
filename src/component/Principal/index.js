@@ -52,7 +52,9 @@ class Principal extends Component {
                 <div className="valueProposal">
                 <div class="post-banner-category">
 								<img class="banner__icon" src="https://www.webfx.com/blog/wp-content/themes/webfx/assets/svg/icon_blog-design.svg"></img>
-								<span class="banner__category">Web Design</span>
+								<span class="banner__category">recicla</span>
+                                <Link to="/game">
+                                <button>JUGAR</button> </Link>
 							</div>
                 </div>
                 <div className="container">

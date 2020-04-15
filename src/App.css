@@ -212,11 +212,11 @@ body {
   margin-left: 60px;*/
 
   position:absolute;
-  background-color: #6b3b68;
+  background-color:transparent;
   left:10px;
   font-size:40px;
   font-weight:900;
-  margin:0px;
-  top:10px;
+  margin-top:60px;
+  top:20px;
 
 }
