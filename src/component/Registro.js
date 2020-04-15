@@ -77,7 +77,7 @@ class Registro extends Component {
                         </div>
 
                         <div className="col mb-3">
-                            <label  className="text-white " for="validationServer02">Apellidos</label>
+                            <label  className="text-white " htmlFor="validationServer02">Apellidos</label>
                             <input  className="form-control"
                                 type="text"
                                 name="apellidos"
@@ -96,7 +96,7 @@ class Registro extends Component {
                     </div>
                     <div className="form-row">
                         <div className="col mb-3">
-                            <label className="text-white " for="validationServer02">Correo electrónico</label>
+                            <label className="text-white " htmlFor="validationServer02">Correo electrónico</label>
                             <input
                                className="form-control "
                                 type="email"
@@ -114,7 +114,7 @@ class Registro extends Component {
                         </div>
 
                         <div className="col mb-3">
-                            <label className="text-white " for="validationServer02">Numero de cedula</label>
+                            <label className="text-white " htmlFor="validationServer02">Numero de cedula</label>
                             <input  className="form-control "
                                 type="text" 
                                 name="numeroCedula"
@@ -132,7 +132,7 @@ class Registro extends Component {
                     </div>
                     <div className="form-row">
                         <div className="col mb-3">
-                            <label  className="text-white " for="validationServer02">Contraseña</label>
+                            <label  className="text-white " htmlFor="validationServer02">Contraseña</label>
                             <input  className="form-control "
                                 type="password"
                                 name="contrasena"
@@ -149,7 +149,7 @@ class Registro extends Component {
                         </div>
 
                         <div className="col mb-3">
-                            <label className="text-white " for="validationServer02">Confirmación de contraseña</label>
+                            <label className="text-white " htmlFor="validationServer02">Confirmación de contraseña</label>
                             <input className="form-control "
                                 type="password"
                                 name="ConfirmacionContrasena"
