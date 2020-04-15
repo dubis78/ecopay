@@ -185,47 +185,31 @@ body {
       margin-bottom: 5px;
       padding: 57px 57px 25px 57px;
       min-height: 350px;
-
       max-width: 100%;
-
+    }  
+    .post-banner-category {
+      display: inline-block;
+      padding: 3px 20px 10px px;
     }
-   
 
 }
 .principal #nav {
   background: #0C927D;
 }
-.texto{
-  min-width: 100%;
-  padding-right: 7px;
-  padding-left: 7px;
-
-}
-.formato{
-  margin: 20px 0;
-    font-family: 'Roboto', sans-serif;
-   
-    color: #fff;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden
-}
-
-
 .boton{
-  
-background-color: white;
-font-family: 'Luckiest Guy', cursive;
-width: 90px;
-height: 50px;
-
+  font-family: 'Luckiest Guy', cursive;
+  text-align: center;
+ 
 
 }
 
-.post-banner-category {
-  display: inline-block;
-  padding: 10px 20px 10px 17px;
-}
+
 .post-banner-category .banner__icon {
   width: 35px;
   height: 35px;
+}
+.texto-header{
+  font-family: 'Luckiest Guy', cursive;
+font-size: 50px;
+
 }

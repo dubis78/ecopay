@@ -51,11 +51,11 @@ class Principal extends Component {
                 </header>
                 <div className="valueProposal">
                 <div class="post-banner-category">
-								<img class="banner__icon" src="https://www.webfx.com/blog/wp-content/themes/webfx/assets/svg/icon_blog-design.svg" />
-								<span class="banner__category"> <h4>RECICLA Y GANA</h4></span>
+								<div class="banner__icon"/>
+								<span class="banner__category"> <h4 className="texto-header">RECICLA Y GANA</h4></span>
                                 <div></div>
 
-                                <Link to='/game'> <button className=" boton text-black">JUGAR</button></Link>
+                                <Link to='/game'> <button className="btn btn-light btn-lg text-black boton"><h1>JUGAR</h1></button></Link>
 							
 
                                
