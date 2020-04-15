@@ -164,23 +164,33 @@ body {
     background-size: cover !important;
     min-height: 900px;
   }
+  .post-banner-category{
+
+    display: inline-block;
+
+     margin-left: 200px;
+     margin-top: 50px;
+     padding: 10px 20px 10px 17px;
+ }
 }
 @media (max-width: 992px){
-.principal .valueProposal {
-  background-image: url('./images/bggirl.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
-  position: relative;  
-  display: block; 
-  margin-top: auto;
-  margin-bottom: 5px;
-  padding: 57px 57px 25px 57px;
-  min-height: 350px;
+    .principal .valueProposal {
+      background-image: url('./images/bggirl.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size:cover;
+      position: relative;  
+      display: block; 
+      margin-top: auto;
+      margin-bottom: 5px;
+      padding: 57px 57px 25px 57px;
+      min-height: 350px;
 
-  max-width: 100%;
+      max-width: 100%;
 
-}
+    }
+   
+
 }
 .principal #nav {
   background: #0C927D;
@@ -202,21 +212,20 @@ body {
 
 
 .boton{
-  background:#0C927D !important ;
+  
+background-color: white;
+font-family: 'Luckiest Guy', cursive;
+width: 90px;
+height: 50px;
+
+
 }
-.post-banner-category, .banner__category, .banner__headline {
- /*
+
+.post-banner-category {
   display: inline-block;
-  padding: 5px 5px 5px 17px;
-  background-color: #6b3b68;
-  margin-left: 60px;*/
-
-  position:absolute;
-  background-color:transparent;
-  left:10px;
-  font-size:40px;
-  font-weight:900;
-  margin-top:60px;
-  top:20px;
-
+  padding: 10px 20px 10px 17px;
+}
+.post-banner-category .banner__icon {
+  width: 35px;
+  height: 35px;
 }

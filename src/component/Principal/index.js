@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Logo from '../../images/logo.png';
 import ImgReciclyng from '../../images/img8.jpg';
-
+import JUGAR from '../../Imagenes/JUGAR-1.png'
 
 
 class Principal extends Component {
@@ -51,10 +51,14 @@ class Principal extends Component {
                 </header>
                 <div className="valueProposal">
                 <div class="post-banner-category">
-								<img class="banner__icon" src="https://www.webfx.com/blog/wp-content/themes/webfx/assets/svg/icon_blog-design.svg"></img>
-								<span class="banner__category">recicla</span>
-                                <Link to="/game">
-                                <button>JUGAR</button> </Link>
+								<img class="banner__icon" src="https://www.webfx.com/blog/wp-content/themes/webfx/assets/svg/icon_blog-design.svg" />
+								<span class="banner__category"> <h4>RECICLA Y GANA</h4></span>
+                                <div></div>
+
+                                <Link to='/game'> <button className=" boton text-black">JUGAR</button></Link>
+							
+
+                               
 							</div>
                 </div>
                 <div className="container">
