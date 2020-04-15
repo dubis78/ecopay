@@ -1,5 +1,12 @@
+@media only screen and (min-device-width: 400px) {
+  body {
+    background-image: url('./images/background3.jpg');
+  }
+}
+
 .App {
   text-align: center;
+   
 }
 
 .App-logo {
@@ -40,9 +47,9 @@
 body {
     background: white;
   };
-  
+
   .home .btn1 {
-    width: 300px;
+    width: 250px;
   }
   
   .game .img-fluid {
@@ -52,6 +59,10 @@ body {
 
   .home .img-fluid {
       width: 300px;
+  }
+
+  .game{
+    background: #fafafa;
   }
 
   .game #nav {
@@ -75,7 +86,7 @@ body {
   }
 
   .learning #nav {
-    background: #0C927D;
+    background:rgb(101, 240, 217);
   }
 
   .learning #bntGame {
@@ -89,8 +100,16 @@ body {
   .home #nav {
     background: #0C927D;
   }
+
   .home #btnGame{
     width: 300px;
+  }
+
+  .movie {
+    background-image: url('./images/background3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
 .body-registro{
@@ -99,6 +118,114 @@ body {
   height: 100%;
 }
 .footer-registro{
-  background-color: #0C927D;
+  background-color: rgb(19, 136, 118);
 }
   
+.btn1 {
+  border-radius: 4px;
+  background-color: #fff;
+  background-color: var(--mdc-theme-surface, #fff);
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0,0,0,.12);
+}
+
+.btn1:hover {
+  box-shadow: 0 0 8px 0 rgba(0,0,0,.08), 0 0 15px 0 rgba(0,0,0,.02), 0 0 20px 4px rgba(0,0,0,.06);
+}
+
+/*.game {
+  background-image: url('./images/img10.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}*/
+
+.game .mdb-color.darken-3 {
+  background-color: #1c2a48 !important;
+}
+@media (max-width: 600px){
+  .principal .valueProposal {
+
+  padding: 50px 25px;
+  min-height: auto;}
+}
+@media (min-width: 1024px){
+  .principal .valueProposal {
+    min-height: 200px;
+  }
+}
+@media (min-width: 993px){
+  .principal .valueProposal {
+    background-image: url('./images/bggirl.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    padding-bottom:  200px; 
+    background-attachment: fixed;
+    background-size: cover !important;
+    min-height: 900px;
+  }
+  .post-banner-category{
+
+    display: inline-block;
+
+     margin-left: 200px;
+     margin-top: 50px;
+     padding: 10px 20px 10px 17px;
+ }
+}
+@media (max-width: 992px){
+    .principal .valueProposal {
+      background-image: url('./images/bggirl.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size:cover;
+      position: relative;  
+      display: block; 
+      margin-top: auto;
+      margin-bottom: 5px;
+      padding: 57px 57px 25px 57px;
+      min-height: 350px;
+
+      max-width: 100%;
+
+    }
+   
+
+}
+.principal #nav {
+  background: #0C927D;
+}
+.texto{
+  min-width: 100%;
+  padding-right: 7px;
+  padding-left: 7px;
+
+}
+.formato{
+  margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+   
+    color: #fff;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+
+.boton{
+  
+background-color: white;
+font-family: 'Luckiest Guy', cursive;
+width: 90px;
+height: 50px;
+
+
+}
+
+.post-banner-category {
+  display: inline-block;
+  padding: 10px 20px 10px 17px;
+}
+.post-banner-category .banner__icon {
+  width: 35px;
+  height: 35px;
+}
