@@ -42,10 +42,10 @@ class Login1 extends Component {
       .then(res => {
        if(res!=null){
         res.data.forEach(element => {
-          if(element.correo == this.state.form.email){ //condicional que nos ayuda a buscar si el correo existe
-            if(element.contrasena == this.state.form.password){ //condicional que nos ayuda a buscar si la contraseña existe
+          if(element.correo === this.state.form.email){ //condicional que nos ayuda a buscar si el correo existe
+            if(element.contrasena === this.state.form.password){ //condicional que nos ayuda a buscar si la contraseña existe
               localStorage.setItem('user', JSON.stringify(element)); //convertimos en formato json el array que nos lanza el for each element
-              this.props.history.push('/home'); //nos redirecciona al home
+              this.props.history.push('/principal'); //nos redirecciona al home
             }
           }
         });
@@ -57,7 +57,7 @@ class Login1 extends Component {
     //estamos pasando que los datos de usser se conviertan en formato json mediante el localstorage
     let user = JSON.parse(localStorage.getItem('user'));
 
-        if(user != null && user.nombres != ""){ //estamos validando que  tengamos datos en el formulario de login
+        if(user !== null && user.nombres !== ""){ //estamos validando que  tengamos datos en el formulario de login
           return <Redirect to='/home' /> //si no está vacio y si si existen en nuestra api,nos redirecciona al home
           
         }else{

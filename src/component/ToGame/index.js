@@ -9,7 +9,7 @@ class ToGame extends Component {
 
         return (
             <div 
-                className="learning"
+                className="game"
             >
                 <header>
                     <nav 
@@ -37,23 +37,13 @@ class ToGame extends Component {
                                 className="navbar-nav"
                             >
                                 <Link 
-                                    to="/home"
+                                    to="/principal"
                                 >
                                     <button 
                                         id="bntGame" 
                                         className="nav-item text-white btn rounded-pill mr-1"
                                     >
                                         Inicio
-                                    </button>
-                                </Link>
-                                <Link 
-                                    to="/learning"
-                                >
-                                    <button 
-                                        id="bntGame" 
-                                        className="nav-item text-white btn rounded-pill mr-1"
-                                    >
-                                        Aprendamos Juntos
                                     </button>
                                 </Link>
                             </div>

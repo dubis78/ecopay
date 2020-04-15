@@ -29,23 +29,28 @@ class Principal extends Component {
                         </a>
                         <div
                             className="navbar-nav" >
-                            <Link
+                            {/*<Link
                                 to="/registro" >
                                 <button
                                     id="bntGame"
                                     className="nav-item text-white btn rounded-pill mr-1">
                                     Registrarse
                                     </button>
-                            </Link>
-                            <Link
-                                to="/login"
-                            >
-                                <button
-                                    id="bntGame"
-                                    className="nav-item text-white btn rounded-pill mr-1" >
-                                    Iniciar sesión
-                                    </button>
-                            </Link>
+                            </Link>*/}
+                            <a href="https://ecopay.netlify.com">
+                                            <button 
+                                                id="bntGame" 
+                                                className="nav-item text-white btn rounded-pill mr-1" 
+                                                onClick={this.signOut}                                            
+                                    /* <Link to="/Login1">
+                                            <button
+                                                id="bntGame"
+                                                className="nav-item text-white btn rounded-pill mr-1"
+                                                onClick={this.signOut}*/
+                                            >
+                                                Salir
+                                            </button>
+                                        </a>
                         </div>
                     </nav>
                 </header>
@@ -53,11 +58,7 @@ class Principal extends Component {
                 <div class="post-banner-category">
 								<div class="banner__icon"/>
 								<span class="banner__category"> <h4 className="texto-header">RECICLA Y GANA</h4></span>
-                                <div></div>
-
-                                <Link to='/login'> <button className="btn btn-light btn-lg text-black boton"><h1>JUGAR</h1></button></Link>
-							
-
+                                <Link to='/game'> <button className="btn btn-light btn-lg text-black boton"><h1>JUGAR</h1></button></Link>                            
                                
 							</div>
                 </div>
