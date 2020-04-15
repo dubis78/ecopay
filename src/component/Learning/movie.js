@@ -1,24 +1,24 @@
-import React, { Component } from 'react'
-import ReactPlayer from 'react-player'
-import Bg from '../../images/background3.jpg'
+import React, { Component } from 'react';
+import ReactPlayer from 'react-player';
 
 class Video extends Component {
   render() {
     return (
-      <div 
+
+      <div
         className="movie"
-      >          
-        <div 
+      >              
+        <div
           className="container"
         >
-          <h1 
+          <h1
             className="text-center p-3"
           >
             ¡Aprende con nosotros!
-          </h1>
+        </h1>
         </div>
-        <div 
-          id="movie" 
+        <div
+          id="movie"
           className="justify-content-center d-flex align-items-center p-5"
         >
           <ReactPlayer

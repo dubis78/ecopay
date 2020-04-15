@@ -49,7 +49,7 @@ class Learning extends Component {
                                 >
                                     <button 
                                         id="bntGame" 
-                                        className="nav-item active text-white btn rounded-pill"
+                                        className="nav-item text-white btn rounded-pill mr-1"
                                     >
                                         Inicio 
                                     </button>
@@ -58,7 +58,7 @@ class Learning extends Component {
                                 >
                                     <button 
                                         id="bntGame" 
-                                        className="nav-item text-white btn rounded-pill"
+                                        className="nav-item text-white btn rounded-pill mr-1"
                                         >
                                             Juego
                                     </button>

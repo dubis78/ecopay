@@ -72,7 +72,7 @@ class Home extends React.Component {
                                     >
                                         <button
                                             id="bntGame"
-                                            className="nav-item active text-white btn rounded-pill"
+                                            className="nav-item text-white btn rounded-pill mr-1"
                                         >
                                             Jugar
                                         </button>
@@ -80,7 +80,7 @@ class Home extends React.Component {
                                     <Link to="/Login1">
                                         <button
                                             id="bntGame"
-                                            className="nav-item text-white btn rounded-pill"
+                                            className="nav-item text-white btn rounded-pill mr-1"
                                             onClick={this.signOut}
                                         >
                                             Salir
@@ -102,7 +102,7 @@ class Home extends React.Component {
                                     className="col-sm d-flex justify-content-center"
                                 >
                                     <Link
-                                        className="btn1 mr-1 p-3 text-body"
+                                        className="btn1 mr-2 p-3 text-body"
                                         to="/learning"
                                     >
 
@@ -122,7 +122,7 @@ class Home extends React.Component {
                                     className="col-sm d-flex justify-content-center"
                                 >
                                     <Link
-                                        className="btn1 mr-1 p-3 text-body"
+                                        className="btn1 mr-2 p-3 text-body"
                                         to="/learning"
                                     >
                                         <img

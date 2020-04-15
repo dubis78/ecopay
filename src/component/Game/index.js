@@ -6,6 +6,7 @@ import Pikachu from '../../images/pikachu.png';
 import Bullbasaur from '../../images/bullbasaur.png';
 import Charmander from '../../images/charmander.png';
 import Jigglypuff from '../../images/jigglypuff.png';
+import ImgFooter from '../../images/bg2.jfif'
 
 class Game extends Component {
     render() {
@@ -46,7 +47,7 @@ class Game extends Component {
                             >
                                 <button 
                                     id="bntGame" 
-                                    className="nav-item active text-white btn rounded-pill"
+                                    className="nav-item text-white btn rounded-pill mr-1"
                                 >
                                     Inicio
                                 </button>
@@ -56,7 +57,7 @@ class Game extends Component {
                             >
                                 <button 
                                     id="bntGame" 
-                                    className="nav-item text-white btn rounded-pill"
+                                    className="nav-item text-white btn rounded-pill mr-1"
                                 >
                                     Aprendamos Juntos
                                 </button>
@@ -159,7 +160,8 @@ class Game extends Component {
                     </div>
                 </article>
                 <footer 
-                    className="footer">
+                    className="footer"
+                >
                     <div 
                         className="card-footer bg-transparent border-success text-center text-white"
                     >
