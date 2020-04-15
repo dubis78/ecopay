@@ -7,7 +7,7 @@ import Login1 from './component/Login1';
 import Learning from './component/Learning';
 import Game from './component/Game';
 import ToGame from './component/ToGame';
-import Principal from './component/Principal';
+
 
 class Routes extends Component {
     
@@ -15,7 +15,8 @@ class Routes extends Component {
         return ( 
             <>
             <Switch>
-                <Route exact path='/' component={Login1} />
+              <Route exact path='/' component={Auth} />
+                <Route exact path='/login' component={Login1} />
                 <Route exact path= '/registro' component={Registro} /> 
                 <Route exact path='/home' component={Home} />
                 
