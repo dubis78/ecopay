@@ -29,17 +29,14 @@ class Principal extends Component {
                         </a>
                         <div
                             className="navbar-nav" >
-                            <Link
-                                to="/registro" >
+                            <Link to="/registro" >
                                 <button
                                     id="bntGame"
                                     className="nav-item text-white btn rounded-pill mr-1">
                                     Registrarse
-                                    </button>
+                                </button>
                             </Link>
-                            <Link
-                                to="/login"
-                            >
+                            <Link to="/login">
                                 <button
                                     id="bntGame"
                                     className="nav-item text-white btn rounded-pill mr-1" >

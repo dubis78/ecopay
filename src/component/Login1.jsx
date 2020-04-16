@@ -111,23 +111,15 @@ class Login1 extends Component {
                     <button className="btn btn-lg btn-primary rounded-pil  btn-block" type="submit" 
                     style={{
                         backgroundColor:'#0C927D' 
-                      }}>Ingresar</button>
-                    
-                    
-                     
-                     
+                      }}>Ingresar</button>                   
                    
                     <Link to="/registro">
 
                     <p className="create-account-callout mt-3">
-                        No tienes una cuenta?
-                        Crear Una.
+                        No tienes una cuenta. Crear Una.
                     </p>
-                      </Link>
-                    
-                    
-                    <Login/>
-      
+                      </Link>                  
+                    <Login/>      
                 </form>
             </div>
 
