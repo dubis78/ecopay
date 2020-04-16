@@ -52,7 +52,7 @@ class Game extends Component {
                                     Inicio
                                 </button>
                             </Link>
-                            <Link 
+                            {/*<Link 
                                 to="/learning"
                             >
                                 <button 
@@ -61,16 +61,16 @@ class Game extends Component {
                                 >
                                     Aprendamos Juntos
                                 </button>
-                            </Link>
+                            </Link>*/}
                         </div>
                     </nav>
                 </header>
                 <h1 
-                    className="text-center p-5"
+                    className="text-center p-5 text-white"
                 >
-                    Selecciona el nivel
+                    SELECCIONA EL NIVEL
                 </h1>
-                <article>
+                <article className="bg">
                     <div 
                         className="container align-items-center justify-content-center"
                     >
@@ -81,7 +81,7 @@ class Game extends Component {
                                 className="col d-flex justify-content-center"
                             >
                                 <Link 
-                                    className="btn1" 
+                                    className="btn1 bg-transparent" 
                                     to="/togame"
                                 >
                                     <button
@@ -99,7 +99,8 @@ class Game extends Component {
                             <div 
                                 className="col d-flex justify-content-center"
                             >
-                            <Link className="btn1" to="/game">
+                            <Link className="btn1 bg-transparent" 
+                                to="/game">
                                 <button
                                     type="button"
                                     className="btn mr-1 p-4"
@@ -116,7 +117,7 @@ class Game extends Component {
                                 className="col d-flex justify-content-center"
                             >
                                 <h2 
-                                    className="text-black text-center p-2 text-wrap"
+                                    className="text-white text-center p-2 text-wrap"
                                 >
                                     Nivel 1
                                 </h2>
@@ -124,7 +125,7 @@ class Game extends Component {
                             <div 
                                 className="col d-flex justify-content-center">
                                 <h2 
-                                    className="text-black text-center p-2 text-wrap"
+                                    className="text-white text-center p-2 text-wrap"
                                 >
                                     Nivel 2
                                 </h2>
@@ -133,8 +134,11 @@ class Game extends Component {
                         <div 
                             className="row row-cols-1"
                         >
-                            <div className="col d-flex justify-content-center">                                
-                                <Link className="btn1" to="/game">
+                            <div 
+                                className="col d-flex justify-content-center">                                
+                                <Link 
+                                    className="btn1 bg-transparent" 
+                                    to="/game">
                                 <button
                                     type="button"
                                     className="btn mr-1 p-4"
@@ -151,7 +155,7 @@ class Game extends Component {
                                 className="col d-flex justify-content-center"
                             >
                                 <h2 
-                                    className="text-black text-center p-2 text-wrap"
+                                    className="text-white text-center p-2 text-wrap"
                                 >
                                     Nivel 3
                                 </h2>
