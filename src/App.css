@@ -77,15 +77,15 @@ body {
     background: #0F2943;
   }
 
-  .organic .footer {
+  .learning .footer {
     background: #0F2943;
   }
 
-  .organic #nav {
-    background:#0C927D;
+  .learning #nav {
+    background:rgb(101, 240, 217);
   }
 
-  .organic #bntGame {
+  .learning #bntGame {
     background: #0F2943;
   }
 
@@ -99,6 +99,13 @@ body {
 
   .home #btnGame{
     width: 300px;
+  }
+
+  .movie {
+    background-image: url('./images/background3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
 .body-registro{
@@ -118,14 +125,18 @@ body {
 }
 
 .btn1:hover {
-  box-shadow: 0 0 8px 0 rgba(209, 203, 203, 0.08), 0 0 15px 0 rgba(190, 186, 186, 0.02), 0 0 20px 4px rgba(219, 209, 209, 0.06);
+  box-shadow: 0 0 8px 0 rgba(0,0,0,.08), 0 0 15px 0 rgba(0,0,0,.02), 0 0 20px 4px rgba(0,0,0,.06);
 }
 
 .game {
-  background-image: url('./images/img10.jpg') ;
+  background-image: url('./images/img10.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.game .mdb-color.darken-3 {
+  background-color: #1c2a48 !important;
 }
 @media (max-width: 600px){
   .principal .valueProposal {
@@ -187,122 +198,31 @@ body {
  
 
 }
-
-
 .post-banner-category .banner__icon {
   width: 35px;
   height: 35px;
 }
-
 .texto-header{
-  font-family: 'Luckiest Guy', cursive;
-font-size: 50px;
+
+  font-size: 50px;
 }
 
-.principal .valueProposal {
-  background-image: url('./images/bggirl.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:cover;
-  max-width: 100%;
+.img-footer{
+  width: 60%;
   height: auto;
-  padding: 350px;
+  border-bottom: 10px;
 }
+.footer-one{
+  
+  background: #0C927D;
+ 
 
-.principal #nav {
-  background:#0C927D;
 }
-
-.organic .bg {
-  background: rgb(44, 204, 44);
+.listado li{
+  list-style:none
 }
-
-.organic .bg {
-  background-color: rgba(10, 119, 10, 0.3);
-}
-
-.metales .bg {
-  background: rgb(56, 34, 34);
-}
-
-.metales .footer {
-  background: #0F2943;
-}
-
-.metales #nav {
-  background:#0C927D;
-}
-
-.metales #bntGame {
-  background: #0F2943;
-}
-
-.metales .bg {
-  background-color: rgba(77, 40, 14, 0.5);
-}
-
-.ordinary .bg {
-  background-color: rgba(230, 230, 41, 0.5);
-}
-
-.ordinary .footer {
-  background: #0F2943;
-}
-
-.ordinary #nav {
-  background:#0C927D;
-}
-
-.ordinary #bntGame {
-  background: #0F2943;
-}
-
-.paper .bg {
-  background-color: rgba(77, 77, 76, 0.5);
-}
-
-.paper .footer {
-  background: #0F2943;
-}
-
-.paper #nav {
-  background:#0C927D;
-}
-
-.paper #bntGame {
-  background: #0F2943;
-}
-
-.plastic .bg {
-  background-color: rgba(24, 88, 206, 0.575);
-}
-
-.plastic .footer {
-  background: #0F2943;
-}
-
-.plastic #nav {
-  background:#0C927D;
-}
-
-.plastic #bntGame {
-  background: #0F2943;
-}
-
-.glass .footer {
-  background: #0F2943;
-}
-
-.glass #nav {
-  background:#0C927D;
-}
-
-.glass #bntGame {
-  background: #0F2943;
-}
-
-.principal .footer {
-  background: #0F2943;
+.footer{
+  background-color: #E3DEDD;
 }
 
 .home {
@@ -312,7 +232,7 @@ font-size: 50px;
   background-size: cover;
 }
 
-.togame {
+.togame .bg {
   background-image: url('./images/bggame.jpg') ;
   background-repeat: no-repeat;
   background-position: center;

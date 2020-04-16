@@ -47,7 +47,7 @@ class ToGame extends Component {
                                     </button>
                             </Link>
                             <Link
-                                to="/learning"
+                                to="/home"
                             >
                                 <button
                                     id="bntGame"
@@ -60,7 +60,7 @@ class ToGame extends Component {
                     </nav>
                 </header>
                 <div
-                    className="bg p-3"
+                    className="bg"
                 >
                     <h2 className="text-center text-white">BIENVENIDO AL NIVEL 1</h2>
                     <div className="p-5">
