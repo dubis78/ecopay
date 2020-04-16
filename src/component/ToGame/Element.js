@@ -46,11 +46,11 @@ const Element=(props)=>{
     if (cont>4 && pPuntaje<10){      
       return(
         <div className='lose'>
-          <Link to='/prueba'>
+          <a href='https://ecopay.netlify.app/prueba'> 
             <button id="bntGame" className="nav-item text-white btn rounded-pill mr-1">
                 Perdiste
             </button>
-            </Link>
+          </a>
         </div>
       )
       cont=0;
