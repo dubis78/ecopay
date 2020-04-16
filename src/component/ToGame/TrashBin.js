@@ -2,11 +2,11 @@ import React from 'react';
 import { useDrop } from 'react-dnd'
 
 const TrashBin=(props)=>{  
-  const {pIcon,pName,pAcepts,pIndex}=props;
+  const {pIcon,pName,pCorrect,pAcepts,pIndex}=props;
   
   const [,drop] = useDrop({
       accept: pAcepts,    //llamar de trasData los tipos de materiales q acepta
-      drop: () => ({name: pName}),   //llamar de trasData el nombre      
+      drop: () => ({name: pName}),   //llamar de trasData el nombre           
     })
 
     /*

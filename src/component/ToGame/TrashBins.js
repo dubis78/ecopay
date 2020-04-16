@@ -11,7 +11,7 @@ const TrashBins=()=>{
         <TrashBin
             pIcon={trashData.trashCan[0].icon}
             pName={trashData.trashCan[0].name}
-            pAcepts={trashData.trashCan[0].acepts}
+            pAcepts={['glass','plastic','organic','paper','ordinary','paperboard']}
             pIndex={0}            
         />
         

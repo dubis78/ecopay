@@ -1,10 +1,10 @@
 import React,{useState} from 'react';
 import { useDrag } from 'react-dnd'
+import { Link } from "react-router-dom";
 
-
-
+let pPuntaje=0,cont=0;
 const Element=(props)=>{
-  const {pIcon,pName,pType,pIndex}=props;
+  const {pIcon,pName,pType,pCorrect,pIndex}=props;
   const [isDropped,setIsDropped]=useState();
   
   const [,drag] = useDrag({
@@ -15,9 +15,16 @@ const Element=(props)=>{
         const dropResult = monitor.getDropResult()
 
         if (item && dropResult) {
-          setIsDropped(true);
-          alert(`You dropped ${item.name} into ${dropResult.name}!`) 
+          cont++;
+          if ( pCorrect.includes(pType) ) {
+            pPuntaje+=5;            
+          alert(`You dropped ${item.name} into ${dropResult.name}! PUNTAJE: ${pPuntaje}`);  
+          }
+          else {
+            pPuntaje-=3;
+          }
         }
+          setIsDropped(true);        
       },
 
       collect: (monitor) => ({
@@ -29,10 +36,30 @@ const Element=(props)=>{
     if(isDropped){
       display='none';
     }
-
+    if (pPuntaje>9){      
+      return(  
+        <div className='win'>¡GANASTE!, registrate para acumular puntos por ganar</div>   
+      )
+      cont=0;
+      pPuntaje=0;   
+    }
+    if (cont>4 && pPuntaje<10){      
+      return(
+        <div className='lose'>
+          <a href='https://ecopay.netlify.app/'> 
+            <button id="bntGame" className="nav-item text-white btn rounded-pill mr-1">
+                Perdite
+            </button>
+          </a>
+        </div>
+      )
+      cont=0;
+      pPuntaje=0;   
+    }
+  
   return(
     <div>      
-      <span key={`label${pIndex}`}><img ref={drag} alt=''  className="trashElement" id={`trashEle${pIndex}`} src={pIcon} style={{display}} ></img></span>                     
+      <span key={`label${pIndex}`}><img ref={drag} alt=''  className="trashElement mt-5" id={`trashEle${pIndex}`} src={pIcon} style={{display}} ></img></span>                        
     </div>       
   );
 }

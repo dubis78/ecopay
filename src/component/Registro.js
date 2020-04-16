@@ -176,8 +176,6 @@ class Registro extends Component {
                 </form>
             </div>
             <footer className="footer-registro"></footer>
-
-
             </Fragment>
            
             
