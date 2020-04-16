@@ -25,7 +25,6 @@ class Registro extends Component {
             }
         })
     }
-
     handleSubmit = event => {
         event.preventDefault(); 
         var service_id = "default_service";
