@@ -27,8 +27,7 @@ class Routes extends Component {
         <Route exact path='/togame' component={ToGame}/>
         <Route exact path='/prueba' component={Prueba}/>
         <Route exact path='/game' component={Game}/>
-        <Route exact path='/' component={Principal}/>         
-        <Route exact path='/principal' component={PrincipalLogin}/> 
+        <Route exact path='/' component={Principal}/>
         <Route exact path='/infoglass' component={Glass}/> 
         <Route exact path='/infopaper' component={Paper}/>          
         <Route exact path='/infoplastic' component={Plastic}/> 
