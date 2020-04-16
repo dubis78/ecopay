@@ -202,14 +202,29 @@ body {
  
 
 }
-
-
 .post-banner-category .banner__icon {
   width: 35px;
   height: 35px;
 }
 .texto-header{
-  font-family: 'Luckiest Guy', cursive;
-font-size: 50px;
 
+  font-size: 50px;
+}
+
+.img-footer{
+  width: 60%;
+  height: auto;
+  border-bottom: 10px;
+}
+.footer-one{
+  
+  background: #0C927D;
+ 
+
+}
+.listado li{
+  list-style:none
+}
+.footer{
+  background-color: #E3DEDD;
 }

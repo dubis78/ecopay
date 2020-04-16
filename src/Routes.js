@@ -10,22 +10,32 @@ import Prueba from './component/ToGame/Prueba';
 import Principal from './component/Principal/index';
 import PrincipalLogin from './component/PrincipalLogin/index';
 
+import Organic from './component/info/organic';
+import Metals from './component/info/metals';
+import Ordinary from './component/info/ordinary';
+import Paper from './component/info/paper';
+import Glass from './component/info/glass';
+import Plastic from './component/info/plastic';
 
-class Routes extends Component {
-    
-    render() { 
-      return (
-        <Switch>
-          <Route exact path= '/registro' component={Registro} />          
-          <Route exact path='/login' component={Login1} />  
-          <Route exact path='/home' component={Home} />              
-          <Route exact path='/togame' component={ToGame}/>
-          <Route exact path='/prueba' component={Prueba}/>
-          <Route exact path='/game' component={Game}/>
-          <Route exact path='/' component={Principal}/>         
-          <Route exact path='/principal' component={PrincipalLogin}/> 
-        </Switch>
-      );
-    }
+class Routes extends Component {    
+  render() { 
+    return (
+      <Switch>
+        <Route exact path= '/registro' component={Registro} />          
+        <Route exact path='/login' component={Login1} />  
+        <Route exact path='/home' component={Home} />              
+        <Route exact path='/togame' component={ToGame}/>
+        <Route exact path='/prueba' component={Prueba}/>
+        <Route exact path='/game' component={Game}/>
+        <Route exact path='/' component={Principal}/>         
+        <Route exact path='/principal' component={PrincipalLogin}/> 
+        <Route exact path='/infoglass' component={Glass}/>         
+        <Route exact path='/infoplastic' component={Plastic}/> 
+        <Route exact path='/infometals' component={Metals}/>         
+        <Route exact path='/infoorganic' component={Organic}/> 
+        <Route exact path='/infoordinary' component={Ordinary}/> 
+      </Switch>
+    );
+  }
 }
 export default Routes;

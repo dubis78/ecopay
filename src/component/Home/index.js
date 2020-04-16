@@ -108,7 +108,7 @@ class Home extends React.Component {
                                 >
                                     <Link
                                         className="btn1 mr-2 p-3 text-body"
-                                        to="/learning"
+                                        to="/infoorganic"
                                     >
 
                                         <img
@@ -119,7 +119,7 @@ class Home extends React.Component {
                                         <h2
                                             className="text-body text-center p-2"
                                         >
-                                            Orgánicos
+                                            Ordinarios
                                         </h2>
                                     </Link>
                                 </div>
@@ -128,7 +128,7 @@ class Home extends React.Component {
                                 >
                                     <Link
                                         className="btn1 mr-2 p-3 text-body"
-                                        to="/learning"
+                                        to="/infometals"
                                     >
                                         <img
                                             className="img-fluid"
@@ -147,7 +147,7 @@ class Home extends React.Component {
                                 >
                                     <Link
                                         className="btn1 mr-1 p-3 text-body"
-                                        to="/learning"
+                                        to="/infoordinary"
                                     >
                                         <img
                                             className="img-fluid"
@@ -157,7 +157,7 @@ class Home extends React.Component {
                                         <h2
                                             className="text-body text-center p-2"
                                         >
-                                            Ordinarios
+                                            Orgánicos
                                         </h2>
                                     </Link>
                                 </div>
@@ -168,7 +168,7 @@ class Home extends React.Component {
                                 >
                                     <Link
                                         className="btn1 mr-1 p-3 text-body"
-                                        to="/learning"
+                                        to="/infopaper"
                                     >
                                         <img
                                             className="img-fluid"
@@ -187,7 +187,7 @@ class Home extends React.Component {
                                 >
                                     <Link
                                         className="btn1 mr-1 p-3 text-body"
-                                        to="/learning"
+                                        to="/infoplastic"
                                     >
                                         <img
                                             className="img-fluid"
@@ -207,7 +207,7 @@ class Home extends React.Component {
                                 >
                                     <Link
                                         className="btn1 mr-1 p-3 text-body"
-                                        to="/learning"
+                                        to="/infoglass"
                                     >
                                         <img
                                             className="img-fluid"
