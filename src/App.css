@@ -212,17 +212,78 @@ body {
   height: auto;
   border-bottom: 10px;
 }
-.footer-one{
-  
+.footer-one{  
   background: #0C927D;
- 
-
 }
 .listado li{
   list-style:none
 }
 .footer{
   background-color: #E3DEDD;
+}
+
+.ordinary .bg {
+  background-color: rgba(230, 230, 41, 0.5);
+}
+
+.ordinary .footer {
+  background: #0F2943;
+}
+
+.ordinary #nav {
+  background:#0C927D;
+}
+
+.ordinary #bntGame {
+  background: #0F2943;
+}
+
+.paper .bg {
+  background-color: rgba(77, 77, 76, 0.5);
+}
+
+.paper .footer {
+  background: #0F2943;
+}
+
+.paper #nav {
+  background:#0C927D;
+}
+
+.paper #bntGame {
+  background: #0F2943;
+}
+
+.plastic .bg {
+  background-color: rgba(24, 88, 206, 0.575);
+}
+
+.plastic .footer {
+  background: #0F2943;
+}
+
+.plastic #nav {
+  background:#0C927D;
+}
+
+.plastic #bntGame {
+  background: #0F2943;
+}
+
+.glass .footer {
+  background: #0F2943;
+}
+
+.glass #nav {
+  background:#0C927D;
+}
+
+.glass #bntGame {
+  background: #0F2943;
+}
+
+.principal .footer {
+  background: #0F2943;
 }
 
 .home {
@@ -232,7 +293,7 @@ body {
   background-size: cover;
 }
 
-.togame .bg {
+.togame {
   background-image: url('./images/bggame.jpg') ;
   background-repeat: no-repeat;
   background-position: center;
@@ -248,5 +309,43 @@ body {
 }
 
 .togame #bntGame {
+  background: #0F2943;
+}
+.organic .bg {
+  background: rgb(44, 204, 44);
+}
+
+.organic .bg {
+  background-color: rgba(10, 119, 10, 0.3);
+}
+
+.metales .bg {
+  background: rgb(56, 34, 34);
+}
+
+.metales .footer {
+  background: #0F2943;
+}
+
+.metales #nav {
+  background:#0C927D;
+}
+
+.metales #bntGame {
+  background: #0F2943;
+}
+
+.metales .bg {
+  background-color: rgba(77, 40, 14, 0.5);
+}
+.organic .footer {
+  background: #0F2943;
+}
+
+.organic #nav {
+  background:#0C927D;
+}
+
+.organic #bntGame {
   background: #0F2943;
 }
