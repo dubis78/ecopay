@@ -19,13 +19,13 @@ class Routes extends Component {
   render() { 
     return (
       <Switch>
+        <Route exact path='/' component={Principal}/>
         <Route exact path= '/registro' component={Registro} />          
         <Route exact path='/login' component={Login1} />  
         <Route exact path='/home' component={Home} />              
         <Route exact path='/togame' component={ToGame}/>
         <Route exact path='/prueba' component={Prueba}/>
-        <Route exact path='/game' component={Game}/>
-        <Route exact path='/' component={Principal}/>
+        <Route exact path='/game' component={Game}/>        
         <Route exact path='/infoglass' component={Glass}/> 
         <Route exact path='/infopaper' component={Paper}/>          
         <Route exact path='/infoplastic' component={Plastic}/> 

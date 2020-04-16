@@ -5,16 +5,6 @@ import { Link, Redirect} from 'react-router-dom';
 import Login from './Login';
 import axios from 'axios';
 
-
-
-/*
-import withFirebaseAuth from 'react-with-firebase-auth'
-import * as firebase from 'firebase/app';
-import 'firebase/auth';
-import firebaseConfig from '../firebaseConfig';
-
-
-import GoogleLogin from 'react-google-login';*/
 class Login1 extends Component {
   
   //creamos el state de los campos del formulario que vamos a usar
@@ -116,7 +106,7 @@ class Login1 extends Component {
                     <Link to="/registro">
 
                     <p className="create-account-callout mt-3">
-                        No tienes una cuenta. Crear Una.
+                        No tienes una cuenta, crear Una.
                     </p>
                       </Link>                  
                     <Login/>      

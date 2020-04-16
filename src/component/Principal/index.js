@@ -50,15 +50,15 @@ class Principal extends Component {
                                     id="bntGame"
                                     className="nav-item text-white btn rounded-pill mr-1" >
                                     Iniciar sesión
-                                    </button>
-                                </Link>
+                                </button>
+                            </Link>
                             </div>
                         </nav>
                     </header>
                     <div className="valueProposal">
-                        <div class="post-banner-category">
-                            <div class="banner__icon" />
-                            <span class="banner__category"> <h4 className="texto-header">RECICLA Y GANA</h4></span>
+                        <div className="post-banner-category">
+                            <div className="banner__icon" />
+                            <span className="banner__category"> <h4 className="texto-header">RECICLA Y GANA</h4></span>
                             <div></div>
 
                             <Link to='/prueba'> <button className="btn btn-light btn-lg text-black boton"><h1>JUGAR</h1></button></Link>
@@ -85,7 +85,7 @@ class Principal extends Component {
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 text-center">
+                    <div className="col-12 text-center">
 
                         <h2 className="text-wrap d-inline-block">Beneficios del reciclaje</h2>
 
@@ -93,70 +93,70 @@ class Principal extends Component {
                     <br></br>
                     <br></br>
 
-                    <div class="row">
-                        <div class="col-md-4 beneficio">
+                    <div className="row">
+                        <div className="col-md-4 beneficio">
 
-                            <div class="icono text-center">
+                            <div className="icono text-center">
                                 <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono1-1.png" alt="Usamos menos materias primas" class="img-responsive" />
                             </div>
                             <div class="titulo text-center">
                                 <h4 className="titular text-wrap">Usamos menos materias primas</h4>
                             </div>
-                            <div class="texto text-center">
+                            <div className="texto text-center">
                                 <p>Ahorramos recursos naturales<br />
                                 y conservamos muchos<br />
                                     espacios naturales.</p>
                             </div>
 
                         </div>
-                        <div class="col-md-4">
+                        <div className="col-md-4">
 
-                            <div class="icono text-center">
+                            <div className="icono text-center">
                                 <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono2-1.png" alt="Ahorramos energía" class="img-responsive" />
                             </div>
-                            <div class="titulo text-center">
-                                <h4 class="titular">Ahorramos energía</h4>
+                            <div className="titulo text-center">
+                                <h4 className="titular">Ahorramos energía</h4>
                             </div>
-                            <div class="texto text-center">
+                            <div className="texto text-center">
                                 <p>Frenamos el <strong>cambio climático</strong>: el gasto de energía que supone tratar nuevas materias es muy superior al que se gasta cuando reciclamos. Generamos menos CO2, ahorramos agua… De esta forma ayudamos a preservar el medioambiente.</p>
                             </div>
 
                         </div>
-                        <div class="col-md-4 beneficio">
+                        <div className="col-md-4 beneficio">
 
-                            <div class="icono text-center">
-                                <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono3-1.png" alt="Generamos menos residuos" class="img-responsive" />
+                            <div className="icono text-center">
+                                <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono3-1.png" alt="Generamos menos residuos" className="img-responsive" />
                             </div>
-                            <div class="titulo text-center">
-                                <h4 class="titular">Generamos menos residuos</h4>
+                            <div className="titulo text-center">
+                                <h4 className="titular">Generamos menos residuos</h4>
                             </div>
-                            <div class="texto text-center">
+                            <div className="texto text-center">
                                 <p>Ayudamos a no contaminar nuestros espacios naturales y los hábitats de los animales acuáticos y terrestres.</p>
                             </div>
 
                         </div>
                     </div>
                    
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset text-center">
-                            <div class="icono text-center">
-                                <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono4.png" alt="Creamos puestos de trabajo" class="img-responsive" />
+                    <div className="row">
+                        <div className="col-md-6 col-md-offset text-center">
+                            <div className="icono text-center">
+                                <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono4.png" alt="Creamos puestos de trabajo" className="img-responsive" />
                             </div>
-                            <div class="titulo text-center">
-                                <h4 class="titular">Creamos puestos de trabajo</h4>
+                            <div className="titulo text-center">
+                                <h4 className="titular">Creamos puestos de trabajo</h4>
                             </div>
-                            <div class="texto text-center">
+                            <div className="texto text-center">
                                 <p>El reciclaje de residuos precisa de empresas y personas para llevar a cabo este proceso.</p>
                             </div>
                         </div>
-                        <div class="col-md-4 ">
-                            <div class="icono text-center">
-                                <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono5.png" alt="Fabricamos nuevos productos" class="img-responsive" />
+                        <div className="col-md-4 ">
+                            <div className="icono text-center">
+                                <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono5.png" alt="Fabricamos nuevos productos" className="img-responsive" />
                             </div>
-                            <div class="titulo text-center">
-                                <h4 class="titular">Fabricamos nuevos productos</h4>
+                            <div className="titulo text-center">
+                                <h4 className="titular">Fabricamos nuevos productos</h4>
                             </div>
-                            <div class="texto text-center">
+                            <div className="texto text-center">
                                 <p>Dar vida a productos usados para convertirlos en otros completamente distintos ¡puede ser fascinante!</p>
                             </div>
                         </div>
@@ -171,11 +171,11 @@ class Principal extends Component {
                         <i><img className="mx-2" width="30" height="auto" src={inst}></img></i>
                     </div>
 
-                    <div class="container footer-dos">
-                        <div class="row justify-content-center">
+                    <div className="container footer-dos">
+                        <div className="row justify-content-center">
                             <div className="container">
-                                <div class="row">
-                                    <div class="col-sm-8">
+                                <div className="row">
+                                    <div className="col-sm-8">
                                         <h5 className="texto-header text-responsive">Nuestros Aliados</h5>
                                         <ul className="listado ">
                                             <li>
@@ -197,7 +197,7 @@ class Principal extends Component {
 
                                     </div>
 
-                                    <div class="col-sm-4 ">
+                                    <div className="col-sm-4 ">
                                         <h5 className="texto-header text-responsive">Contactanos</h5>
                                         <ul className="listado">
                                             <li>
