@@ -16,7 +16,8 @@ class Registro extends Component {
           
         }
     };
-    handleChange = (event) => {
+    handleChange=(event)=>{
+        this.setState({feedback: event.target.value})
         this.setState({
             form: {
                 ...this.state.form,
@@ -26,20 +27,34 @@ class Registro extends Component {
     }
 
     handleSubmit = event => {
-        event.preventDefault();
-        axios.post(`https://datosregistro.now.sh/datosUsuario/`, { ...this.state.form })
-            .then(res => {
-                if (res != null) {
-                    localStorage.setItem('user', JSON.stringify(res.data)); //local storage de la data para asi llevarlos al home
-                    this.props.history.push('/home');
-                }
-            })      
-            
+        event.preventDefault(); 
+        var service_id = "default_service";
+        const templateId = 'template_HDm5JSFo';
+        //this.send(service_id,templateId,this.state,userId);
+        this.sendFeedback(service_id,templateId,this.state.form);
+	//this.sendFeedback(templateId,{message_html: this.state.feedback, from_name: this.state.nombres, reply_to: this.state.correo})
+        axios.post(`https://datosregistro.now.sh/datosUsuario/`, {...this.state.form})
+          .then(res => {
+           if(res!=null){
+            localStorage.setItem('user', JSON.stringify(res.data)); //local storage de la data para asi llevarlos al home
+            this.props.history.push('/home');
+            }
+          })
+        
+      }
 
-            
-
-    }
-    render() {
+      sendFeedback (serviceId,templateId, variables) {
+          console.log("Enviado a: " + variables.correo);
+ 
+          window.emailjs.send(serviceId,templateId,variables)
+          .then((response) => {
+            console.log("Enviado",response.status,response.text);
+          }, (err) => {
+            console.log("Error: ",err);
+          })
+      }
+      
+    render(){
         return (
             <Fragment>
                 <header>
