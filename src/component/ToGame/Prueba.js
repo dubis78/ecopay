@@ -8,10 +8,8 @@ class Prueba extends Component {
     render() {
 
         return (
-            <audio src={song} autoPlay='true'/>
-            <div
-                className="togame"
-            >
+            <div className="togame" >
+                <audio src={song} autoPlay='true'/>
                 <header>
                     <nav
                         id="nav"
