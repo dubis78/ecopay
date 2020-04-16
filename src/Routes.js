@@ -1,5 +1,5 @@
-import React,{Component} from 'react';
-import { Switch,Route } from 'react-router-dom';
+import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 import Registro from './component/Registro';
 import Home from './component/Home/index';
@@ -11,6 +11,7 @@ import Paper from './component/info/paper';
 import Glass from './component/info/glass';
 import Game from './component/Game';
 import ToGame from './component/ToGame';
+<<<<<<< HEAD
 import Principal from './component/Principal';
 import Plastic from './component/info/plastic';
 
@@ -60,6 +61,48 @@ class Routes extends Component {
               </>
          );
     }
+=======
+import Principal from './component/Principal/index';
+
+
+class Routes extends Component {
+
+  render() {
+    return (
+      <>
+        <Switch>
+
+         
+
+          <Route exact path='/login' component={Login1} />
+          <Route exact path='/registro' component={Registro} />
+          <Route exact path='/home' component={Home} />
+
+          <Route path="/principal">
+            <Principal />
+          </Route>
+        
+          <Route path="/togame">
+            <ToGame />
+          </Route>
+          <Route path="/game">
+            <Game />
+          </Route>
+          <Route path="/learning">
+            <Learning />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+
+
+
+        </Switch>
+
+      </>
+    );
+  }
+>>>>>>> bc3ee2b2ef090559bd7662c5539683417745de16
 }
- 
+
 export default Routes;

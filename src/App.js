@@ -5,6 +5,7 @@ import './App.css';
 import Home from './component/Home';
 import Game from './component/Game'
 import ToGame from './component/ToGame'
+
 import './index.css';
 
 import {
