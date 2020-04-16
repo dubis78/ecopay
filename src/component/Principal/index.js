@@ -171,6 +171,15 @@ class Principal extends Component {
                         </div>
                     </div>
                 </div>
+                <footer
+                            className="footer"
+                        >
+                            <div
+                                className="card-footer bg-transparent border-success text-center text-white"
+                            >
+                                By Team ECOPAY
+                            </div>
+                        </footer>
             </div>
         );
     }
