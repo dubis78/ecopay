@@ -35,7 +35,6 @@ class Principal extends Component {
                                         alt="" />
                                   ECOPAY
                             </h2>
-<<<<<<< HEAD
                         </a>
                         <div
                             className="navbar-nav" >
@@ -51,26 +50,6 @@ class Principal extends Component {
                                     id="bntGame"
                                     className="nav-item text-white btn rounded-pill mr-1" >
                                     Iniciar sesión
-=======
-                            </a>
-                            <div
-                                className="navbar-nav" >
-                                <Link
-                                    to="/registro" >
-                                    <button
-                                        id="bntGame"
-                                        className="nav-item text-white btn rounded-pill mr-1">
-                                        Registrarse
-                                    </button>
-                                </Link>
-                                <Link
-                                    to="/login"
-                                >
-                                    <button
-                                        id="bntGame"
-                                        className="nav-item text-white btn rounded-pill mr-1" >
-                                        Iniciar sesión
->>>>>>> alejandra
                                     </button>
                                 </Link>
                             </div>
@@ -87,34 +66,12 @@ class Principal extends Component {
 
 
                         </div>
-<<<<<<< HEAD
-                    </nav>
-                </header>
-                <div className="valueProposal">
-                <div class="post-banner-category">
-								<div class="banner__icon"/>
-								<span class="banner__category"> <h4 className="texto-header">RECICLA Y GANA</h4></span>
-                                <div></div>
-
-                                <Link to='/prueba'> <button className="btn btn-light btn-lg text-black boton"><h1>JUGAR</h1></button></Link>
-							
-
-                               
-							</div>
-                </div>
-                <div className="container">
-                    <div className="row d-flex align-items-center p-5">
-                        <div className="col-sm justify-content-center">
-                            <h2 className="text-center p-2">
-                                Aprende a reciclar jugando y gana
-=======
                     </div>
                     <div className="container">
                         <div className="row d-flex align-items-center p-5">
                             <div className="col-sm justify-content-center">
                                 <h2 className="text-center p-2">
                                     Aprende a reciclar jugando y gana
->>>>>>> alejandra
                         </h2>
                                 <p className="text-center">
                                     En ECOPAY queremos incentivar el reciclaje y para ello ofrecemos herramientas
