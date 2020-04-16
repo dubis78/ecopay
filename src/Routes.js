@@ -8,8 +8,6 @@ import Game from './component/Game';
 import ToGame from './component/ToGame/Nivel1';
 import Prueba from './component/ToGame/Prueba';
 import Principal from './component/Principal/index';
-import PrincipalLogin from './component/PrincipalLogin/index';
-
 import Organic from './component/info/organic';
 import Metals from './component/info/metals';
 import Ordinary from './component/info/ordinary';
