@@ -138,7 +138,7 @@ class Principal extends Component {
                     </div>
                    
                     <div class="row">
-                        <div class="col-md-6 ml-5 col-md-offset text-center">
+                        <div class="col-md-6 col-md-offset text-center">
                             <div class="icono text-center">
                                 <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono4.png" alt="Creamos puestos de trabajo" class="img-responsive" />
                             </div>

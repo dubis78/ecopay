@@ -163,7 +163,7 @@ class Registro extends Component {
                             </div>
 
                             <div className="col mb-3">
-                                <label className="text-white " for="validationServer02">Confirmación de contraseña</label>
+                                <label className="text-white " for="validationServer02">Confirmar contraseña</label>
                                 <input className="form-control "
                                     type="password"
                                     name="ConfirmacionContrasena"
