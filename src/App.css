@@ -138,6 +138,7 @@ body {
 .game .mdb-color.darken-3 {
   background-color: #1c2a48 !important;
 }
+
 @media (max-width: 600px){
   .principal .valueProposal {
 
@@ -282,35 +283,7 @@ body {
   background: #0F2943;
 }
 
-.principal .footer {
-  background: #0F2943;
-}
 
-.home {
-  background-image: url('./images/img9.png') ;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.togame {
-  background-image: url('./images/bggame.jpg') ;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.togame .footer {
-  background: #0F2943;
-}
-
-.togame #nav {
-  background:#0C927D;
-}
-
-.togame #bntGame {
-  background: #0F2943;
-}
 .organic .bg {
   background: rgb(44, 204, 44);
 }
@@ -349,3 +322,75 @@ body {
 .organic #bntGame {
   background: #0F2943;
 }
+
+.principal .footer {
+  background: #0F2943;
+}
+
+.home {
+  background-image: url('./images/img9.png') ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.togame {
+  background-image: url('./images/bggame.jpg') ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+@media (max-width: 642px){
+  .togame {
+    background-image: none;
+    background-color: white;
+    height: 100vh;
+  }
+  .togame .footer {
+    position: relative;
+    margin-top: 130px;
+    width: 100vw;
+    height: 100px;
+  }
+}
+
+.togame .footer {
+  position: absolute;
+  width: 100vw;
+  top:92vh;
+  height: 100px;
+  background: #0F2943;
+}
+
+.togame #nav {
+  background:#0C927D;
+}
+
+.togame #bntGame {
+  background: #0F2943;
+}
+
+
+.win{
+  background-color: #0C927D;
+  text-align: center;
+  color: rgb(197, 197, 197);
+  height: 50px;
+  position: absolute;
+  border-radius: 5%;
+}
+
+.registerLink {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.registerLink:hover {
+  text-decoration: none;
+  color: rgb(141, 134, 134);
+  font-size: 18px;
+}
+

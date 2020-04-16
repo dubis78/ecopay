@@ -21,50 +21,36 @@ class Principal extends Component {
             <Fragment>
                 <div className="principal">
                     <header>
-                        <nav
-                            id="nav"
-                            className="navbar navbar-inverse navbar-static-top navbar-expand-lg justify-content-between">
+                        <nav id="nav" className="navbar navbar-inverse navbar-static-top navbar-expand-lg justify-content-between">
                             <a className="navbar-brand text-white" >
                                 <h2 className="nombre text-responsive" >
-                                    <img
-                                        id="logo"
-                                        src={Logo}
-                                        width="30"
-                                        height="30"
-                                        className="d-inline-block align-top"
-                                        alt="" />
-                                  ECOPAY
-                            </h2>
-                        </a>
-                        <div
-                            className="navbar-nav" >
-                            <Link to="/registro" >
-                                <button
-                                    id="bntGame"
-                                    className="nav-item text-white btn rounded-pill mr-1">
-                                    Registrarse
-                                </button>
-                            </Link>
-                            <Link to="/login">
-                                <button
-                                    id="bntGame"
-                                    className="nav-item text-white btn rounded-pill mr-1" >
-                                    Iniciar sesión
-                                </button>
-                            </Link>
+                                    <img id="logo" src={Logo} width="30" height="30" className="d-inline-block align-top" alt="" />
+                                    ECOPAY
+                                </h2>
+                            </a>
+                            <div className="navbar-nav" >
+                                <Link to="/registro" >
+                                    <button id="bntGame" className="nav-item text-white btn rounded-pill mr-1">
+                                        Registrarse
+                                    </button>
+                                </Link>
+                                <Link to="/login">
+                                    <button id="bntGame" className="nav-item text-white btn rounded-pill mr-1" >
+                                        Iniciar sesión
+                                    </button>
+                                </Link>
                             </div>
                         </nav>
                     </header>
                     <div className="valueProposal">
                         <div className="post-banner-category">
                             <div className="banner__icon" />
-                            <span className="banner__category"> <h4 className="texto-header">RECICLA Y GANA</h4></span>
-                            <div></div>
-
-                            <Link to='/prueba'> <button className="btn btn-light btn-lg text-black boton"><h1>JUGAR</h1></button></Link>
-
-
-
+                                <span className="banner__category"> <h4 className="texto-header">RECICLA Y GANA</h4></span>
+                            <Link to='/prueba'>
+                                <button className="btn btn-light btn-lg text-black boton">
+                                    <h1>JUGAR</h1>
+                                </button>
+                            </Link>
                         </div>
                     </div>
                     <div className="container">
@@ -72,13 +58,13 @@ class Principal extends Component {
                             <div className="col-sm justify-content-center">
                                 <h2 className="text-center p-2">
                                     Aprende a reciclar jugando y gana
-                        </h2>
+                                </h2>
                                 <p className="text-center">
                                     En ECOPAY queremos incentivar el reciclaje y para ello ofrecemos herramientas
                                     didáctivas e interactivas con las cuales aprender es muy fácil. Además si ganas
                                     el juego obtienes dinero que se reflejará en el saldo de tu tarjeta cívica del Metro de
                                     Medellín.
-                        </p>
+                                </p>
                             </div>
                             <div className="col-sm">
                                 <img className="img-fluid mx-auto d-block" src={ImgReciclyng} alt="" />
@@ -86,33 +72,28 @@ class Principal extends Component {
                         </div>
                     </div>
                     <div className="col-12 text-center">
-
                         <h2 className="text-wrap d-inline-block">Beneficios del reciclaje</h2>
-
                     </div>
                     <br></br>
                     <br></br>
-
                     <div className="row">
                         <div className="col-md-4 beneficio">
-
                             <div className="icono text-center">
-                                <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono1-1.png" alt="Usamos menos materias primas" class="img-responsive" />
+                                <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono1-1.png" alt="Usamos menos materias primas" className="img-responsive" />
                             </div>
-                            <div class="titulo text-center">
+                            <div className="titulo text-center">
                                 <h4 className="titular text-wrap">Usamos menos materias primas</h4>
                             </div>
                             <div className="texto text-center">
-                                <p>Ahorramos recursos naturales<br />
-                                y conservamos muchos<br />
+                                <p> Ahorramos recursos naturales<br />
+                                    y conservamos muchos<br />
                                     espacios naturales.</p>
                             </div>
 
                         </div>
                         <div className="col-md-4">
-
                             <div className="icono text-center">
-                                <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono2-1.png" alt="Ahorramos energía" class="img-responsive" />
+                                <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono2-1.png" alt="Ahorramos energía" className="img-responsive" />
                             </div>
                             <div className="titulo text-center">
                                 <h4 className="titular">Ahorramos energía</h4>

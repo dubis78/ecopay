@@ -15,6 +15,7 @@ const Element=(props)=>{
         const dropResult = monitor.getDropResult()
 
         if (item && dropResult) {
+          setIsDropped(true);
           cont++;
           if ( pCorrect.includes(pType) ) {
             pPuntaje+=5;            
@@ -23,8 +24,7 @@ const Element=(props)=>{
           else {
             pPuntaje-=3;
           }
-        }
-          setIsDropped(true);        
+        }          
       },
 
       collect: (monitor) => ({
@@ -36,25 +36,33 @@ const Element=(props)=>{
     if(isDropped){
       display='none';
     }
-    if (pPuntaje>9){      
-      return(  
-        <div className='win'>¡GANASTE!, registrate para acumular puntos por ganar</div>   
-      )
+    if (pPuntaje>9){         
       cont=0;
       pPuntaje=0;   
+      return(  
+        <div className='win'>
+          <b>
+            ¡GANASTE!
+            <br/>
+            <Link to="/registro" className='registerLink'>
+              Registrate para acumular puntos por ganar
+            </Link>
+            </b>
+        </div>   
+      )   
     }
-    if (cont>4 && pPuntaje<10){      
+    else if (cont>5 && pPuntaje<10){         
+      cont=0;
+      pPuntaje=0;    
       return(
         <div className='lose'>
-          <a href='https://ecopay.netlify.app/prueba'> 
+          <Link to="/" >
             <button id="bntGame" className="nav-item text-white btn rounded-pill mr-1">
                 Perdiste
             </button>
-          </a>
+          </Link>        
         </div>
-      )
-      cont=0;
-      pPuntaje=0;   
+      )  
     }
   
   return(
@@ -64,17 +72,3 @@ const Element=(props)=>{
   );
 }
 export default Element
-
-
-/*
-return(          
-      <div  className='row justify-content-center'>
-       
-        {elementsData.elements.map((iconInfo,index)=>{
-          return(           
-              <span key={`label${index}`}><img ref={drag}  className="trashElement" id={`trashEle${index}`} src={iconInfo.icon} style={{display}} ></img></span>                             
-          )
-      })}
-      </div>       
-  );
-*/
