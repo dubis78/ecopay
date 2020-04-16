@@ -9,7 +9,6 @@ import {
   } from "react-router-dom";
   import '../index.css'
 
-    
 
 class Registro extends Component {
     state={
