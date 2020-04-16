@@ -8,18 +8,18 @@ class ToGame extends Component {
     render() {
 
         return (
-            <div 
-                className="game"
+            <div
+                className="togame"
             >
                 <header>
-                    <nav 
-                        id="nav" 
+                    <nav
+                        id="nav"
                         className="navbar navbar-inverse navbar-static-top navbar-expand-lg justify-content-between"
                     >
-                        <a 
+                        <a
                             className="navbar-brand text-white"
                         >
-                            <h2 
+                            <h2
                                 className="nombre text-responsive"
                             >
                                 <img
@@ -32,32 +32,45 @@ class ToGame extends Component {
                                 />
                                 ECOPAY
                             </h2>
-                        </a> 
-                            <div 
-                                className="navbar-nav"
+                        </a>
+                        <div
+                            className="navbar-nav"
+                        >
+                            <Link
+                                to="/home"
                             >
-                                <Link 
-                                    to="/principal"
+                                <button
+                                    id="bntGame"
+                                    className="nav-item text-white btn rounded-pill mr-1"
                                 >
-                                    <button 
-                                        id="bntGame" 
-                                        className="nav-item text-white btn rounded-pill mr-1"
-                                    >
-                                        Inicio
+                                    Inicio
                                     </button>
-                                </Link>
-                            </div>
+                            </Link>
+                            <Link
+                                to="/home"
+                            >
+                                <button
+                                    id="bntGame"
+                                    className="nav-item text-white btn rounded-pill mr-1"
+                                >
+                                    Aprendamos Juntos
+                                    </button>
+                            </Link>
+                        </div>
                     </nav>
                 </header>
-                <div 
-                    className="App container"
-                >        
-                    <Board/>        
-                 </div>
-                <footer 
-                    className="footer"
+                <div
+                    className="bg"
                 >
-                    <div 
+                    <h2 className="text-center text-white">BIENVENIDO AL NIVEL 1</h2>
+                    <div className="p-5">
+                        <Board />
+                    </div>
+                </div>
+                <footer
+                    className="footer p-2"
+                >
+                    <div
                         className="card-footer bg-transparent border-success text-center text-white"
                     >
                         By Team ECOPAY
