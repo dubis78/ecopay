@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Logo from '../../images/logo.png';
 import Board from './Board';
-
+import song from '../../music/Loneliness.pm3';
 
 class Prueba extends Component {
     render() {
 
         return (
+            <audio src={song} autoPlay='true'/>
             <div
                 className="togame"
             >
