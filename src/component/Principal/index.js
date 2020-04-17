@@ -181,21 +181,21 @@ class Principal extends Component {
                     
                         <div className="container text-center containerCard">
                             <div class="row">
-                                <div className="col-4 cardidea">
+                                <div className="col-12 col-md-4 cardidea mt-4">
                                     <img src={arbolito} />
                                     <h4>Planta un árbol</h4>
                                     <p>¿Sabías que plantar un árbol es una de las cosas más fáciles y poderosas que puedes hacer para tener un impacto positivo en el medio ambiente? Los árboles limpian el aire, te ayudan a ahorrar energía, evitan la escorrentía del agua de lluvia e incluso combaten el calentamiento global.</p>
 
                                 </div>
 
-                                <div className="col-4  col-md-4  cardidea">
+                                <div className="col-12  col-md-4  cardidea mt-4">
                                     <img src={aguita} />
                                     <h4>Dale un buen manejo al agua</h4>
                                     <p>El agua es un recurso necesario para la vida. Todavía hay gente que piensa que es inagotable. Lo cierto es que el agua es un recurso muy limitado y cada vez son más las zonas que sufren de escasez de este vital elemento. En la zona de Levante estamos muy concienciados con este tema pero nunca está de más recordarlo. </p>
 
                                 </div>
 
-                                <div className="col-4 cardidea">
+                                <div className="col-12 col-md-4 cardidea mt-4">
                                     <img src={luz} />
                                     <h4>Ahorra energía</h4>
                                     <p>Reducir el consumo eléctrico en casa tiene un doble beneficio: podemos contribuir a cuidar el medioambiente mientras ahorramos unos cuantos pesos en la factura de luz. Es mucho más sencillo de lo que pensamos si aprendemos algunos consejos sobre cómo ahorrar energía!</p>
