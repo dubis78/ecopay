@@ -96,7 +96,7 @@ class Principal extends Component {
                         <br />
 
                         <div className="row p-5">
-                            <div className="col-md-4 beneficio">
+                            <div className="col-4 col-md-4 col-sm-12 beneficio">
 
                                 <div className="icono text-center">
                                     <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono1-1.png" alt="Usamos menos materias primas" className="img-responsive" />
@@ -111,7 +111,7 @@ class Principal extends Component {
                                 </div>
 
                             </div>
-                            <div className="col-md-4">
+                            <div className="col-4 col-md-4 col-sm-12">
 
                                 <div className="icono text-center">
                                     <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono2-1.png" alt="Ahorramos energía" className="img-responsive" />
@@ -124,7 +124,7 @@ class Principal extends Component {
                                 </div>
 
                             </div>
-                            <div className="col-md-4 beneficio">
+                            <div className="col-4 col-md-4 col-sm-12 beneficio">
 
                                 <div className="icono text-center">
                                     <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono3-1.png" alt="Generamos menos residuos" className="img-responsive" />
@@ -140,17 +140,6 @@ class Principal extends Component {
                         </div>
 
                         <div class="row">
-                            <div class="col-md-6 col-md-offset text-center">
-                                <div class="icono text-center">
-                                    <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono4.png" alt="Creamos puestos de trabajo" class="img-responsive" />
-                                </div>
-                                <div class="titulo text-center">
-                                    <h4 class="titular">Creamos puestos de trabajo</h4>
-                                </div>
-                                <div class="texto text-center">
-                                    <p>El reciclaje de residuos precisa de empresas y personas para llevar a cabo este proceso.</p>
-                                </div>
-                            </div>
 
                             <div className="row">
                                 <div className="col-md-6 col-md-offset text-center">
@@ -164,7 +153,7 @@ class Principal extends Component {
                                         <p>El reciclaje de residuos precisa de empresas y personas para llevar a cabo este proceso.</p>
                                     </div>
                                 </div>
-                                <div className="col-md-4 ">
+                                <div className="col-md-6 ">
                                     <div className="icono text-center">
                                         <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono5.png" alt="Fabricamos nuevos productos" className="img-responsive" />
                                     </div>
@@ -179,6 +168,7 @@ class Principal extends Component {
                         </div>
                         <br />
                         <br />
+                        
                         <hr></hr>
                         <div class="col-12 text-center">
 
