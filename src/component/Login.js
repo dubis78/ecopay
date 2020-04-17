@@ -31,7 +31,7 @@ class Login extends Component {
           localStorage.setItem('user', JSON.stringify(user.displayName))
            
             
-                : <p>Please sign in.</p>
+                : <p></p>
             }
   
             {
@@ -40,7 +40,9 @@ class Login extends Component {
                 ? 
                 <Redirect to='/hm' />
                 : 
+                <div className="col-12 ml-2">
                 <button onClick={signInWithGoogle}>Sign in with Google</button>
+                </div>
             }
           
         </div>
