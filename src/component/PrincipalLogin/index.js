@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Logo from '../../images/logo.png';
 import ImgReciclyng from '../../images/img8.jpg';
+
+
 import JUGAR from '../../Imagenes/JUGAR-1.png'
 
 
@@ -38,29 +40,29 @@ class Principal extends Component {
                                     </button>
                             </Link>*/}
                             <a href="https://ecopay.netlify.com">
-                                            <button 
-                                                id="bntGame" 
-                                                className="nav-item text-white btn rounded-pill mr-1" 
-                                                onClick={this.signOut}                                            
-                                    /* <Link to="/Login1">
-                                            <button
-                                                id="bntGame"
-                                                className="nav-item text-white btn rounded-pill mr-1"
-                                                onClick={this.signOut}*/
-                                            >
-                                                Salir
+                                <button
+                                    id="bntGame"
+                                    className="nav-item text-white btn rounded-pill mr-1"
+                                    onClick={this.signOut}
+                                /* <Link to="/Login1">
+                                        <button
+                                            id="bntGame"
+                                            className="nav-item text-white btn rounded-pill mr-1"
+                                            onClick={this.signOut}*/
+                                >
+                                    Salir
                                             </button>
-                                        </a>
+                            </a>
                         </div>
                     </nav>
                 </header>
                 <div className="valueProposal">
-                <div class="post-banner-category">
-								<div class="banner__icon"/>
-								<span class="banner__category"> <h4 className="texto-header">RECICLA Y GANA</h4></span>
-                                <Link to='/game'> <button className="btn btn-light btn-lg text-black boton"><h1>JUGAR</h1></button></Link>                            
-                               
-							</div>
+                    <div class="post-banner-category">
+                        <div class="banner__icon" />
+                        <span class="banner__category"> <h4 className="texto-header">RECICLA Y GANA</h4></span>
+                        <Link to='/game'> <button className="btn btn-light btn-lg text-black boton"><h1>JUGAR</h1></button></Link>
+
+                    </div>
                 </div>
                 <div className="container">
                     <div className="row d-flex align-items-center p-5">
@@ -82,7 +84,7 @@ class Principal extends Component {
                 </div>
                 <div class="col-12 text-center">
 
-                    <h2 className="text-wrap d-inline-block">Beneficios del reciclaje</h2>
+                    <h2 className="text-wrap d-inline-block">Beneficios del reciclajeee</h2>
 
                 </div>
                 <br></br>
@@ -160,7 +162,12 @@ class Principal extends Component {
                         </div>
                     </div>
                 </div>
+         
             </div>
+
+
+
+
         );
     }
 }

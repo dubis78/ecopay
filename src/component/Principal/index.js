@@ -11,6 +11,10 @@ import inst from '../../Imagenes/inst.png'
 import phone from '../../Imagenes/icons8-home-26.png'
 import home from '../../Imagenes/icons8-phone-24.png'
 import email from '../../Imagenes/email-icon.png'
+import arbolito from '../../Imagenes/arbolito.jpg';
+import aguita from '../../Imagenes/aguita.jpg';
+import luz from '../../Imagenes/luz.jpg';
+import './style.css';
 
 
 
@@ -35,22 +39,22 @@ class Principal extends Component {
                                         alt="" />
                                   ECOPAY
                             </h2>
-                        </a>
-                        <div
-                            className="navbar-nav" >
-                            <Link to="/registro" >
-                                <button
-                                    id="bntGame"
-                                    className="nav-item text-white btn rounded-pill mr-1">
-                                    Registrarse
+                            </a>
+                            <div
+                                className="navbar-nav" >
+                                <Link to="/registro" >
+                                    <button
+                                        id="bntGame"
+                                        className="nav-item text-white btn rounded-pill mr-1">
+                                        Registrarse
                                 </button>
-                            </Link>
-                            <Link to="/login">
-                                <button
-                                    id="bntGame"
-                                    className="nav-item text-white btn rounded-pill mr-1" >
-                                    Iniciar sesión
-                                    </button>
+                                </Link>
+                                <Link to="/login" >
+                                    <button
+                                        id="bntGame"
+                                        className="nav-item text-white btn rounded-pill mr-1">
+                                        Iniciar sesion
+                                </button>
                                 </Link>
                             </div>
                         </nav>
@@ -59,8 +63,6 @@ class Principal extends Component {
                         <div class="post-banner-category">
                             <div class="banner__icon" />
                             <span class="banner__category"> <h4 className="texto-header">RECICLA Y GANA</h4></span>
-                            <div></div>
-
                             <Link to='/prueba'> <button className="btn btn-light btn-lg text-black boton"><h1>JUGAR</h1></button></Link>
 
 
@@ -136,7 +138,7 @@ class Principal extends Component {
 
                         </div>
                     </div>
-                   
+
                     <div class="row">
                         <div class="col-md-6 col-md-offset text-center">
                             <div class="icono text-center">
@@ -161,6 +163,45 @@ class Principal extends Component {
                             </div>
                         </div>
                     </div>
+                    <br />
+                    <br />
+                    <hr></hr>
+                    <div class="col-12 text-center">
+
+                        <h2 className="text-wrap d-inline-block">Otras maneras de cuidar nuestro planeta</h2>
+
+                    </div>
+                   
+                    <br/>
+                    <br/>
+
+                    <div className="container text-center containerCard">
+                        <div class="row">
+                            <div className="col-4 cardidea">
+                                <img src={arbolito} />
+                                <h4>Planta un árbol</h4>
+                                <p>¿Sabías que plantar un árbol es una de las cosas más fáciles y poderosas que puedes hacer para tener un impacto positivo en el medio ambiente? Los árboles limpian el aire, te ayudan a ahorrar energía, evitan la escorrentía del agua de lluvia e incluso combaten el calentamiento global.</p>
+
+                            </div>
+
+                            <div className="col-4  col-md-4  cardidea">
+                                <img src={aguita} />
+                                <h4>Dale un buen manejo al agua</h4>
+                                <p>El agua es un recurso necesario para la vida. Todavía hay gente que piensa que es inagotable. Lo cierto es que el agua es un recurso muy limitado y cada vez son más las zonas que sufren de escasez de este vital elemento. En la zona de Levante estamos muy concienciados con este tema pero nunca está de más recordarlo. </p>
+
+                            </div>
+
+                            <div className="col-4 cardidea">
+                                <img src={luz} />
+                                <h4>Ahorra energía</h4>
+                                <p>Reducir el consumo eléctrico en casa tiene un doble beneficio: podemos contribuir a cuidar el medioambiente mientras ahorramos unos cuantos pesos en la factura de luz. Es mucho más sencillo de lo que pensamos si aprendemos algunos consejos sobre cómo ahorrar energía!</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <br/>
+                    <br/>
                 </div>
                 <footer
                     className="footer">

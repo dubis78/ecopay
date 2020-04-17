@@ -47,6 +47,8 @@ class Login1 extends Component {
               localStorage.setItem('user', JSON.stringify(element)); //convertimos en formato json el array que nos lanza el for each element
               this.props.history.push('/home'); //nos redirecciona al home
             }
+          }else{
+            window.alert("el correo que ingresaste no se encuentra registrado :(")
           }
         });
         }
