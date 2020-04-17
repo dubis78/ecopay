@@ -46,7 +46,6 @@
 
 body {
     background: white;
-    
   };
 
   .home .btn1 {
@@ -268,7 +267,7 @@ body {
 }
 
 .home {
-  background-image: url('./images/img9.png') ;
+  background-image: url('./images/bg.jpg') ;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
