@@ -4,7 +4,7 @@ import Logo from '../../images/logo.png';
 import ImgReciclyng from '../../images/img8.jpg';
 import Im1 from '../../Imagenes/Im1.png'
 import Im2 from '../../Imagenes/Im2.png'
-import Im3 from '../../Imagenes/Im1.png'
+import Im3 from '../../Imagenes/metro.png'
 import facebook from '../../Imagenes/facebook.png'
 import twitter from '../../Imagenes/twitter.png'
 import inst from '../../Imagenes/inst.png'
@@ -15,6 +15,7 @@ import arbolito from '../../Imagenes/arbolito.jpg';
 import aguita from '../../Imagenes/aguita.jpg';
 import luz from '../../Imagenes/luz.jpg';
 import './style.css';
+
 
 
 class Principal extends Component {
@@ -95,7 +96,7 @@ class Principal extends Component {
                         <br />
 
                         <div className="row p-5">
-                            <div className="col-4 col-md-4 col-sm-12 beneficio">
+                            <div className="col-md-4 beneficio">
 
                                 <div className="icono text-center">
                                     <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono1-1.png" alt="Usamos menos materias primas" className="img-responsive" />
@@ -110,7 +111,7 @@ class Principal extends Component {
                                 </div>
 
                             </div>
-                            <div className="col-4 col-md-4 col-sm-12">
+                            <div className="col-md-4">
 
                                 <div className="icono text-center">
                                     <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono2-1.png" alt="Ahorramos energía" className="img-responsive" />
@@ -123,7 +124,7 @@ class Principal extends Component {
                                 </div>
 
                             </div>
-                            <div className="col-4 col-md-4 col-sm-12 beneficio">
+                            <div className="col-md-4 beneficio">
 
                                 <div className="icono text-center">
                                     <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono3-1.png" alt="Generamos menos residuos" className="img-responsive" />
@@ -165,7 +166,6 @@ class Principal extends Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
                         <br />
                         <br />
                         
@@ -175,27 +175,27 @@ class Principal extends Component {
                             <h2 className="text-wrap d-inline-block">Otras maneras de cuidar nuestro planeta</h2>
 
                         </div>
-                    
+
                         <br />
                         <br />
-                    
+                    </div>
                         <div className="container text-center containerCard">
                             <div class="row">
-                                <div className="col-12 col-md-4 cardidea mt-4">
+                                <div className="col-4 cardidea">
                                     <img src={arbolito} />
                                     <h4>Planta un árbol</h4>
                                     <p>¿Sabías que plantar un árbol es una de las cosas más fáciles y poderosas que puedes hacer para tener un impacto positivo en el medio ambiente? Los árboles limpian el aire, te ayudan a ahorrar energía, evitan la escorrentía del agua de lluvia e incluso combaten el calentamiento global.</p>
 
                                 </div>
 
-                                <div className="col-12  col-md-4  cardidea mt-4">
+                                <div className="col-4  col-md-4  cardidea">
                                     <img src={aguita} />
                                     <h4>Dale un buen manejo al agua</h4>
                                     <p>El agua es un recurso necesario para la vida. Todavía hay gente que piensa que es inagotable. Lo cierto es que el agua es un recurso muy limitado y cada vez son más las zonas que sufren de escasez de este vital elemento. En la zona de Levante estamos muy concienciados con este tema pero nunca está de más recordarlo. </p>
 
                                 </div>
 
-                                <div className="col-12 col-md-4 cardidea mt-4">
+                                <div className="col-4 cardidea">
                                     <img src={luz} />
                                     <h4>Ahorra energía</h4>
                                     <p>Reducir el consumo eléctrico en casa tiene un doble beneficio: podemos contribuir a cuidar el medioambiente mientras ahorramos unos cuantos pesos en la factura de luz. Es mucho más sencillo de lo que pensamos si aprendemos algunos consejos sobre cómo ahorrar energía!</p>

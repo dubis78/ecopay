@@ -14,7 +14,7 @@ import Ordinary from './component/info/ordinary';
 import Paper from './component/info/paper';
 import Glass from './component/info/glass';
 import Plastic from './component/info/plastic';
-
+import HomeGoogle from './component/Home/HomeGoogle';
 class Routes extends Component {    
   render() { 
     return (
@@ -22,7 +22,8 @@ class Routes extends Component {
         <Route exact path='/' component={Principal}/>
         <Route exact path= '/registro' component={Registro} />          
         <Route exact path= '/login' component={Login1} />  
-        <Route exact path='/home' component={Home} />              
+        <Route exact path='/home' component={Home} /> 
+        <Route exact path='/hm' component={HomeGoogle} />               
         <Route exact path='/togame' component={ToGame}/>
         <Route exact path='/prueba' component={Prueba}/>
         <Route exact path='/game' component={Game}/>        

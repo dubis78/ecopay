@@ -21,13 +21,15 @@ class Home extends React.Component {
     }
  
 
-    signOut() {
-        localStorage.clear();
-        window.location.reload(false);
-        
-    }
+
     render() {
-      
+        const {
+          
+            signOut,
+            
+          
+          } = this.props;
+
         let user = JSON.parse(localStorage.getItem('user')); //estamos recibiendo el formato json
         console.log(user)
         if (user !== null && user.nombres !== "") {
@@ -64,7 +66,7 @@ class Home extends React.Component {
                                 <p
                                     className="text-white"
                                 >
-                                    Bienvenid@ {user.nombres}!
+                                    Bienvenid@ {user}!
                             </p>
                                 <button
                                     className="navbar-toggler"
@@ -84,11 +86,11 @@ class Home extends React.Component {
                                             Jugar
                                         </button>
                                     </Link>
-                                    <a href="https://ecopay.netlify.com">
+                                        <a href="https://ecopay.netlify.com">
                                             <button 
                                                 id="bntGame" 
                                                 className="nav-item text-white btn rounded-pill" 
-                                                onClick={this.signOut}                                      
+                                                onClick={signOut}                                      
                                     /* <Link to="/Login1">
                                             <button
                                                 id="bntGame"

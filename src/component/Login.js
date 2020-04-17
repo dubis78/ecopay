@@ -3,7 +3,7 @@ import withFirebaseAuth from 'react-with-firebase-auth';
 import * as firebase from 'firebase/app';
 import 'firebase/auth';
 import firebaseConfig from './firebaseConfig';
-
+import { Link, Redirect} from 'react-router-dom';
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
@@ -13,16 +13,24 @@ class Login extends Component {
         user,
         signOut,
         signInWithGoogle,
+     
       } = this.props;
       console.log(user)
-      
+    
       return (
         <div>
+           
             {
-             
-              user
-                
-            ? <p>Hello, {user.displayName}, correo {user.displayEmail}</p>
+           
+
+            
+ 
+              user   
+            ? 
+          
+          localStorage.setItem('user', JSON.stringify(user.displayName))
+           
+            
                 : <p>Please sign in.</p>
             }
   
@@ -30,10 +38,11 @@ class Login extends Component {
               user
 
                 ? 
-                <button onClick={signOut}>Sign out</button> 
+                <Redirect to='/hm' />
                 : 
                 <button onClick={signInWithGoogle}>Sign in with Google</button>
             }
+          
         </div>
       );
     }

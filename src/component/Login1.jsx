@@ -37,17 +37,17 @@ class Login1 extends Component {
               localStorage.setItem('user', JSON.stringify(element)); //convertimos en formato json el array que nos lanza el for each element
               this.props.history.push('/home'); //nos redirecciona al home
             }
-          }else{
-            window.alert("el correo que ingresaste no se encuentra registrado :(")
           }
         });
         }
       })
   }
+  
 
   render() {
     //estamos pasando que los datos de usser se conviertan en formato json mediante el localstorage
     let user = JSON.parse(localStorage.getItem('user'));
+    console.log(user)
 
         if(user !== null && user.nombres !== ""){ //estamos validando que  tengamos datos en el formulario de login
           return <Redirect to='/' /> //si no está vacio y si si existen en nuestra api,nos redirecciona al home
@@ -79,7 +79,7 @@ class Login1 extends Component {
                     <div className="form-label-group">
                     <label className="text-white"htmlFor="inputEmail">Correo Electrónico</label>
                         <input className="text-white" type="email" id="email" name="email" className="form-control" placeholder="Example@gmail.com"
-                        onChange={this.handleChange} required
+                        onChange={this.handleChange}
                         ></input>
                         
                     </div>
@@ -88,7 +88,7 @@ class Login1 extends Component {
                       
                     <label className="text-white" htmlFor="inputPassword">Contraseña</label>
                         <input type="password" id="password" name="password" className="form-control" placeholder="******" onChange={this.handleChange}
-                        required></input>
+                        ></input>
                         
                     </div>
                     <div className="checkbox mb-3">
