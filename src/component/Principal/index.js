@@ -35,30 +35,30 @@ class Principal extends Component {
                                         alt="" />
                                   ECOPAY
                             </h2>
-                        </a>
-                        <div
-                            className="navbar-nav" >
-                            <Link to="/registro" >
-                                <button
-                                    id="bntGame"
-                                    className="nav-item text-white btn rounded-pill mr-1">
-                                    Registrarse
+                            </a>
+                            <div
+                                className="navbar-nav" >
+                                <Link to="/registro" >
+                                    <button
+                                        id="bntGame"
+                                        className="nav-item text-white btn rounded-pill mr-1">
+                                        Registrarse
                                 </button>
-                            </Link>
-                            <Link to="/login">
-                                <button
-                                    id="bntGame"
-                                    className="nav-item text-white btn rounded-pill mr-1" >
-                                    Iniciar sesión
+                                </Link>
+                                <Link to="/login">
+                                    <button
+                                        id="bntGame"
+                                        className="nav-item text-white btn rounded-pill mr-1" >
+                                        Iniciar sesión
                                     </button>
                                 </Link>
                             </div>
                         </nav>
                     </header>
                     <div className="valueProposal">
-                        <div class="post-banner-category">
-                            <div class="banner__icon" />
-                            <span class="banner__category"> <h4 className="texto-header">RECICLA Y GANA</h4></span>
+                        <div className="post-banner-category">
+                            <div className="banner__icon" />
+                            <span className="banner__category"> <h4 className="texto-header">RECICLA Y GANA</h4></span>
                             <div></div>
 
                             <Link to='/prueba'> <button className="btn btn-light btn-lg text-black boton"><h1>JUGAR</h1></button></Link>
@@ -67,11 +67,11 @@ class Principal extends Component {
 
                         </div>
                     </div>
-                    <div className="container">
+                    <div id="valuep" className="container p-5">
                         <div className="row d-flex align-items-center p-5">
                             <div className="col-sm justify-content-center">
                                 <h2 className="text-center p-2">
-                                    Aprende a reciclar jugando y gana
+                                ¿No tienes saldo en tu cívica?, usa ECOPAY, juega, aprenge y GANA!
                         </h2>
                                 <p className="text-center">
                                     En ECOPAY queremos incentivar el reciclaje y para ello ofrecemos herramientas
@@ -85,141 +85,142 @@ class Principal extends Component {
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 text-center">
-
-                        <h2 className="text-wrap d-inline-block">Beneficios del reciclaje</h2>
-
-                    </div>
-                    <br></br>
-                    <br></br>
-
-                    <div class="row">
-                        <div class="col-md-4 beneficio">
-
-                            <div class="icono text-center">
-                                <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono1-1.png" alt="Usamos menos materias primas" class="img-responsive" />
-                            </div>
-                            <div class="titulo text-center">
-                                <h4 className="titular text-wrap">Usamos menos materias primas</h4>
-                            </div>
-                            <div class="texto text-center">
-                                <p>Ahorramos recursos naturales<br />
-                                y conservamos muchos<br />
-                                    espacios naturales.</p>
-                            </div>
+                    <div id="beneficio">
+                        <div className="col-12 text-center p-5">            
+                            <h2 className="text-wrap d-inline-block">Beneficios del reciclaje</h2>
 
                         </div>
-                        <div class="col-md-4">
+                        <br />
+                        <br />
 
-                            <div class="icono text-center">
-                                <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono2-1.png" alt="Ahorramos energía" class="img-responsive" />
-                            </div>
-                            <div class="titulo text-center">
-                                <h4 class="titular">Ahorramos energía</h4>
-                            </div>
-                            <div class="texto text-center">
-                                <p>Frenamos el <strong>cambio climático</strong>: el gasto de energía que supone tratar nuevas materias es muy superior al que se gasta cuando reciclamos. Generamos menos CO2, ahorramos agua… De esta forma ayudamos a preservar el medioambiente.</p>
-                            </div>
+                        <div className="row p-5">
+                            <div className="col-md-4 beneficio">
 
+                                <div className="icono text-center">
+                                    <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono1-1.png" alt="Usamos menos materias primas" className="img-responsive" />
+                                </div>
+                                <div className="titulo text-center">
+                                    <h4 className="titular text-wrap">Usamos menos materias primas</h4>
+                                </div>
+                                <div className="texto text-center">
+                                    <p>Ahorramos recursos naturales<br />
+                                    y conservamos muchos<br />
+                                        espacios naturales.</p>
+                                </div>
+
+                            </div>
+                            <div className="col-md-4">
+
+                                <div className="icono text-center">
+                                    <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono2-1.png" alt="Ahorramos energía" className="img-responsive" />
+                                </div>
+                                <div className="titulo text-center">
+                                    <h4 className="titular">Ahorramos energía</h4>
+                                </div>
+                                <div className="texto text-center">
+                                    <p>Frenamos el <strong>cambio climático</strong>: el gasto de energía que supone tratar nuevas materias es muy superior al que se gasta cuando reciclamos. Generamos menos CO2, ahorramos agua… De esta forma ayudamos a preservar el medioambiente.</p>
+                                </div>
+
+                            </div>
+                            <div className="col-md-4 beneficio">
+
+                                <div className="icono text-center">
+                                    <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono3-1.png" alt="Generamos menos residuos" className="img-responsive" />
+                                </div>
+                                <div className="titulo text-center">
+                                    <h4 className="titular">Generamos menos residuos</h4>
+                                </div>
+                                <div className="texto text-center">
+                                    <p>Ayudamos a no contaminar nuestros espacios naturales y los hábitats de los animales acuáticos y terrestres.</p>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="col-md-4 beneficio">
 
-                            <div class="icono text-center">
-                                <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono3-1.png" alt="Generamos menos residuos" class="img-responsive" />
+                        <div className="row">
+                            <div className="col-md-6 col-md-offset text-center">
+                                <div className="icono text-center">
+                                    <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono4.png" alt="Creamos puestos de trabajo" className="img-responsive" />
+                                </div>
+                                <div className="titulo text-center">
+                                    <h4 className="titular">Creamos puestos de trabajo</h4>
+                                </div>
+                                <div className="texto text-center">
+                                    <p>El reciclaje de residuos precisa de empresas y personas para llevar a cabo este proceso.</p>
+                                </div>
                             </div>
-                            <div class="titulo text-center">
-                                <h4 class="titular">Generamos menos residuos</h4>
-                            </div>
-                            <div class="texto text-center">
-                                <p>Ayudamos a no contaminar nuestros espacios naturales y los hábitats de los animales acuáticos y terrestres.</p>
-                            </div>
-
-                        </div>
-                    </div>
-                   
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset text-center">
-                            <div class="icono text-center">
-                                <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono4.png" alt="Creamos puestos de trabajo" class="img-responsive" />
-                            </div>
-                            <div class="titulo text-center">
-                                <h4 class="titular">Creamos puestos de trabajo</h4>
-                            </div>
-                            <div class="texto text-center">
-                                <p>El reciclaje de residuos precisa de empresas y personas para llevar a cabo este proceso.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 ">
-                            <div class="icono text-center">
-                                <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono5.png" alt="Fabricamos nuevos productos" class="img-responsive" />
-                            </div>
-                            <div class="titulo text-center">
-                                <h4 class="titular">Fabricamos nuevos productos</h4>
-                            </div>
-                            <div class="texto text-center">
-                                <p>Dar vida a productos usados para convertirlos en otros completamente distintos ¡puede ser fascinante!</p>
+                            <div className="col-md-4 ">
+                                <div className="icono text-center">
+                                    <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono5.png" alt="Fabricamos nuevos productos" className="img-responsive" />
+                                </div>
+                                <div className="titulo text-center">
+                                    <h4 className="titular">Fabricamos nuevos productos</h4>
+                                </div>
+                                <div className="texto text-center">
+                                    <p>Dar vida a productos usados para convertirlos en otros completamente distintos ¡puede ser fascinante!</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <footer
                     className="footer">
-                    <div className="row justify-content-center footer-one" >
+                    <div className="row justify-content-center footer-one p-3 text-header text-white" >
                         By Team ECOPAY
-                        <i><img className="mx-2" width="30" height="auto" src={facebook}></img></i>
-                        <i><img className="mx-2" width="30" height="auto" src={twitter}></img></i>
-                        <i><img className="mx-2" width="30" height="auto" src={inst}></img></i>
+                        <i><img className="mx-2" width="30" height="auto" src={facebook} alt=""/></i>
+                        <i><img className="mx-2" width="30" height="auto" src={twitter} alt=""/></i>
+                        <i><img className="mx-2" width="30" height="auto" src={inst}  alt=""/></i>
                     </div>
 
-                    <div class="container footer-dos">
-                        <div class="row justify-content-center">
-                            <div className="container">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h5 className="texto-header text-responsive">Nuestros Aliados</h5>
-                                        <ul className="listado ">
-                                            <li>
-                                                <i><img className="img-responsive mx-2" width="50" src={Im1}></img></i>
-                                                Agile Innova
+                    <div className="container">
+                            <div className="row justify-content-center">
+                                <div className="container">
+                                    <div className="row">
+                                        <div className="col-sm-8">
+                                            <h5 id="textfooter" className="texto-header text-uppercase text-responsive">Nuestros Aliados</h5>
+                                            <ul className="listado">
+                                                <li>
+                                                    <i><img className="img-responsive mx-2" width="50" src={Im1} alt=""  /></i>
+                                                    Agile Innova
 
-                                            </li>
+                                                </li>
 
-                                            <li>
-                                                <i><img className="img-responsive mx-2" width="50" src={Im2}></img></i>
-                                                Makaia
-                                            </li>
+                                                <li>
+                                                    <i><img className="img-responsive mx-2" width="50" src={Im2} alt="" /></i>
+                                                    Makaia
+                                                </li>
 
-                                            <li>
-                                                <i><img className="img-responsive mx-2" width="50" src={Im3}></img></i>
-                                                Metro
-                                            </li>
-                                        </ul>
+                                                <li>
+                                                    <i><img className="img-responsive mx-2" width="50" src={Im3} alt="" /></i>
+                                                    Metro
+                                                </li>
+                                            </ul>
 
-                                    </div>
+                                        </div>
 
-                                    <div class="col-sm-4 ">
-                                        <h5 className="texto-header text-responsive">Contactanos</h5>
-                                        <ul className="listado">
-                                            <li>
-                                                <i><img className="img-responsive mx-2" width="20" src={home}></img></i>
-                                                +573115991986
+                                        <div className="col-sm-4 ">
+                                            <h5 id="textfooter" className="texto-header text-uppercase text-responsive justify-content-center">Contactanos</h5>
+                                            <ul className="listado justify-content-left">
+                                                <li>
+                                                    <i><img className="img-responsive mx-2" width="20" src={home} alt="" /></i>
+                                                    +573115991986
 
-                                            </li>
-                                            <li>
-                                                <i><img className="img-responsive mx-2" width="20" src={phone}></img></i>
-                                            Medellín, Colombia
-                                            </li>
-                                            <li>
-                                                <i><img className="img-responsive mx-2" width="20" src={email}></img></i>
-                                                 ecopay@gmail.com
-                                            </li>
+                                                </li>
+                                                <li>
+                                                    <i><img className="img-responsive mx-2" width="20" src={phone} alt=""/></i>
+                                                Medellín, Colombia
+                                                </li>
+                                                <li>
+                                                    <i><img className="img-responsive mx-2" width="20" src={email} alt="" /></i>
+                                                    ecopay@gmail.com
+                                                </li>
 
-                                        </ul>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </footer>
 
             </Fragment>

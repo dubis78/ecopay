@@ -282,8 +282,8 @@ body {
   background: #0F2943;
 }
 
-.principal .footer {
-  background: #0F2943;
+.footer{
+  background: rgba(12, 146, 125, 0.9);
 }
 
 .home {
@@ -348,4 +348,49 @@ body {
 
 .organic #bntGame {
   background: #0F2943;
+}
+
+#textfooter {
+  font-size: 30px;
+  color:  rgb(240, 228, 228);
+}
+
+.footer .listado {
+  color: rgb(240, 228, 228);
+}
+
+#valuep {
+  background: rgba(155, 155, 238, 0.1);
+}
+
+#beneficio {
+  background-image: url('./images/bg1.jpg') ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 80px 50px;
+	text-align: center;
+	position: relative;
+}
+
+#beneficio:before {
+	content:'';
+	position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+#beneficio h2 {
+	color: #fff;
+}
+
+#beneficio h4 {
+	color: #fff;
+}
+
+#beneficio p {
+	color: #fff;
 }
