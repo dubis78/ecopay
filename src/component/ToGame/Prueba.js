@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Logo from '../../images/logo.png';
-import Board from './Board';
+import Board from './BoardL';
 import song from '../../music/Loneliness.mp3';
 
 class Prueba extends Component {

@@ -43,8 +43,10 @@ const Element=(props)=>{
         <div className='win'>
           <b>
             ¡GANASTE!
-            <br/>            
-              Tienes 10 puntos para redimir
+            <br/>
+            <Link to="/registro" className='registerLink'>
+              Registrate para acumular puntos por ganar
+            </Link>
             </b>
         </div>   
       )   
@@ -54,7 +56,7 @@ const Element=(props)=>{
       pPuntaje=0;    
       return(
         <div className='lose'>
-          <Link to="/game" >
+          <Link to="/" >
             <button id="bntGame" className="nav-item text-white btn rounded-pill mr-1">
                 Perdiste
             </button>
