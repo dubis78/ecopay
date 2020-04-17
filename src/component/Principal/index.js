@@ -4,7 +4,7 @@ import Logo from '../../images/logo.png';
 import ImgReciclyng from '../../images/img8.jpg';
 import Im1 from '../../Imagenes/Im1.png'
 import Im2 from '../../Imagenes/Im2.png'
-import Im3 from '../../Imagenes/metro.png'
+import Im3 from '../../Imagenes/Im1.png'
 import facebook from '../../Imagenes/facebook.png'
 import twitter from '../../Imagenes/twitter.png'
 import inst from '../../Imagenes/inst.png'
@@ -17,7 +17,6 @@ import luz from '../../Imagenes/luz.jpg';
 import './style.css';
 
 
-
 class Principal extends Component {
 
     render() {
@@ -25,21 +24,34 @@ class Principal extends Component {
             <Fragment>
                 <div className="principal">
                     <header>
-                        <nav id="nav" className="navbar navbar-inverse navbar-static-top navbar-expand-lg justify-content-between">
+                        <nav
+                            id="nav"
+                            className="navbar navbar-inverse navbar-static-top navbar-expand-lg justify-content-between">
                             <a className="navbar-brand text-white" >
                                 <h2 className="nombre text-responsive" >
-                                    <img id="logo" src={Logo} width="30" height="30" className="d-inline-block align-top" alt="" />
-                                    ECOPAY
-                                </h2>
+                                    <img
+                                        id="logo"
+                                        src={Logo}
+                                        width="30"
+                                        height="30"
+                                        className="d-inline-block align-top"
+                                        alt="" />
+                                  ECOPAY
+                            </h2>
                             </a>
-                            <div className="navbar-nav" >
+                            <div
+                                className="navbar-nav" >
                                 <Link to="/registro" >
-                                    <button id="bntGame" className="nav-item text-white btn rounded-pill mr-1">
+                                    <button
+                                        id="bntGame"
+                                        className="nav-item text-white btn rounded-pill mr-1">
                                         Registrarse
-                                    </button>
+                                </button>
                                 </Link>
                                 <Link to="/login">
-                                    <button id="bntGame" className="nav-item text-white btn rounded-pill mr-1" >
+                                    <button
+                                        id="bntGame"
+                                        className="nav-item text-white btn rounded-pill mr-1" >
                                         Iniciar sesión
                                     </button>
                                 </Link>
@@ -47,14 +59,13 @@ class Principal extends Component {
                         </nav>
                     </header>
                     <div className="valueProposal">
-                        <div className="post-banner-category">
-                            <div className="banner__icon" />
-                                <span className="banner__category"> <h4 className="texto-header">RECICLA Y GANA</h4></span>
-                            <Link to='/prueba'>
-                                <button className="btn btn-light btn-lg text-black boton">
-                                    <h1>JUGAR</h1>
-                                </button>
-                            </Link>
+                        <div class="post-banner-category">
+                            <div class="banner__icon" />
+                            <span class="banner__category"> <h4 className="texto-header">RECICLA Y GANA</h4></span>
+                            <Link to='/prueba'> <button className="btn btn-light btn-lg text-black boton"><h1>JUGAR</h1></button></Link>
+
+
+
                         </div>
                     </div>
                     <div id="valuep" className="container p-5">
@@ -62,13 +73,13 @@ class Principal extends Component {
                             <div className="col-sm justify-content-center">
                                 <h2 className="text-center p-2">
                                     ¿No tienes saldo en tu cívica?, usa ECOPAY, juega, aprenge y GANA!
-                                </h2>
+                        </h2>
                                 <p className="text-center">
                                     En ECOPAY queremos incentivar el reciclaje y para ello ofrecemos herramientas
                                     didáctivas e interactivas con las cuales aprender es muy fácil. Además si ganas
                                     el juego obtienes dinero que se reflejará en el saldo de tu tarjeta cívica del Metro de
                                     Medellín.
-                                </p>
+                        </p>
                             </div>
                             <div className="col-sm">
                                 <img className="img-fluid mx-auto d-block" src={ImgReciclyng} alt="" />
@@ -96,7 +107,10 @@ class Principal extends Component {
                                     <p>Ahorramos recursos naturales<br />
                                     y conservamos muchos<br />
                                         espacios naturales.</p>
-                                </div>                            
+                                </div>
+
+                            </div>
+                            <div className="col-md-4">
 
                                 <div className="icono text-center">
                                     <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono2-1.png" alt="Ahorramos energía" className="img-responsive" />
@@ -125,18 +139,20 @@ class Principal extends Component {
                         </div>
 
                         <div class="row">
-                            <div class="col-sm-6 col-md-offset text-center">
-                                <div class="icono text-center">
-                                    <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono4.png" alt="Creamos puestos de trabajo" class="img-responsive" />
+
+                            <div className="row">
+                                <div className="col-md-6 col-md-offset text-center">
+                                    <div className="icono text-center">
+                                        <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono4.png" alt="Creamos puestos de trabajo" className="img-responsive" />
+                                    </div>
+                                    <div className="titulo text-center">
+                                        <h4 className="titular">Creamos puestos de trabajo</h4>
+                                    </div>
+                                    <div className="texto text-center">
+                                        <p>El reciclaje de residuos precisa de empresas y personas para llevar a cabo este proceso.</p>
+                                    </div>
                                 </div>
-                                <div class="titulo text-center">
-                                    <h4 class="titular">Creamos puestos de trabajo</h4>
-                                </div>
-                                <div class="texto text-center">
-                                    <p>El reciclaje de residuos precisa de empresas y personas para llevar a cabo este proceso.</p>
-                                </div>
-                            </div>
-                                <div className="col-md-6">
+                                <div className="col-md-6 ">
                                     <div className="icono text-center">
                                         <img src="https://ecoembesdudasreciclaje.es/wp-content/uploads/2018/05/icono5.png" alt="Fabricamos nuevos productos" className="img-responsive" />
                                     </div>
@@ -149,18 +165,20 @@ class Principal extends Component {
                                 </div>
                             </div>
                         </div>
-                        </div>
+                    </div>
                         <br />
                         <br />
+                        
                         <hr></hr>
                         <div class="col-12 text-center">
+
                             <h2 className="text-wrap d-inline-block">Otras maneras de cuidar nuestro planeta</h2>
+
                         </div>
-
-                        {/* */}
-
+                    
                         <br />
-                        <br />                    
+                        <br />
+                    
                         <div className="container text-center containerCard">
                             <div class="row">
                                 <div className="col-4 cardidea">
@@ -188,6 +206,7 @@ class Principal extends Component {
                         </div>
                         <br />
                         <br />
+                    </div>
                     <footer
                         className="footer">
                         <div className="row justify-content-center footer-one p-3 text-header text-white" >

@@ -259,7 +259,7 @@ class Home extends React.Component {
 
                                                     <li>
                                                         <i><img className="img-responsive mx-2" width="50" src={Im3} alt="" /></i>
-                                                    Metro
+                                                    Makaia
                                                 </li>
                                                 </ul>
 
