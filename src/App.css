@@ -1,9 +1,3 @@
-@media only screen and (min-device-width: 400px) {
-  body {
-    background-image: url('./images/background3.jpg');
-  }
-}
-
 .App {
   text-align: center;
    
@@ -65,27 +59,7 @@ body {
     background: #0C927D;
   }
 
-  .game .footer {
-    background: #0F2943;
-  }
-
   .game #bntGame {
-    background: #0F2943;
-  }
-
-  .home .footer {
-    background: #0F2943;
-  }
-
-  .learning .footer {
-    background: #0F2943;
-  }
-
-  .learning #nav {
-    background:rgb(101, 240, 217);
-  }
-
-  .learning #bntGame {
     background: #0F2943;
   }
 
@@ -99,13 +73,6 @@ body {
 
   .home #btnGame{
     width: 300px;
-  }
-
-  .movie {
-    background-image: url('./images/background3.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
 
 .body-registro{
@@ -138,6 +105,7 @@ body {
 .game .mdb-color.darken-3 {
   background-color: #1c2a48 !important;
 }
+
 @media (max-width: 600px){
   .principal .valueProposal {
 
@@ -204,7 +172,7 @@ body {
 }
 .texto-header{
 
-  font-size: 50px;
+  font-size: 25px;
 }
 
 .img-footer{
@@ -287,17 +255,19 @@ body {
 }
 
 .home {
-  background-image: url('./images/img9.png') ;
+  background-image: url('./images/bg.jpg') ;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 
 .togame {
   background-image: url('./images/bggame.jpg') ;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  
 }
 
 .togame .footer {
@@ -350,8 +320,73 @@ body {
   background: #0F2943;
 }
 
+.principal .footer {
+  background: #0F2943;
+}
+
+
+.togame {
+  background-image: url('./images/bggame.jpg') ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+@media (max-width: 642px){
+  .togame {
+    background-image: none;
+    background-color: white;
+    height: 100vh;
+  }
+  .togame .footer {
+    position: relative;
+    margin-top: 130px;
+    width: 100vw;
+    height: 100px;
+  }
+}
+
+.togame .footer {
+  position: absolute;
+  width: 100vw;
+  top:92vh;
+  height: 100px;
+  background: #0F2943;
+}
+
+.togame #nav {
+  background:#0C927D;
+}
+
+.togame #bntGame {
+  background: #0F2943;
+}
+
+
+.win{
+  background-color: #0C927D;
+  text-align: center;
+  color: rgb(197, 197, 197);
+  height: 50px;
+  position: absolute;
+  border-radius: 5%;
+}
+
+.registerLink {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.registerLink:hover {
+  text-decoration: none;
+  color: rgb(141, 134, 134);
+  font-size: 18px;
+}
+
 #textfooter {
-  font-size: 30px;
+  font-size: 20px;
   color:  rgb(240, 228, 228);
 }
 
@@ -394,3 +429,21 @@ body {
 #beneficio p {
 	color: #fff;
 }
+
+.home #textfooter {
+  font-size: 30px;
+  color:  rgb(240, 228, 228);
+}
+
+.home .footer .listado {
+  color: rgb(240, 228, 228);
+}
+/* FORMULARIO REGISTRO */
+.form-signin{
+  padding-top: 20px;
+  margin-right:10px ;
+  margin-left:10px ;
+}
+
+
+

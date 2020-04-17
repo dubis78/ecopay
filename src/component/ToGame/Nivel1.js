@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Logo from '../../images/logo.png';
 import Board from './Board';
-
+import song from '../../music/Loneliness.mp3';
 
 class ToGame extends Component {
     render() {
 
         return (
-            <div
-                className="togame"
-            >
+            
+            <div className="togame" >
+                <audio src={song} autoPlay='true'/>
                 <header>
                     <nav
                         id="nav"

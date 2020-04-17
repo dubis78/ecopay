@@ -4,9 +4,7 @@ import { Link } from "react-router-dom";
 import Logo from '../../images/logo.png';
 import Pikachu from '../../images/pikachu.png';
 import Bullbasaur from '../../images/bullbasaur.png';
-import Charmander from '../../images/charmander.png';
 import Jigglypuff from '../../images/jigglypuff.png';
-import ImgFooter from '../../images/bg2.jfif'
 
 class Game extends Component {
     render() {
