@@ -46,6 +46,7 @@
 
 body {
     background: white;
+    
   };
 
   .home .btn1 {
@@ -65,27 +66,7 @@ body {
     background: #0C927D;
   }
 
-  .game .footer {
-    background: #0F2943;
-  }
-
   .game #bntGame {
-    background: #0F2943;
-  }
-
-  .home .footer {
-    background: #0F2943;
-  }
-
-  .learning .footer {
-    background: #0F2943;
-  }
-
-  .learning #nav {
-    background:rgb(101, 240, 217);
-  }
-
-  .learning #bntGame {
     background: #0F2943;
   }
 
@@ -293,6 +274,7 @@ body {
   background-size: cover;
 }
 
+
 .togame {
   background-image: url('./images/bggame.jpg') ;
   background-repeat: no-repeat;
@@ -351,7 +333,7 @@ body {
 }
 
 #textfooter {
-  font-size: 30px;
+  font-size: 20px;
   color:  rgb(240, 228, 228);
 }
 
@@ -393,4 +375,13 @@ body {
 
 #beneficio p {
 	color: #fff;
+}
+
+.home #textfooter {
+  font-size: 30px;
+  color:  rgb(240, 228, 228);
+}
+
+.home .footer .listado {
+  color: rgb(240, 228, 228);
 }
