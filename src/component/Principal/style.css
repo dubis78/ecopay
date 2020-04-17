@@ -1,0 +1,45 @@
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 100px;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.containerCard .cardidea{
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.containerCard .cardidea:hover{
+    transform: translateY(-15px);
+    box-shadow: 20px 20px 20px rgba(40, 206, 7, 0.2);
+}
+
+.containerCard .cardidea img{
+    width: 330px;
+    height: 220px;
+}
+
+
+.containerCard .cardidea h4{
+    font-weight: 600;
+}
+
+.containercard .cardidea p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.containercard .cardidea a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #3498db;
+}

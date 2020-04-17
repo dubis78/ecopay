@@ -65,27 +65,7 @@ body {
     background: #0C927D;
   }
 
-  .game .footer {
-    background: #0F2943;
-  }
-
   .game #bntGame {
-    background: #0F2943;
-  }
-
-  .home .footer {
-    background: #0F2943;
-  }
-
-  .learning .footer {
-    background: #0F2943;
-  }
-
-  .learning #nav {
-    background:rgb(101, 240, 217);
-  }
-
-  .learning #bntGame {
     background: #0F2943;
   }
 
@@ -283,7 +263,36 @@ body {
   background: #0F2943;
 }
 
+.footer{
+  background: rgba(12, 146, 125, 0.9);
+}
 
+.home {
+  background-image: url('./images/bg.jpg') ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+.togame {
+  background-image: url('./images/bggame.jpg') ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.togame .footer {
+  background: #0F2943;
+}
+
+.togame #nav {
+  background:#0C927D;
+}
+
+.togame #bntGame {
+  background: #0F2943;
+}
 .organic .bg {
   background: rgb(44, 204, 44);
 }
@@ -394,3 +403,56 @@ body {
   font-size: 18px;
 }
 
+#textfooter {
+  font-size: 20px;
+  color:  rgb(240, 228, 228);
+}
+
+.footer .listado {
+  color: rgb(240, 228, 228);
+}
+
+#valuep {
+  background: rgba(155, 155, 238, 0.1);
+}
+
+#beneficio {
+  background-image: url('./images/bg1.jpg') ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 80px 50px;
+	text-align: center;
+	position: relative;
+}
+
+#beneficio:before {
+	content:'';
+	position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+#beneficio h2 {
+	color: #fff;
+}
+
+#beneficio h4 {
+	color: #fff;
+}
+
+#beneficio p {
+	color: #fff;
+}
+
+.home #textfooter {
+  font-size: 30px;
+  color:  rgb(240, 228, 228);
+}
+
+.home .footer .listado {
+  color: rgb(240, 228, 228);
+}

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Registro from './component/Registro';
-import Login1 from './component/Login1';
+import Login1 from  './component/Login1';
 import Home from './component/Home/index';
 import Game from './component/Game';
 import ToGame from './component/ToGame/Nivel1';
@@ -21,7 +21,7 @@ class Routes extends Component {
       <Switch>
         <Route exact path='/' component={Principal}/>
         <Route exact path= '/registro' component={Registro} />          
-        <Route exact path='/login' component={Login1} />  
+        <Route exact path= '/login' component={Login1} />  
         <Route exact path='/home' component={Home} />              
         <Route exact path='/togame' component={ToGame}/>
         <Route exact path='/prueba' component={Prueba}/>
