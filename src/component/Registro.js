@@ -212,7 +212,7 @@ class Registro extends Component {
 
                        
                         <div className="row pl-3 pr-3">                        
-                                <label className="text-white" for="validationServer04">Numero de cedula</label>
+                                <label className="text-white" for="validationServer04">Número de cédula</label>
                                 <input className="form-control "
                                     type="text"
                                     name="numeroCedula"
