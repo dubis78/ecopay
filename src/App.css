@@ -204,7 +204,7 @@ body {
 }
 .texto-header{
 
-  font-size: 50px;
+  font-size: 25px;
 }
 
 .img-footer{
@@ -349,3 +349,10 @@ body {
 .organic #bntGame {
   background: #0F2943;
 }
+/* FORMULARIO REGISTRO */
+.form-signin{
+  padding-top: 20px;
+  margin-right:10px ;
+  margin-left:10px ;
+}
+

@@ -198,7 +198,7 @@ class Principal extends Component {
                                     </div>
 
                                     <div class="col-sm-4 ">
-                                        <h5 className="texto-header text-responsive">Contactanos</h5>
+                                        <p className="texto-header text-responsive">Contactanos</p>
                                         <ul className="listado">
                                             <li>
                                                 <i><img className="img-responsive mx-2" width="20" src={home}></img></i>
