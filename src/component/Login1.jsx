@@ -1,6 +1,6 @@
 import React,{ Component } from 'react';
 import '../index.css';
-import logo  from '../Imagenes/logo.png';
+import logo  from '../images/logo.png';
 import { Link, Redirect} from 'react-router-dom';
 import Login from './Login';
 import axios from 'axios';
@@ -37,9 +37,10 @@ class Login1 extends Component {
               localStorage.setItem('user', JSON.stringify(element)); //convertimos en formato json el array que nos lanza el for each element
               this.props.history.push('/home'); //nos redirecciona al home
             }
-          }else{
-            window.alert("el correo que ingresaste no se encuentra registrado :(")
           }
+          {/*else if(element.correo !== this.state.form.email){
+            window.alert("el correo que ingresaste no se encuentra registrado :(")
+          }*/}
         });
         }
       })

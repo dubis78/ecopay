@@ -103,7 +103,6 @@ class Home extends React.Component {
                                 </div>
                             </nav>
                         </header>
-HOLA PERRA
                         <h1
                             className="text-center text-black text-wrap p-5"
                         >
