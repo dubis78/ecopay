@@ -83,7 +83,7 @@ body {
 .footer-registro{
   background-color: rgb(19, 136, 118);
 }
-  
+
 .btn1 {
   border-radius: 4px;
   background-color: #fff;
@@ -180,9 +180,6 @@ body {
   height: auto;
   border-bottom: 10px;
 }
-.footer-one{  
-  background: #0C927D;
-}
 .listado li{
   list-style:none
 }
@@ -192,10 +189,6 @@ body {
 
 .ordinary .bg {
   background-color: rgba(230, 230, 41, 0.5);
-}
-
-.ordinary .footer {
-  background: #0F2943;
 }
 
 .ordinary #nav {
@@ -210,10 +203,6 @@ body {
   background-color: rgba(77, 77, 76, 0.5);
 }
 
-.paper .footer {
-  background: #0F2943;
-}
-
 .paper #nav {
   background:#0C927D;
 }
@@ -226,19 +215,11 @@ body {
   background-color: rgba(24, 88, 206, 0.575);
 }
 
-.plastic .footer {
-  background: #0F2943;
-}
-
 .plastic #nav {
   background:#0C927D;
 }
 
 .plastic #bntGame {
-  background: #0F2943;
-}
-
-.glass .footer {
   background: #0F2943;
 }
 
@@ -251,6 +232,72 @@ body {
 }
 
 .footer{
+  background: rgba(12, 146, 125, 0.9);
+}
+
+.principal .footer #footerOne{
+  background: rgba(12, 146, 125, 0.9);
+  width: 100vw;
+}
+
+.glass .footer #footerOne{
+  background: rgba(12, 146, 125, 0.9);
+  width: 100vw;
+}
+
+.glass .footer {
+  background: rgba(12, 146, 125, 0.9);
+}
+
+#glass {
+  width: 100vw;
+}
+
+.metales .footer #footerOne{
+  background: rgba(12, 146, 125, 0.9);
+  width: 100vw;
+}
+
+.metales .footer {
+  background: rgba(12, 146, 125, 0.9);
+}
+
+#metals {
+  width: 100vw;
+}
+
+.plastic .footer #footerOne{
+  background: rgba(12, 146, 125, 0.9);
+  width: 100vw;
+}
+
+.plastic .footer {
+  background: rgba(12, 146, 125, 0.9);
+}
+
+#plastic {
+  width: 100vw;
+}
+
+.organic .footer #footerOne{
+  background: rgba(12, 146, 125, 0.9);
+  width: 100vw;
+}
+
+.organic .footer {
+  background: rgba(12, 146, 125, 0.9);
+}
+
+#organic {
+  width: 100vw;
+}
+
+.ordinary .footer #footerOne{
+  background: rgba(12, 146, 125, 0.9);
+  width: 100vw;
+}
+
+.ordinary .footer {
   background: rgba(12, 146, 125, 0.9);
 }
 
@@ -282,19 +329,11 @@ body {
   background: #0F2943;
 }
 .organic .bg {
-  background: rgb(44, 204, 44);
-}
-
-.organic .bg {
-  background-color: rgba(10, 119, 10, 0.3);
+  background: rgba(44, 204, 44, 0.5);
 }
 
 .metales .bg {
   background: rgb(56, 34, 34);
-}
-
-.metales .footer {
-  background: #0F2943;
 }
 
 .metales #nav {
@@ -308,9 +347,6 @@ body {
 .metales .bg {
   background-color: rgba(77, 40, 14, 0.5);
 }
-.organic .footer {
-  background: #0F2943;
-}
 
 .organic #nav {
   background:#0C927D;
@@ -319,11 +355,6 @@ body {
 .organic #bntGame {
   background: #0F2943;
 }
-
-.principal .footer {
-  background: #0F2943;
-}
-
 
 .togame {
   background-image: url('./images/bggame.jpg') ;

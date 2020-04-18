@@ -18,6 +18,7 @@ class Metals extends Component {
 
             <div
                 className="metales"
+                id="metals"
             >
                 <header>
                     <nav
@@ -104,8 +105,9 @@ class Metals extends Component {
                     </div>
                 </article>
                 <footer
-                        className="footer">
-                        <div className="row justify-content-center footer-one p-3 text-header text-white" >
+                        className="footer"
+                        >
+                        <div id="footerOne" className="row justify-content-center footer-one p-3 text-header text-white" >
                             By Team ECOPAY
                         <i><img className="mx-2" width="30" height="auto" src={facebook} alt="" /></i>
                             <i><img className="mx-2" width="30" height="auto" src={twitter} alt="" /></i>
@@ -130,7 +132,7 @@ class Metals extends Component {
 
                                                 <li>
                                                     <i><img className="img-responsive mx-2" width="50" src={Im3} alt="" /></i>
-                                                    Metro
+                                                    Academia Geek
                                                 </li>
                                             </ul>
 
