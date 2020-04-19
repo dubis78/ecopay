@@ -233,14 +233,14 @@ class Home extends React.Component {
                         </div>
                         <footer
                             className="footer">
-                            <div className="row justify-content-center footer-one p-3 text-header text-white" >
+                            <div id="footerOne" className="row justify-content-center footer-one p-3 text-header text-white" >
                                 By Team ECOPAY
-                        <i><img className="mx-2" width="30" height="auto" src={facebook} alt="" /></i>
+                                <i><img className="mx-2" width="30" height="auto" src={facebook} alt="" /></i>
                                 <i><img className="mx-2" width="30" height="auto" src={twitter} alt="" /></i>
                                 <i><img className="mx-2" width="30" height="auto" src={inst} alt="" /></i>
                             </div>
 
-                            <div className="container">
+                            <div id="footertwo" className="container">
                                 <div className="row justify-content-center">
                                     <div className="container">
                                         <div className="row">

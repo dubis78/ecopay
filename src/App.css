@@ -184,7 +184,7 @@ body {
   list-style:none
 }
 .footer{
-  background-color: #E3DEDD;
+  background-color: rgb(12, 146, 125);
 }
 
 .ordinary .bg {
@@ -231,11 +231,26 @@ body {
   background: #0F2943;
 }
 
-.footer{
+.principal .footer {
   background: rgba(12, 146, 125, 0.9);
+  width: 100vw;
 }
 
-.principal .footer #footerOne{
+.principal #footerOne{
+  background: rgba(12, 146, 125, 0.9);
+  width: 100vw;
+}
+
+.principal #footertwo{
+  background: rgba(12, 146, 125, 0.9);
+  width: 100vw;
+}
+
+.home #footerOne{
+  background: rgb(12, 146, 125);
+  width: 100vw;
+}
+.home #footertwo{
   background: rgba(12, 146, 125, 0.9);
   width: 100vw;
 }
@@ -475,6 +490,3 @@ body {
   margin-right:10px ;
   margin-left:10px ;
 }
-
-
-
