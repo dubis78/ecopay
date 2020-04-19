@@ -70,7 +70,7 @@ class Game extends Component {
                             >
                                 <Link 
                                     className="btn1 bg-transparent" 
-                                    to="/togame"
+                                    to="/togame1"
                                 >
                                     <button
                                         type="button"
@@ -88,7 +88,7 @@ class Game extends Component {
                                 className="col d-flex justify-content-center"
                             >
                             <Link className="btn1 bg-transparent" 
-                                to="/game">
+                                to="/togame2">
                                 <button
                                     type="button"
                                     className="btn mr-1 p-4"
@@ -126,7 +126,7 @@ class Game extends Component {
                                 className="col d-flex justify-content-center">                                
                                 <Link 
                                     className="btn1 bg-transparent" 
-                                    to="/game">
+                                    to="/togame3">
                                 <button
                                     type="button"
                                     className="btn mr-1 p-4"

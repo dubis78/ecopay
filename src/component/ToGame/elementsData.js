@@ -4,7 +4,7 @@ import icon3 from '../../icon/icon3.png'
 import icon4 from '../../icon/icon4.png'
 import icon5 from '../../icon/icon5.png'
 import icon6 from '../../icon/icon6.png'
-/*import icon7 from '../../icon/icon7.png'
+import icon7 from '../../icon/icon7.png'
 import icon8 from '../../icon/icon8.png'
 import icon9 from '../../icon/icon9.png'
 import icon10 from '../../icon/icon10.png'
@@ -12,7 +12,7 @@ import icon11 from '../../icon/icon11.png'
 import icon12 from '../../icon/icon12.png'
 import icon13 from '../../icon/icon13.png'
 import icon14 from '../../icon/icon14.png'
-import icon15 from '../../icon/icon15.png'*/
+import icon15 from '../../icon/icon15.png'
 
 export const elementsData={
     elements:[
@@ -45,7 +45,47 @@ export const elementsData={
             icon:icon6,
             name:'Plant',
             type:'organic',                                   
-        },       
+        },    
+        {
+            icon:icon7,
+            name:'Can',
+            type:'metal',                                   
+        },
+        {
+            icon:icon8,
+            name:'Chip',
+            type:'ordinary',                                   
+        },  
+        {
+            icon:icon9,
+            name:'box',
+            type:'paper',                                   
+        },
+        {
+            icon:icon10,
+            name:'bottle',
+            type:'glass',                                   
+        }, 
+        {
+            icon:icon11,
+            name:'key',
+            type:'metal',                                   
+        },
+        {
+            icon:icon12,
+            name:'keyboard',
+            type:'ordinary',                                   
+        },   
+        {
+            icon:icon13,
+            name:'paper',
+            type:'paper',                                   
+        },
+        {
+            icon:icon14,
+            name:'sandwich',
+            type:'organic',                                   
+        },   
     ]
 }
 export default elementsData;
