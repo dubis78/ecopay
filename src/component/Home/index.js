@@ -102,10 +102,6 @@ class Home extends React.Component {
                                 </div>
                             </nav>
                         </header>
-<<<<<<< HEAD
-=======
-
->>>>>>> camila
                         <h1
                             className="text-center text-black text-wrap p-5"
                         >
