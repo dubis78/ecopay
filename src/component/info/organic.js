@@ -18,6 +18,7 @@ class Organic extends Component {
 
             <div
                 className="organic"
+                id="organic"
             >
                 <header>
                     <nav
@@ -97,9 +98,10 @@ class Organic extends Component {
                         </div>
                     </div>
                 </article>
+                
                 <footer
-                        className="footer">
-                        <div className="row justify-content-center footer-one p-3 text-header text-white" >
+                        className="footer p-3">
+                        <div id="footerOne" className="row justify-content-center footer-one p-5 text-header text-white" style={{'background': 'rgba(12, 146, 125, 0.9)', 'width': '100vw'}}>
                             By Team ECOPAY
                         <i><img className="mx-2" width="30" height="auto" src={facebook} alt="" /></i>
                             <i><img className="mx-2" width="30" height="auto" src={twitter} alt="" /></i>
@@ -124,7 +126,7 @@ class Organic extends Component {
 
                                                 <li>
                                                     <i><img className="img-responsive mx-2" width="50" src={Im3} alt="" /></i>
-                                                    Metro
+                                                    Academia Geek
                                                 </li>
                                             </ul>
 

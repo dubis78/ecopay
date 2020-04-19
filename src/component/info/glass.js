@@ -17,7 +17,8 @@ class Glass extends Component {
         return (
 
             <div
-                className="glass"
+                className="glass" 
+                id="glass"
             >
                 <header>
                     <nav
@@ -43,11 +44,6 @@ class Glass extends Component {
                                     </span>
                             </h2>
                         </a>
-                        <button
-                            className="navbar-toggler"
-                            type="button"
-                        >
-                        </button>
                         <div
                             className="navbar-nav"
                         >
@@ -100,7 +96,7 @@ class Glass extends Component {
                 </article>
                 <footer
                         className="footer">
-                        <div className="row justify-content-center footer-one p-3 text-header text-white" >
+                        <div id="footerOne" className="row justify-content-center footer-one p-3 text-header text-white" >
                             By Team ECOPAY
                         <i><img className="mx-2" width="30" height="auto" src={facebook} alt="" /></i>
                             <i><img className="mx-2" width="30" height="auto" src={twitter} alt="" /></i>
@@ -125,7 +121,7 @@ class Glass extends Component {
 
                                                 <li>
                                                     <i><img className="img-responsive mx-2" width="50" src={Im3} alt="" /></i>
-                                                    Metro
+                                                    Academia Geek
                                                 </li>
                                             </ul>
 

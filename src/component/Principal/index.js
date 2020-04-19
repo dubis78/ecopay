@@ -64,9 +64,6 @@ class Principal extends Component {
                             <div class="banner__icon" />
                             <span class="banner__category"> <h4 className="texto-header">RECICLA Y GANA</h4></span>
                             <Link to='/prueba'> <button className="btn btn-light btn-lg text-black boton"><h1>JUGAR</h1></button></Link>
-
-
-
                         </div>
                     </div>
                     <div id="valuep" className="container p-5">
@@ -166,104 +163,99 @@ class Principal extends Component {
                                 </div>
                             </div>
                         </div>
-                        <br />
-                        <br />
-                        
-                        <hr></hr>
-                        <div class="col-12 text-center">
-
-                            <h2 className="text-wrap d-inline-block">Otras maneras de cuidar nuestro planeta</h2>
-
-                        </div>
-
-                        <br />
-                        <br />
                     </div>
-                        <div className="container text-center containerCard">
-                            <div class="row">
-                                <div className="col-4 cardidea">
-                                    <img src={arbolito} />
-                                    <h4>Planta un árbol</h4>
-                                    <p>¿Sabías que plantar un árbol es una de las cosas más fáciles y poderosas que puedes hacer para tener un impacto positivo en el medio ambiente? Los árboles limpian el aire, te ayudan a ahorrar energía, evitan la escorrentía del agua de lluvia e incluso combaten el calentamiento global.</p>
+                    <br />
+                    <br />
 
-                                </div>
+                    <hr></hr>
+                    <div class="col-12 text-center">
 
-                                <div className="col-4  col-md-4  cardidea">
-                                    <img src={aguita} />
-                                    <h4>Dale un buen manejo al agua</h4>
-                                    <p>El agua es un recurso necesario para la vida. Todavía hay gente que piensa que es inagotable. Lo cierto es que el agua es un recurso muy limitado y cada vez son más las zonas que sufren de escasez de este vital elemento. En la zona de Levante estamos muy concienciados con este tema pero nunca está de más recordarlo. </p>
+                        <h2 className="text-wrap d-inline-block">Otras maneras de cuidar nuestro planeta</h2>
 
-                                </div>
+                    </div>
 
-                                <div className="col-4 cardidea">
-                                    <img src={luz} />
-                                    <h4>Ahorra energía</h4>
-                                    <p>Reducir el consumo eléctrico en casa tiene un doble beneficio: podemos contribuir a cuidar el medioambiente mientras ahorramos unos cuantos pesos en la factura de luz. Es mucho más sencillo de lo que pensamos si aprendemos algunos consejos sobre cómo ahorrar energía!</p>
+                    <br />
+                    <br />
 
-                                </div>
+                    <div className="container text-center containerCard">
+                        <div class="row">
+                            <div className="col-12 col-md-4 cardidea mt-4">
+                                <img src={arbolito} />
+                                <h4>Planta un árbol</h4>
+                                <p>¿Sabías que plantar un árbol es una de las cosas más fáciles y poderosas que puedes hacer para tener un impacto positivo en el medio ambiente? Los árboles limpian el aire, te ayudan a ahorrar energía, evitan la escorrentía del agua de lluvia e incluso combaten el calentamiento global.</p>
 
                             </div>
-                        </div>
-                        <br />
-                        <br />
-                    </div>
-                    <footer
-                        className="footer">
-                        <div className="row justify-content-center footer-one p-3 text-header text-white" >
-                            By Team ECOPAY
-                        <i><img className="mx-2" width="30" height="auto" src={facebook} alt="" /></i>
-                            <i><img className="mx-2" width="30" height="auto" src={twitter} alt="" /></i>
-                            <i><img className="mx-2" width="30" height="auto" src={inst} alt="" /></i>
-                        </div>
 
-                        <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="container">
-                                    <div className="row">
-                                        <div className="col-sm-8">
-                                            <h5 id="textfooter" className="texto-header text-uppercase text-responsive">Nuestros Aliados</h5>
-                                            <ul className="listado">
-                                                <li>
-                                                    <i><img className="img-responsive mx-2" width="50" src={Im1} alt="" /></i>
+                            <div className="col-12  col-md-4  cardidea mt-4">
+                                <img src={aguita} />
+                                <h4>Dale un buen manejo al agua</h4>
+                                <p>El agua es un recurso necesario para la vida. Todavía hay gente que piensa que es inagotable. Lo cierto es que el agua es un recurso muy limitado y cada vez son más las zonas que sufren de escasez de este vital elemento. En la zona de Levante estamos muy concienciados con este tema pero nunca está de más recordarlo. </p>
+
+                            </div>
+
+                            <div className="col-12 col-md-4 cardidea mt-4">
+                                <img src={luz} />
+                                <h4>Ahorra energía</h4>
+                                <p>Reducir el consumo eléctrico en casa tiene un doble beneficio: podemos contribuir a cuidar el medioambiente mientras ahorramos unos cuantos pesos en la factura de luz. Es mucho más sencillo de lo que pensamos si aprendemos algunos consejos sobre cómo ahorrar energía!</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                </div>
+                <footer
+                    className="footer">
+                    <div id="#footerOne" className="row justify-content-center text-white" style={{'width': '100vw'}}>
+                        By Team ECOPAY
+                            <i><img className="mx-2" width="30" height="auto" src={facebook} alt="" /></i>
+                        <i><img className="mx-2" width="30" height="auto" src={twitter} alt="" /></i>
+                        <i><img className="mx-2" width="30" height="auto" src={inst} alt="" /></i>
+                    </div>
+                    <div id="footertwo" className="container">
+                        <div className="row justify-content-center">
+                            <div className="container">
+                                <div className="row">
+                                    <div className="col-sm-8">
+                                        <h5 id="textfooter" className="texto-header text-uppercase text-responsive">Nuestros Aliados</h5>
+                                        <ul className="listado">
+                                            <li>
+                                                <i><img className="img-responsive mx-2" width="50" src={Im1} alt="" /></i>
                                                     Agile Innova
                                                 </li>
-                                                <li>
-                                                    <i><img className="img-responsive mx-2" width="50" src={Im2} alt="" /></i>
+                                            <li>
+                                                <i><img className="img-responsive mx-2" width="50" src={Im2} alt="" /></i>
                                                     Makaia
                                                 </li>
-
-                                                <li>
-                                                    <i><img className="img-responsive mx-2" width="50" src={Im3} alt="" /></i>
-                                                    Metro
-                                                </li>
-                                            </ul>
-
-                                        </div>
-
-                                        <div className="col-sm-4 ">
-                                            <h5 id="textfooter" className="texto-header text-uppercase text-responsive justify-content-center">Contactanos</h5>
-                                            <ul className="listado justify-content-left">
-                                                <li>
-                                                    <i><img className="img-responsive mx-2" width="20" src={home} alt="" /></i>
+                                            <li>
+                                                <i><img className="img-responsive mx-2" width="50" src={Im3} alt="" /></i>
+                                                    Academia Geek
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className="col-sm-4 ">
+                                        <h5 id="textfooter" className="texto-header text-uppercase text-responsive justify-content-center">Contactanos</h5>
+                                        <ul className="listado justify-content-left">
+                                            <li>
+                                                <i><img className="img-responsive mx-2" width="20" src={home} alt="" /></i>
                                                     +573115991986
-
-                                                </li>
-                                                <li>
-                                                    <i><img className="img-responsive mx-2" width="20" src={phone} alt="" /></i>
+                                            </li>
+                                            <li>
+                                                <i><img className="img-responsive mx-2" width="20" src={phone} alt="" /></i>
                                                 Medellín, Colombia
-                                                </li>
-                                                <li>
-                                                    <i><img className="img-responsive mx-2" width="20" src={email} alt="" /></i>
+                                            </li>
+                                            <li>
+                                                <i><img className="img-responsive mx-2" width="20" src={email} alt="" /></i>
                                                     ecopay@gmail.com
-                                                </li>
-
-                                            </ul>
-                                        </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </footer>
+                    </div>
+                </footer>
 
             </Fragment>
 

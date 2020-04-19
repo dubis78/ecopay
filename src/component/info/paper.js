@@ -97,6 +97,7 @@ class Paper extends Component {
                         </div>
                     </div>
                 </article>
+                
                 <footer
                         className="footer">
                         <div className="row justify-content-center footer-one p-3 text-header text-white" >
@@ -124,7 +125,7 @@ class Paper extends Component {
 
                                                 <li>
                                                     <i><img className="img-responsive mx-2" width="50" src={Im3} alt="" /></i>
-                                                    Metro
+                                                    Academia Geek
                                                 </li>
                                             </ul>
 
