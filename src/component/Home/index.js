@@ -11,6 +11,15 @@ import Organicos from '../../images/organicos.png';
 import Papel from '../../images/papel.png';
 import Plastico from '../../images/plastico.png';
 import Vidrio from '../../images/vidrio.png';
+import Im1 from '../../Imagenes/Im1.png';
+import Im2 from '../../Imagenes/Im2.png';
+import Im3 from '../../Imagenes/metro.png';
+import facebook from '../../Imagenes/facebook.png';
+import twitter from '../../Imagenes/twitter.png';
+import inst from '../../Imagenes/inst.png';
+import phone from '../../Imagenes/icons8-home-26.png';
+import home from '../../Imagenes/icons8-phone-24.png';
+import email from '../../Imagenes/email-icon.png';
 import './home.css';
 
 
