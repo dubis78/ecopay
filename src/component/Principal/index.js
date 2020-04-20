@@ -84,8 +84,9 @@ class Principal extends Component {
                             </div>
                         </div>
                     </div>
+                    <br />
                     <div id="beneficio">
-                        <div className="col-12 text-center p-5">
+                        <div className="col-12 text-center">
                             <h2 className="text-wrap d-inline-block">Beneficios del reciclaje</h2>
 
                         </div>

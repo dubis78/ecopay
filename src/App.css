@@ -1,3 +1,7 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
 .App {
   text-align: center;
    
@@ -237,7 +241,6 @@ body {
 }
 
 .principal #footerOne{
-  background: rgba(12, 146, 125, 0.9);
   width: 100vw;
 }
 
@@ -256,7 +259,6 @@ body {
 }
 
 .glass .footer #footerOne{
-  background: rgba(12, 146, 125, 0.9);
   width: 100vw;
 }
 
@@ -269,7 +271,8 @@ body {
 }
 
 .metales .footer #footerOne{
-  background: rgba(12, 146, 125, 0.9);
+
+
   width: 100vw;
 }
 
@@ -282,7 +285,6 @@ body {
 }
 
 .plastic .footer #footerOne{
-  background: rgba(12, 146, 125, 0.9);
   width: 100vw;
 }
 
@@ -295,7 +297,6 @@ body {
 }
 
 .organic .footer #footerOne{
-  background: rgba(12, 146, 125, 0.9);
   width: 100vw;
 }
 
@@ -308,12 +309,15 @@ body {
 }
 
 .ordinary .footer #footerOne{
-  background: rgba(12, 146, 125, 0.9);
-  width: 100vw;
+  width: 100vw !important;
 }
 
 .ordinary .footer {
-  background: rgba(12, 146, 125, 0.9);
+  background: rgba(12, 146, 125, 0.9) !important;
+}
+
+.ordinary {
+  width: 100vw !important;
 }
 
 .home {
