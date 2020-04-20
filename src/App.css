@@ -1,6 +1,7 @@
 body{
   font-family: 'Montserrat', sans-serif;
-  heigth: 100vh;
+  height: 100vh;
+  width: 100vw;
 }
 
 .App {
@@ -82,11 +83,13 @@ body {
 
 .body-registro{
   background-color: #0F2943;
-  margin: 0;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
+
 .footer-registro{
   background-color: rgb(19, 136, 118);
+  width: 100vw;
 }
 
 .btn1 {
@@ -241,6 +244,7 @@ body {
 .principal .footer {
   background: rgba(12, 146, 125, 0.9);
   width: 100vw;
+  padding: 10px;
 }
 
 .principal #footerOne{
@@ -254,19 +258,20 @@ body {
 
 .home #footerOne{
   background: rgb(12, 146, 125);
-  width: 100vw;
 }
 .home #footertwo{
   background: rgba(12, 146, 125, 0.9);
-  width: 100vw;
 }
 
 .glass .footer #footerOne{
   width: 100vw;
+  padding: 10px;
 }
 
 .glass .footer {
   background: rgba(12, 146, 125, 0.9);
+  width: 100vw;
+  padding: 10px;
 }
 
 #glass {
@@ -274,13 +279,14 @@ body {
 }
 
 .metales .footer #footerOne{
-
-
   width: 100vw;
+  padding: 10px;
 }
 
 .metales .footer {
   background: rgba(12, 146, 125, 0.9);
+  width: 100vw;
+  padding: 10px;
 }
 
 #metals {
@@ -289,10 +295,13 @@ body {
 
 .plastic .footer #footerOne{
   width: 100vw;
+  padding: 10px;
 }
 
 .plastic .footer {
   background: rgba(12, 146, 125, 0.9);
+  width: 100vw;
+  padding: 10px;
 }
 
 #plastic {
@@ -301,10 +310,13 @@ body {
 
 .organic .footer #footerOne{
   width: 100vw;
+  padding: 10px;
 }
 
 .organic .footer {
   background: rgba(12, 146, 125, 0.9);
+  width: 100vw;
+  padding: 10px;
 }
 
 #organic {
@@ -312,15 +324,17 @@ body {
 }
 
 .ordinary .footer #footerOne{
-  width: 100vw !important;
+  width: 100vw ;
 }
 
 .ordinary .footer {
-  background: rgba(12, 146, 125, 0.9) !important;
+  background: rgba(12, 146, 125, 0.9) ;
+  width: 100vw;
+  padding: 10px;
 }
 
 .ordinary {
-  width: 100vw !important;
+  width: 100vw ;
 }
 
 .home {
@@ -328,6 +342,8 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 100vw;
+  height: 170vh;
 }
 
 
