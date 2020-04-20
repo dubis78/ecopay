@@ -29,7 +29,13 @@ const BoardL=(props)=>{
           <br/>   
           <br/>    
           <br/>    
+          <br/>   
           <br/>    
+          <br/>    
+          <br/>   
+          <br/>    
+          <br/>    
+          <br/> 
       </DndProvider>
   )
 }
