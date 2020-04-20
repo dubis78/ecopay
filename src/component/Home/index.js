@@ -1,23 +1,17 @@
 import React from 'react';
 import { Link, Redirect } from "react-router-dom";
-
 import Logo from '../../images/logo.png';
-import Ordinarios from '../../images/ordinarios.png';
-import Metales from '../../images/metales.png';
-import Organicos from '../../images/organicos.png';
-import Papel from '../../images/papel.png';
-import Plastico from '../../images/plastico.png';
-import Vidrio from '../../images/vidrio.png';
-import Im1 from '../../Imagenes/Im1.png';
-import Im2 from '../../Imagenes/Im2.png';
-import Im3 from '../../Imagenes/metro.png';
-import facebook from '../../Imagenes/facebook.png';
-import twitter from '../../Imagenes/twitter.png';
-import inst from '../../Imagenes/inst.png';
-import phone from '../../Imagenes/icons8-home-26.png';
-import home from '../../Imagenes/icons8-phone-24.png';
-import email from '../../Imagenes/email-icon.png';
-import './home.css';
+import Im1 from '../../Imagenes/Im1.png'
+import Im2 from '../../Imagenes/Im2.png'
+import Im3 from '../../Imagenes/Im1.png'
+import facebook from '../../Imagenes/facebook.png'
+import twitter from '../../Imagenes/twitter.png'
+import inst from '../../Imagenes/inst.png'
+import phone from '../../Imagenes/icons8-home-26.png'
+import home from '../../Imagenes/icons8-phone-24.png'
+import email from '../../Imagenes/email-icon.png'
+
+
 
 
 class Home extends React.Component {
