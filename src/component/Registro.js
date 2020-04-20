@@ -1,15 +1,6 @@
 import React, { Component,Fragment } from 'react';
 import logo from '../images/logo.png'
 import axios from 'axios';
-import Img1 from '../Imagenes/Img1.png'
-import Img2 from '../Imagenes/Img2.png';
-import Img3 from '../Imagenes/Img3.png';
-import facebook from '../Imagenes/facebook.png';
-import twitter from '../Imagenes/twitter.png';
-import inst from '../Imagenes/inst.png';
-import phone from '../Imagenes/icons8-home-26.png';
-import home from '../Imagenes/icons8-phone-24.png';
-import email from '../Imagenes/email-icon.png';
 import '../index.css'
 
 
@@ -141,13 +132,13 @@ class Registro extends Component {
                     </nav>
 
                 </header>
-                <div className="container-fluid d-flex justify-content-center align-item-center body-registro " >
+                <div className="container-fluid d-flex justify-content-center align-item-center body-registro" >
 
                     <form className="form-signin" onSubmit={this.handleSubmit}>
-                        <div className="text-center mb-4">
+                        <div className="text-center mb-2">
 
-                            <img className="mb-4 mt-4" src={logo} alt="" width="72" height="72"></img>
-                            <h1 className="h3 mb-3 font-weight-normal text-center text-white">Registro</h1>
+                            <img className="mb-2 mt-2" src={logo} alt="" width="72" height="72"></img>
+                            <h1 className="h3 mb-2 font-weight-normal text-center text-white">Registro</h1>
 
                         </div>
                         <div className="form-row ">
@@ -263,81 +254,14 @@ class Registro extends Component {
                                                           
                         </div>
                         <div> 
-                            <button className="btn btn-lg btn-primary rounded-pil  btn-block boton-registro mt-3 " type="submit"
+                            <button className="btn btn-lg btn-primary rounded-pil  btn-block boton-registro mt-2 " type="submit"
                             style={{
                                 backgroundColor: '#0C927D'
                             }}>Registrarse</button>
-
-                        </div>
-
-                        
-                        <p className="mt-5 mb-3 text-muted text-center text-white">© 2020</p>
-
+                            <h6 className="text-center text-white">© 2020</h6>
+                        </div>  
                     </form>
                 </div>
-                <footer
-                        className="footer">
-                        <div className="row justify-content-center footer-one p-3 text-header text-white" >
-                            By Team ECOPAY
-                        <i>                            
-                            <a href="https://www.facebook.com/ecopaygeek" target="_blank">
-                                <img className="mx-2" width="30" height="auto" src={facebook} alt="" />
-                            </a>
-                        </i>
-                            <i><img className="mx-2" width="30" height="auto" src={twitter} alt="" /></i>
-                            <i><img className="mx-2" width="30" height="auto" src={inst} alt="" /></i>
-                        </div>
-
-                        <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="container">
-                                    <div className="row">
-                                        <div className="col-sm-8">
-                                            <h5 id="textfooter" className="texto-header text-uppercase text-responsive">Nuestros Aliados</h5>
-                                            <ul className="listado">
-                                                <li>
-                                                    <i><img className="img-responsive mx-2" width="50" src={Img1} alt="" /></i>
-                                                    Agile Innova
-                                                </li>
-                                                <li>
-                                                    <i><img className="img-responsive mx-2" width="50" src={Img2} alt="" /></i>
-                                                    Makaia
-                                                </li>
-
-                                                <li>
-                                                    <i><img className="img-responsive mx-2" width="50" src={Img3} alt="" /></i>
-                                                    Academia Geek
-                                                </li>
-                                            </ul>
-
-                                        </div>
-
-                                        <div className="col-sm-4 ">
-                                            <h5 id="textfooter" className="texto-header text-uppercase text-responsive justify-content-center">Contactanos</h5>
-                                            <ul className="listado justify-content-left">
-                                                <li>
-                                                    <i><img className="img-responsive mx-2" width="20" src={home} alt="" /></i>
-                                                    +573115991986
-
-                                                </li>
-                                                <li>
-                                                    <i><img className="img-responsive mx-2" width="20" src={phone} alt="" /></i>
-                                                Medellín, Colombia
-                                                </li>
-                                                <li>
-                                                    <i><img className="img-responsive mx-2" width="20" src={email} alt="" /></i>
-                                                    ecopay@gmail.com
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
-
-
             </Fragment>
 
 
