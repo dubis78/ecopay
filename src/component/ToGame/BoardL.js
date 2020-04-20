@@ -23,19 +23,7 @@ const BoardL=(props)=>{
   return(
       <DndProvider backend={MultiBackend} options={HTML5toTouch}>
           <TrashBins/>   
-          <Elements/>  
-            <br/>    
-            <br/>    
-            <br/>   
-            <br/>    
-            <br/>    
-            <br/>   
-            <br/>    
-            <br/>    
-            <br/>   
-            <br/>    
-            <br/>    
-            <br/> 
+          <Elements/> 
       </DndProvider>
   )
 }
