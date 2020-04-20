@@ -4,7 +4,7 @@ import Logo from '../../images/logo.png';
 import ImgReciclyng from '../../images/img8.jpg';
 import Im1 from '../../Imagenes/Im1.png'
 import Im2 from '../../Imagenes/Im2.png'
-import Im3 from '../../Imagenes/Im1.png'
+import Im3 from '../../Imagenes/metro.png'
 import facebook from '../../Imagenes/facebook.png'
 import twitter from '../../Imagenes/twitter.png'
 import inst from '../../Imagenes/inst.png'
@@ -15,6 +15,7 @@ import arbolito from '../../Imagenes/arbolito.jpg';
 import aguita from '../../Imagenes/aguita.jpg';
 import luz from '../../Imagenes/luz.jpg';
 import './style.css';
+
 
 
 class Principal extends Component {

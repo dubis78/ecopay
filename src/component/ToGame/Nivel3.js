@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Logo from '../../images/logo.png';
-import Board from './Board1';
+import Board from './Board3';
 import song from '../../music/Loneliness.mp3';
 
 class ToGame extends Component {
@@ -62,7 +62,7 @@ class ToGame extends Component {
                 <div
                     className="bg"
                 >
-                    <h2 className="text-center text-white">BIENVENIDO AL NIVEL 1</h2>
+                    <h2 className="text-center text-white">BIENVENIDO AL NIVEL 3</h2>
                     <br/>
                     <h2 className="text-center text-white"> DEPOSITA LAS BASURAS CORRESPONDIENTES AL CONTENEDOR</h2>
                     <div className="p-5">
