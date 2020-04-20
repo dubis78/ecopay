@@ -419,6 +419,21 @@ body {
   border-radius: 5%;
 }
 
+.redimir{  
+  text-align: center;
+  color: rgb(197, 197, 197);
+  height: 50px;
+  top: 160px;
+  left: 70px;
+  position: absolute;
+  border-radius: 5%;
+}
+
+.redimirtext{  
+  text-align: center;
+  color: black;
+}
+
 .registerLink {
   text-decoration: none;
   color: white;

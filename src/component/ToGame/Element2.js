@@ -46,6 +46,13 @@ const Element=(props)=>{
             <br/>            
               Tienes 15 puntos para redimir
             </b>
+            <div className='redimir'>
+              <Link to="/redimir" >
+                <button id="bntGame" className="nav-item text-white btn rounded-pill mr-1">
+                    Redimir
+                </button>
+              </Link>        
+            </div>
         </div>   
       )   
     }
