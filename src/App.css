@@ -195,6 +195,7 @@ body {
 .footer{
   background-color: rgb(12, 146, 125);
   width: 100vw;
+  height: 100wh;
   
 }
 
@@ -389,14 +390,14 @@ body {
   background-position: center;
   background-size: cover;
   background-color:#0C927D;
-  height: 100%;
+  height: 100wh;
 }
 
 @media (max-width: 654px){
   .togame {
     background-image: url('./images/bggame.jpg'); 
     background-color:#0C927D;
-    height: 100%;
+    height: 100wh;
   }
 }
 
@@ -504,5 +505,5 @@ body {
   margin-left:10px ;
 }
 .container-fluid{
-  height: 100vh;
+  height: 100wh;
 }
