@@ -372,14 +372,14 @@ body {
   background-position: center;
   background-size: cover;
   background-color:#0C927D;
-  height: 100vh;
+  height: 100%;
 }
 
 @media (max-width: 654px){
   .togame {
     background-image: url('./images/bggame.jpg'); 
     background-color:#0C927D;
-    height: 10%;
+    height: 100%;
   }
 }
 
@@ -404,7 +404,7 @@ body {
   text-align: center;
   color: rgb(197, 197, 197);
   height: 50px;
-  top: 160px;
+  top: 150px;
   left: 70px;
   position: absolute;
   border-radius: 5%;

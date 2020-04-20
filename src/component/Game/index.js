@@ -41,7 +41,7 @@ class Game extends Component {
                             className="navbar-nav"
                         >
                             <Link 
-                                to="/principal"
+                                to="/home"
                             >
                                 <button 
                                     id="bntGame" 
