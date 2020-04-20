@@ -2,9 +2,9 @@ import React, { Component, Fragment } from 'react';
 import { Link } from "react-router-dom";
 import Logo from '../../images/logo.png';
 import ImgReciclyng from '../../images/img8.jpg';
-import Im1 from '../../Imagenes/Im1.png'
-import Im2 from '../../Imagenes/Im2.png'
-import Im3 from '../../Imagenes/metro.png'
+import Img1 from '../../Imagenes/Img1.png'
+import Img2 from '../../Imagenes/Img2.png';
+import Img3 from '../../Imagenes/Img3.png';
 import facebook from '../../Imagenes/facebook.png'
 import twitter from '../../Imagenes/twitter.png'
 import inst from '../../Imagenes/inst.png'
@@ -84,8 +84,9 @@ class Principal extends Component {
                             </div>
                         </div>
                     </div>
+                    <br />
                     <div id="beneficio">
-                        <div className="col-12 text-center p-5">
+                        <div className="col-12 text-center">
                             <h2 className="text-wrap d-inline-block">Beneficios del reciclaje</h2>
 
                         </div>
@@ -221,15 +222,15 @@ class Principal extends Component {
                                         <h5 id="textfooter" className="texto-header text-uppercase text-responsive">Nuestros Aliados</h5>
                                         <ul className="listado">
                                             <li>
-                                                <i><img className="img-responsive mx-2" width="50" src={Im1} alt="" /></i>
+                                                <i><img className="img-responsive mx-2" width="50" src={Img1} alt="" /></i>
                                                     Agile Innova
                                                 </li>
                                             <li>
-                                                <i><img className="img-responsive mx-2" width="50" src={Im2} alt="" /></i>
+                                                <i><img className="img-responsive mx-2" width="50" src={Img2} alt="" /></i>
                                                     Makaia
                                                 </li>
                                             <li>
-                                                <i><img className="img-responsive mx-2" width="50" src={Im3} alt="" /></i>
+                                                <i><img className="img-responsive mx-2" width="50" src={Img3} alt="" /></i>
                                                     Academia Geek
                                             </li>
                                         </ul>

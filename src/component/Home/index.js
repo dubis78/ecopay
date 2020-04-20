@@ -3,7 +3,6 @@ import { Link, Redirect } from "react-router-dom";
 import withFirebaseAuth from 'react-with-firebase-auth';
 import * as firebase from 'firebase/app';
 import 'firebase/auth';
-
 import Logo from '../../images/logo.png';
 import Ordinarios from '../../images/ordinarios.png';
 import Metales from '../../images/metales.png';
@@ -11,9 +10,9 @@ import Organicos from '../../images/organicos.png';
 import Papel from '../../images/papel.png';
 import Plastico from '../../images/plastico.png';
 import Vidrio from '../../images/vidrio.png';
-import Im1 from '../../Imagenes/Im1.png';
-import Im2 from '../../Imagenes/Im2.png';
-import Im3 from '../../Imagenes/metro.png';
+import Img1 from '../../Imagenes/Img1.png'
+import Img2 from '../../Imagenes/Img2.png';
+import Img3 from '../../Imagenes/Img3.png';
 import facebook from '../../Imagenes/facebook.png';
 import twitter from '../../Imagenes/twitter.png';
 import inst from '../../Imagenes/inst.png';
@@ -21,6 +20,7 @@ import phone from '../../Imagenes/icons8-home-26.png';
 import home from '../../Imagenes/icons8-phone-24.png';
 import email from '../../Imagenes/email-icon.png';
 import './home.css';
+
 
 
 class Home extends React.Component {
@@ -241,7 +241,8 @@ class Home extends React.Component {
                         </div>                        
                         <footer
                             className="footer">
-                            <div id="footerOne" className="row justify-content-center footer-one p-3 text-header text-white" >
+                            <div className="row justify-content-center text-white" 
+                            >
                                 By Team ECOPAY
                                 <i><img className="mx-2" width="30" height="auto" src={facebook} alt="" /></i>
                                 <i><img className="mx-2" width="30" height="auto" src={twitter} alt="" /></i>
@@ -256,16 +257,16 @@ class Home extends React.Component {
                                                 <h5 id="textfooter" className="texto-header text-uppercase text-responsive">Nuestros Aliados</h5>
                                                 <ul className="listado">
                                                     <li>
-                                                        <i><img className="img-responsive mx-2" width="50" src={Im1} alt="" /></i>
+                                                        <i><img className="img-responsive mx-2" width="50" src={Img1} alt="" /></i>
                                                     Agile Innova
                                                 </li>
                                                     <li>
-                                                        <i><img className="img-responsive mx-2" width="50" src={Im2} alt="" /></i>
+                                                        <i><img className="img-responsive mx-2" width="50" src={Img2} alt="" /></i>
                                                     Makaia
                                                 </li>
 
                                                     <li>
-                                                        <i><img className="img-responsive mx-2" width="50" src={Im3} alt="" /></i>
+                                                        <i><img className="img-responsive mx-2" width="50" src={Img3} alt="" /></i>
                                                     Makaia
                                                 </li>
                                                 </ul>
