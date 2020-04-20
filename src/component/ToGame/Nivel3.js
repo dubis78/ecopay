@@ -63,6 +63,8 @@ class ToGame extends Component {
                     className="bg"
                 >
                     <h2 className="text-center text-white">BIENVENIDO AL NIVEL 3</h2>
+                    <br/>
+                    <h2 className="text-center text-white"> DEPOSITA LAS BASURAS CORRESPONDIENTES AL CONTENEDOR</h2>
                     <div className="p-5">
                         <Board />
                     </div>
