@@ -19,7 +19,8 @@ const Element=(props)=>{
           cont++;
           if ( pCorrect.includes(pType) ) {
             pPuntaje+=5;            
-          alert(`You dropped ${item.name} into ${dropResult.name}! PUNTAJE: ${pPuntaje}`);  
+            alert(`se depositó ${item.name} en el contenedor! PUNTAJE: ${pPuntaje}`);
+            //alert(`se depositó ${item.name} en el ${dropResult.name}! PUNTAJE: ${pPuntaje}`);    
           }
           else {
             pPuntaje-=3;
